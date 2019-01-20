@@ -61,8 +61,21 @@ background-image: url(images/bw.jpg)
 
 ---
 
-.animated.tada[
-TODO: WHO AM I?
+class: middle, center
+# .sketch.large[Who am I?]
+
+.table.row.middle[
+.col-4.center[
+  .w-70.responsive.avatar.tada.animated[![](images/photo.jpg)]
+]
+.col-8.large.left[
+  Yohan Lasorsa<br>
+  .alt-text[{ **Fullstack Engineer @ Criteo ** }]
+]
+]
+.right.bit-larger[
+  .fab.fa-github[] github.com/sinedied<br>
+  .fab.fa-twitter[] @sinedied<br>
 ]
 
 ---
@@ -156,7 +169,7 @@ Mettons nos problèmes de cotés quelques instants...
 class: timeline
 
 .head[
-# .logo.alt-text.fas.fa-history[]&nbsp; Where does it come from?
+# .alt-text.fas.fa-history[]&nbsp; Where does it come from?
 ]
 <div style="height: 3.3em"></div>
 
@@ -192,7 +205,7 @@ class: middle, center
 ---
 
 .head.dark[
-# .logo[![](images/redux-icon.svg)] The 3 principles
+# .fit[![](images/redux-icon.svg)] The 3 principles
 ]
 .head-spacer[]
 
@@ -211,17 +224,49 @@ To specify how the state tree is transformed by actions, you write pure **reduce
 
 class: center
 .head.dark[
-# .logo[![](images/redux-icon.svg)] Redux data flux
+# .fit[![](images/redux-icon.svg)] Redux data flux
+]
+<br><br>
+.col-11.responsive[![](images/redux0.png)]
+
+---
+
+class: center
+.head.dark[
+# .fit[![](images/redux-icon.svg)] Redux data flux
+]
+<br><br>
+.col-11.responsive[![](images/redux1.png)]
+
+---
+
+class: center
+.head.dark[
+# .fit[![](images/redux-icon.svg)] Redux data flux
+]
+<br><br>
+.col-11.responsive[![](images/redux2.png)]
+
+---
+
+class: center
+.head.dark[
+# .fit[![](images/redux-icon.svg)] Redux data flux
 ]
 <br><br>
 .col-11.responsive[![](images/redux.png)]
 
 ---
 
+class: impact
+# .small[Let's make our<br>.animated.jello.ib[**own**] Redux]!
+
+---
+
 class: big-text, medium-code
 
 .head[
-# Actions
+# .alt-text.fas.fa-code[]&nbsp; Actions
 ]
 .head-spacer.min[]
 
@@ -251,7 +296,7 @@ Note sur static: stage-3 / typescript
 class: big-text, medium-code
 
 .head[
-# Reducer
+# .alt-text.fas.fa-code[]&nbsp; Reducer
 ]
 .head-spacer.min[]
 
@@ -261,11 +306,12 @@ const initialState = { content: 'Hello?' };
 
 function editorApp(previousState = initialState, action) {
   switch(action.type) {
-    case UpdateContent.type:
-      return {
-        ...previousState,
-        content: action.content
-      }
+
+
+
+
+
+
     default:
       return previousState;
   }
@@ -277,7 +323,33 @@ function editorApp(previousState = initialState, action) {
 class: big-text, medium-code
 
 .head[
-# Store
+# .alt-text.fas.fa-code[]&nbsp; Reducer
+]
+.head-spacer.min[]
+
+
+```js
+const initialState = { content: 'Hello?' };
+
+function editorApp(previousState = initialState, action) {
+  switch(action.type) {
+*   case UpdateContent.type:
+*     return {
+*       ...previousState,
+*       content: action.content
+*     }
+    default:
+      return previousState;
+  }
+}
+```
+
+---
+
+class: big-text, medium-code
+
+.head[
+# .alt-text.fas.fa-code[]&nbsp; Store
 ]
 .head-spacer.min[]
 
@@ -285,29 +357,121 @@ class: big-text, medium-code
 ```js
 export class Store {
   constructor(reducer) {
-    this.reducer = reducer;
-    this.state = reducer(undefined, '@@INIT');
-  }
-  getState() { return this.state; }
-  subscribe(observer) {
-    this.observer = observer;
-    observer(this.state);
-  }
-  dispatch(action) {
-    this.state = reducer(this.state, action);
-    if (this.observer) this.observer(this.state);
+    this._reducer = reducer;
+    this._state = reducer(undefined, '@@INIT');
   }
 }
 ```
-
-TODO: split!!
 
 ---
 
 class: big-text, medium-code
 
 .head[
-#  Using it
+# .alt-text.fas.fa-code[]&nbsp; Store
+]
+.head-spacer.min[]
+
+
+```js
+export class Store {
+  constructor(reducer) {
+    this._reducer = reducer;
+    this._state = reducer(undefined, '@@INIT');
+  }
+* getState() { return this._state; }
+}
+```
+
+---
+
+class: big-text, medium-code
+
+.head[
+# .alt-text.fas.fa-code[]&nbsp; Store
+]
+.head-spacer.min[]
+
+
+```js
+export class Store {
+  constructor(reducer) {
+    this._reducer = reducer;
+    this._state = reducer(undefined, '@@INIT');
+  }
+  getState() { return this._state; }
+* subscribe(observer) {
+*   this._observer = observer;
+*   observer(this.state);
+  }
+}
+```
+
+---
+
+class: big-text, medium-code
+
+.head[
+# .alt-text.fas.fa-code[]&nbsp; Store
+]
+.head-spacer.min[]
+
+
+```js
+export class Store {
+  constructor(reducer) {
+    this._reducer = reducer;
+    this._state = reducer(undefined, '@@INIT');
+  }
+  getState() { return this._state; }
+  subscribe(observer) {
+    this._observer = observer;
+    observer(this.state);
+  }
+* dispatch(action) {
+*   this._state = reducer(this._state, action);
+*   if (this._observer) this._observer(this._state);
+* }
+}
+```
+
+---
+
+
+class: big-text, medium-code
+
+.head[
+# .alt-text.fas.fa-code[]&nbsp; Store
+]
+.head-spacer.min[]
+
+
+```js
+export class Store {
+  constructor(reducer) {
+    this._reducer = reducer;
+    this._state = reducer(undefined, '@@INIT');
+  }
+  getState() { return this._state; }
+  subscribe(observer) {
+    this._observer = observer;
+    observer(this.state);
+  }
+  dispatch(action) {
+    this._state = reducer(this._state, action);
+    if (this._observer) this._observer(this._state);
+  }
+}
+```
+
+TODO: code for async/side effects?
+
+---
+
+class: big-text, medium-code
+
+.head[
+#  .alt-text.fas.fa-code[]&nbsp; Using it
 ]
 .head-spacer.min[]
 
@@ -320,10 +484,14 @@ store.subscribe(state => {
 });
 
 store.dispatch(new UpdateContent('Hello SnowCamp!'))
+```
+> Result?
 
-// > Hello?
-// > Hello SnowCamp!
+--
 
+```sh
+> Hello?
+> Hello SnowCamp!
 ```
 
 ---
@@ -412,26 +580,19 @@ On a deja bcp de libs!
 
 class: middle, no-bullet
 
-<!-- .head.dark[
-# State management, where does it come from?
+.col-6.right.space-right.large.v-sep.alt-sep.float-left[
+# .big.sketch[Gain]
+- Debugging
+- Undo history
+- No prop drilling
+- Performance (Angular)
 ]
-.head-spacer[
-] -->
-
-.row.table[
-  .col-6.right.space-right.large.v-sep.alt-sep[
-  # .big.sketch[Gain]
-  - Debugging
-  - Undo history
-  - No prop drilling
-  - Performance (Angular)
-  ]
-  .col-6.space-left.large[
-  # .big.sketch[Pain]
-  - Boilerplate
-  - More indirection levels
-  - Learning curve
-  ]
+--
+.col-6.space-left.large.float-left[
+# .big.sketch[Pain]
+- Boilerplate
+- More indirection levels
+- Learning curve
 ]
 
 ???
@@ -454,80 +615,94 @@ Gain évidents / fonctionnels:
 
 ---
 
-# #realword
+class: middle, no-bullet
 
-# More gain
-- Workflow -> change how you design/think your features
-- Testability - TDD
-- Structure -> container/pres. components
-- Open knowledge -> Clear intention, discoverabiliy
-- SoC -> backend within the frontend
-workflow, maintenance, structure, testability, SoC... benefits
+.full-layer.left.space-left.stick-top.no-margin[
+  # .dark-text.bit-larger.sketch[\#realworld]
+]
 
-# Less pain (than expected)
+.col-6.right.space-right.large.v-sep.alt-sep.float-left[
+# .alt-text[More] .big.sketch[Gain]
+- Workflow
+- Testability
+- Structure
+- Knowledge
+- Evolutivity???
+]
+???
+- change how you design/think your features
+- TDD
+- Structure: container/pres. components, where should I...
+- Clear intentions, discoverability
+- backend within frontend
+--
+.col-6.space-left.large.float-left[
+# .alt-text[Less] .big.sketch[Pain]
 - Boilerplate
 - .strike[More indirection levels]
-- Learning curve -> once setup/example is done, easy to catch
-
----
-
-# #realwork spoiler
-
-# New questions/gotchas
-
-- Should I put it in the store?
-- Actions vs events?
-- Side effects?
-- chained actions
-- overengineering
-- overstorage in state
-- TODO
-
----
-
-# vs challenges
-
-- Complexity -> :( more code, more layers
-- Debugging -> \o/
-- Performance -> ~= (^ with NG)
-- Long-term maintenance -> :)
-- Documentation -> :)
+- Learning curve
+]
+???
+- more code, but simple
+- once setup/example is done, easy to catch
 
 ---
 
 class: impact
-# .small[Let's see some code! 🤓]
-### .col-2.responsive[[![](images/codesandbox.png)](https://codesandbox.io/dashboard/sandboxes/Markdown%20Editor)]
-
-???
-- Explain app, basic components & actions
-- MV* version with services
-- NGRX version
-- NGXS version
+# .small[Spoiler alert TODO: img]
+## .alt-text.large[New solution, new problems]
 
 ---
 
-class: big-text, middle, center
+class: big-text, middle
+# New gotchas
 
-.head.dark[
-# Conclusion
-]
-.head-spacer[]
+- .a["Should I put it in the store?"] .em-text[(also: state zealots)]
+--
 
-# Long live NGXS! 🤟
-### Let's make it live in ASCII 🔥
+- .a[Side effects] .em-text[(aka: I'll put it there, nobody will know)]
+
+--
+- .a[Chained actions] .em-text[(aka: yay, a new event bus!)]
+
+--
+- .a[Overengineering] .em-text[(aka: let's make a wrapper for...)]
+
+--
+- .a[Overstorage in state] .em-text[(aka: it's not free caching?)]
+
+--
+- ...
+
+TODO: split slide with fun memes
+
+---
+
+class: big-text
+# .w-10.responsive.middle[![](images/vs.jpg)] Challenges
+
+.col-6.left.float-left.space-right[Complexity]
+.col-6.left.float-left[:(]
+.col-6.left.float-left.space-right[Debugging]
+.col-6.left.float-left[\o/]
+.col-6.left.float-left.space-right[Performance]
+.col-6.left.float-left[:(]
+.col-6.left.float-left.space-right[Long-term maintenance]
+.col-6.left.float-left[:)]
+.col-6.left.float-left.space-right[Documentation]
+.col-6.left.float-left[:D]
 
 ---
 
 class: middle
 
-.big-text.no-bg[
+.big-text.no-bg.baseline[
 ```js
 store.dispatch(
   new EndTalk({
     message: 'Thank you!',
     slides: 'TODO_URL',
-    code: 'github.com/sinedied/md-editor
+    examples: 'github.com/sinedied/md-editor
   })
 );
 ```

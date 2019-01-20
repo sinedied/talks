@@ -171,6 +171,7 @@ table {
 }
 
 .avatar {
+  position: relative;
   &.big { width: 10em; }
   &.small {
     display: inline-block;
@@ -179,6 +180,18 @@ table {
   & > img {
     border-radius: 50%;
     width: 100%;
+  }
+  &::after {
+    $offset: 20px;
+    content: '';
+    display: block;
+    position: absolute;
+    top: -$offset;
+    bottom: -$offset;
+    left: -$offset;
+    right: -$offset;
+    border: 1px solid $secondary;
+    border-radius: 50%;
   }
 }
 
@@ -220,6 +233,7 @@ table {
 .rounded > img { border-radius: .5em; };
 .top { vertical-align: top; &.override { vertical-align: top !important; } };
 .middle { &, & img, & span { vertical-align: middle; } };
+.baseline { &, & img, & span { vertical-align: baseline; } };
 .bottom { vertical-align: bottom; &.override { vertical-align: bottom !important; } };
 .left, .text-left { text-align: left; }
 .right, .text-right { text-align: right; }
@@ -372,6 +386,13 @@ table {
     float: left;
     height: 5*$font-size;
     margin: -.8*$font-size .5*$font-size 0 -.8*$font-size;
+    vertical-align: middle;
+  }
+
+  .fit img {
+    float: left;
+    height: 3*$font-size;
+    margin: -.5*$font-size .5*$font-size 0 -.5*$font-size;
     vertical-align: middle;
   }
 
@@ -679,6 +700,10 @@ hr {
   &.hr-right {
     background: linear-gradient(90deg, $light, $secondary);
   }
+}
+
+.remark-code-line-highlighted {
+  background-color: lighten(transparentize($secondary, 0.5), 20);
 }
 
 // Fix PDF print with chrome
