@@ -761,10 +761,12 @@ video: v3
 
 ---
 
+video: v4
 # Overengineering
 ### (aka: let's make a wrapper for...)
-.center[
-.w-70.responsive.rounded[![](images/overengineering.gif)]
+.center.rounded[
+<!-- .w-70.responsive.rounded[![](images/overengineering.gif)] -->
+<video id="v4" width="70%" loop src="images/overengineering.webm"></video>
 ]
 
 ---
