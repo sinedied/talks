@@ -2,37 +2,6 @@ title: The revolution in your apps is called **State Management**
 class: animation-fade
 layout: true
 
-<!-- 
-
-- What is state management?
-  * laius on frameworks: NG, Vue, React, it's all components
-  * challenges: complexity, performance, long-term maintenance, debugging, knowledge -> commence simple puis devient complexe
-  => back to state management
-  * history
-  * redux basics
-  * For the big 3's
-
-- Do we need (another) library to manage state?
-  * problems....
-  * ends up reimplementing a SM lib! :)
-
-- Why should I use it?
-  * features: performance, debugging, undo/redo... benefits
-  * => workflow, maintenance, structure, testability, SoC... benefits
-  * -- more boilerplate :(
-
-- Use case feedback @ Criteo
-  Traps + code to illustrate
-  * side effects
-  * chained actions
-  * overstorage in state, overengineering
-  * too much actions
-
-- Conclusion
-  * Use it whenever you can! Or at least think like it
-
--->
-
 ---
 
 class: center, middle
@@ -271,23 +240,47 @@ class: big-text, medium-code
 .head-spacer.min[]
 
 ```js
-export class LoadContent {
-  static type = '[Editor] Load content';
+function loadContent() {
+  return { type: 'Load content' };
 }
 
-export class UpdateContent {
-  static type = '[Editor] Update content';
-
-  constructor(content) {
-    this.content = content;
-  }
+function updateContent(content) {
+  return {
+    type: 'Update content',
+    content
+  };
 }
 ```
 ???
-Note sur static: stage-3 / typescript
-
 - Are object (in-place literals or action creators)
-- Define 
+- Define and intention
+- Have unique type
+- Can carry data (payload)
+
+---
+
+class: big-text, medium-code
+
+.head[
+# .alt-text.fas.fa-code[]&nbsp; Actions
+]
+.head-spacer.min[]
+
+```js
+function loadContent() {
+* return { type: 'Load content' };
+}
+
+function updateContent(content) {
+* return {
+*   type: 'Update content',
+*   content
+* };
+}
+```
+???
+- Are object (in-place literals or action creators)
+- Define and intention
 - Have unique type
 - Can carry data (payload)
 
@@ -333,7 +326,7 @@ const initialState = { content: 'Hello?' };
 
 function editorApp(previousState = initialState, action) {
   switch(action.type) {
-*   case UpdateContent.type:
+*   case 'Update content':
 *     return {
 *       ...previousState,
 *       content: action.content
@@ -351,15 +344,14 @@ class: big-text, medium-code
 .head[
 # .alt-text.fas.fa-code[]&nbsp; Store
 ]
-.head-spacer.min[]
+.head-spacer.none[]
 
 
 ```js
-export class Store {
-  constructor(reducer) {
-    this._reducer = reducer;
-    this._state = reducer(undefined, '@@INIT');
-  }
+function createStore(reducer) {
+  let _state = reducer(undefined, '@@INIT');
+  let store = {};
+  return store;
 }
 ```
 
@@ -370,16 +362,16 @@ class: big-text, medium-code
 .head[
 # .alt-text.fas.fa-code[]&nbsp; Store
 ]
-.head-spacer.min[]
+.head-spacer.none[]
 
 
 ```js
-export class Store {
-  constructor(reducer) {
-    this._reducer = reducer;
-    this._state = reducer(undefined, '@@INIT');
-  }
-* getState() { return this._state; }
+function createStore(reducer) {
+  let _state = reducer(undefined, '@@INIT');
+  let store = {
+*   getState: () => _state,
+  };
+  return store;
 }
 ```
 
@@ -390,20 +382,21 @@ class: big-text, medium-code
 .head[
 # .alt-text.fas.fa-code[]&nbsp; Store
 ]
-.head-spacer.min[]
+.head-spacer.none[]
 
 
 ```js
-export class Store {
-  constructor(reducer) {
-    this._reducer = reducer;
-    this._state = reducer(undefined, '@@INIT');
-  }
-  getState() { return this._state; }
-* subscribe(observer) {
-*   this._observer = observer;
-*   observer(this.state);
-  }
+function createStore(reducer) {
+  let _state = reducer(undefined, '@@INIT');
+* let _listener = null;
+  let store = {
+    getState: () => _state,
+*   subscribe: listener => {
+*     _listener = listener;
+*     if (_listener) _listener(_state);
+*   }
+  };
+  return store;
 }
 ```
 
@@ -414,57 +407,26 @@ class: big-text, medium-code
 .head[
 # .alt-text.fas.fa-code[]&nbsp; Store
 ]
-.head-spacer.min[]
-
-
-```js
-export class Store {
-  constructor(reducer) {
-    this._reducer = reducer;
-    this._state = reducer(undefined, '@@INIT');
-  }
-  getState() { return this._state; }
-  subscribe(observer) {
-    this._observer = observer;
-    observer(this.state);
-  }
-* dispatch(action) {
-*   this._state = reducer(this._state, action);
-*   if (this._observer) this._observer(this._state);
-* }
-}
-```
-
----
-
-
-class: big-text, medium-code
-
-.head[
-# .alt-text.fas.fa-code[]&nbsp; Store
-]
-.head-spacer.min[]
-
+.head-spacer.none[]
 
 ```js
-export class Store {
-  constructor(reducer) {
-    this._reducer = reducer;
-    this._state = reducer(undefined, '@@INIT');
-  }
-  getState() { return this._state; }
-  subscribe(observer) {
-    this._observer = observer;
-    observer(this.state);
-  }
-  dispatch(action) {
-    this._state = reducer(this._state, action);
-    if (this._observer) this._observer(this._state);
-  }
+function createStore(reducer) {
+  let _state = reducer(undefined, '@@INIT');
+  let _listener = null;
+  let store = {
+    getState: () => _state,
+    subscribe: listener => {
+      _listener = listener;
+      if (_listener) _listener(_state);
+    },
+*   dispatch: action => {
+*     _state = reducer(_state, action);
+*     if (_listener) _listener(_state);
+*   }
+  };
+  return store;
 }
 ```
-
-TODO: code for async/side effects?
 
 ---
 
@@ -477,13 +439,13 @@ class: big-text, medium-code
 
 
 ```js
-const store = new Store(editorApp);
+const store = createStore(editorApp);
 
 store.subscribe(state => {
   console.log(state.content);
 });
 
-store.dispatch(new UpdateContent('Hello SnowCamp!'))
+store.dispatch(updateContent('Hello SnowCamp!'));
 ```
 > Result?
 
@@ -492,6 +454,111 @@ store.dispatch(new UpdateContent('Hello SnowCamp!'))
 ```sh
 > Hello?
 > Hello SnowCamp!
+```
+
+---
+
+class: big-text, medium-code
+
+.head[
+#  .alt-text.fas.fa-code[]&nbsp; Side effects?
+]
+.head-spacer.min[]
+
+```js
+const store = createStore(editorApp);
+
+store.subscribe(state => {
+  console.log(state.content);
+});
+
+*store.dispatch(loadContent()); // Async call here?
+store.dispatch(updateContent('Hello SnowCamp!'));
+```
+
+> How to manage?
+
+---
+
+class: big-text, medium-code
+
+.head[
+# .alt-text.fas.fa-code[]&nbsp; Actions with thunks
+]
+.head-spacer.min[]
+
+```js
+function loadContent() {
+  return { type: 'Load content' };
+}
+
+function loadContent() {
+  return (dispatch) => {
+    setTimeout(
+      () => dispatch(updateContent('Hello async!')),
+      1000
+    );
+  };
+}
+```
+???
+Thunk: fct dont on retarde l'evaluation
+
+---
+
+class: big-text, medium-code
+
+.head[
+# .alt-text.fas.fa-code[]&nbsp; Store
+]
+.head-spacer.none[]
+
+```js
+function createStore(reducer) {
+  let _state = reducer(undefined, '@@INIT');
+  let _listener = null;
+  let store = {
+    getState: () => _state,
+    subscribe: listener => { ... },
+    dispatch: action => {
+*     if (typeof action === 'function')
+*       return action(store.dispatch);
+      _state = reducer(_state, action);
+      if (_listener) _listener(_state);
+    }
+  };
+  return store;
+}
+```
+
+---
+
+class: big-text, medium-code
+
+.head[
+#  .alt-text.fas.fa-code[]&nbsp; Side effects in action
+]
+.head-spacer.min[]
+
+```js
+const store = createStore(editorApp);
+
+store.subscribe(state => {
+  console.log(state.content);
+});
+
+store.dispatch(loadContent());
+store.dispatch(updateContent('Hello SnowCamp!'));
+```
+
+> Result?
+
+--
+
+```sh
+> Hello?
+> Hello SnowCamp!
+> Hello async!
 ```
 
 ---
@@ -624,10 +691,9 @@ class: middle, no-bullet
 .col-6.right.space-right.large.v-sep.alt-sep.float-left[
 # .alt-text[More] .big.sketch[Gain]
 - Workflow
-- Testability
+- Testability & Evolutivity
 - Structure
-- Knowledge
-- Evolutivity???
+- Self-documentation
 ]
 ???
 - change how you design/think your features
@@ -637,11 +703,16 @@ class: middle, no-bullet
 - backend within frontend
 --
 .col-6.space-left.large.float-left[
-# .alt-text[Less] .big.sketch[Pain]
+# .alt-text[Less] .big.sketch[Pain]<sup>*</sup>
 - Boilerplate
 - .strike[More indirection levels]
 - Learning curve
 ]
+
+.full-layer.stick-bottom.right.space-right[
+\* than expected
+]
+
 ???
 - more code, but simple
 - once setup/example is done, easy to catch
@@ -649,48 +720,72 @@ class: middle, no-bullet
 ---
 
 class: impact
-# .small[Spoiler alert TODO: img]
+.w-60.responsive.animated.shake[![](images/spoiler.png)]
 ## .alt-text.large[New solution, new problems]
 
 ---
 
-class: big-text, middle
-# New gotchas
-
-- .a["Should I put it in the store?"] .em-text[(also: state zealots)]
---
-
-- .a[Side effects] .em-text[(aka: I'll put it there, nobody will know)]
-
---
-- .a[Chained actions] .em-text[(aka: yay, a new event bus!)]
-
---
-- .a[Overengineering] .em-text[(aka: let's make a wrapper for...)]
-
---
-- .a[Overstorage in state] .em-text[(aka: it's not free caching?)]
-
---
-- ...
-
-TODO: split slide with fun memes
+# Should I put it in the store?
+### (see also: state zealots)
+.center.rounded[
+<video width="70%" autoplay loop src="images/shouldi.webm"></video>
+]
 
 ---
 
-class: big-text
-# .w-10.responsive.middle[![](images/vs.jpg)] Challenges
+# Side effects
+### (aka: I'll put it there, nobody will know)
+.center.rounded[
+<video width="70%" autoplay loop src="images/sideeffects.webm"></video>
+]
 
-.col-6.left.float-left.space-right[Complexity]
-.col-6.left.float-left[:(]
-.col-6.left.float-left.space-right[Debugging]
-.col-6.left.float-left[\o/]
-.col-6.left.float-left.space-right[Performance]
-.col-6.left.float-left[:(]
-.col-6.left.float-left.space-right[Long-term maintenance]
-.col-6.left.float-left[:)]
-.col-6.left.float-left.space-right[Documentation]
-.col-6.left.float-left[:D]
+---
+
+# Chained actions
+### (aka: yay, a new event bus!)
+.center.rounded[
+<!-- .w-60.responsive.rounded[![](images/facepalm.jpg)] -->
+<video width="70%" autoplay loop src="images/eventbus.webm"></video>
+]
+
+---
+
+# Overstorage in state
+### (aka: it's not free caching?)
+.center[
+.w-70.responsive.rounded[![](images/storage.jpg)]
+]
+
+---
+
+# Overengineering
+### (aka: let's make a wrapper for...)
+.center[
+.w-70.responsive.rounded[![](images/overengineering.gif)]
+]
+
+---
+
+class: impact
+# .small[Conclusion]
+## .alt-text[Not a silver bullet]
+.w-20.responsive.middle[![](images/silver-bullet.png)]
+
+???
+Still... use it whenever you can! Or at least think like it
+
+---
+
+class: big-text, middle
+# .w-10.responsive.middle[![](images/gerrit.svg)] Challenges
+
+.baseline[
+- .w-50.ib[Complexity] .dminus[--]
+- .w-50.ib[Debugging] .dplus[++]
+- .w-50.ib[Performance] .dneutral[=] &nbsp;(Angular: .dplus[+])
+- .w-50.ib[Long-term maintenance] .dplus[++++]
+- .w-50.ib[Documentation] .dplus[+]
+]
 
 ---
 
@@ -727,3 +822,12 @@ exclude: true
 - [NGRX libs](https://github.com/ngrx/platform)
 - [What is VueX?](https://vuex.vuejs.org/)
 - [Markdown Editor variants](https://codesandbox.io/dashboard/sandboxes/Markdown%20Editor)
+
+<!-- 
+
+TODO:
+- start video when slide change
+- upload slides && update slide link
+- upload example code!!
+
+ -->

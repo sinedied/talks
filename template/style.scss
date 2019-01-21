@@ -230,7 +230,7 @@ table {
   &.spaced-more { & > img, & > a > img { padding: 1em; } }
 }
 .shadow > img { box-shadow: 0 0 10px 0 rgba(0,0,0,.4); }
-.rounded > img { border-radius: .5em; };
+.rounded > img, .rounded > video { border-radius: .5em; };
 .top { vertical-align: top; &.override { vertical-align: top !important; } };
 .middle { &, & img, & span { vertical-align: middle; } };
 .baseline { &, & img, & span { vertical-align: baseline; } };
@@ -352,9 +352,8 @@ table {
   display: block;
   height: 5*$font-size;
 
-  &.min {
-    height: 3.5*$font-size;
-  }
+  &.min { height: 3.5*$font-size; }
+  &.none { height: 2.1*$font-size; }
 }
 
 .head {
@@ -713,6 +712,11 @@ hr {
 .remark-code-line-highlighted {
   background-color: lighten(transparentize($secondary, 0.5), 20);
 }
+
+.dplus { background: transparentize(lighten($green, 15%), .6); }
+.dminus { background: transparentize(saturate($red, 50%), .6); }
+.dneutral { background: transparentize($grey, .7); }
+.dplus, .dminus, .dneutral { font-family: $font-fixed; padding: 0 .25em; }
 
 // Fix PDF print with chrome
 // ---------------------------------------------------------------------------
