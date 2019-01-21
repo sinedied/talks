@@ -725,27 +725,30 @@ class: impact
 
 ---
 
+video: v1
 # Should I put it in the store?
 ### (see also: state zealots)
 .center.rounded[
-<video width="70%" autoplay loop src="images/shouldi.webm"></video>
+<video id="v1" width="70%" src="images/shouldi.webm"></video>
 ]
 
 ---
 
+video: v2
 # Side effects
 ### (aka: I'll put it there, nobody will know)
 .center.rounded[
-<video width="70%" autoplay loop src="images/sideeffects.webm"></video>
+<video id="v2" width="70%" src="images/sideeffects.webm"></video>
 ]
 
 ---
 
+video: v3
 # Chained actions
 ### (aka: yay, a new event bus!)
 .center.rounded[
 <!-- .w-60.responsive.rounded[![](images/facepalm.jpg)] -->
-<video width="70%" autoplay loop src="images/eventbus.webm"></video>
+<video id="v3" width="70%" src="images/eventbus.webm"></video>
 ]
 
 ---
@@ -826,8 +829,8 @@ exclude: true
 <!-- 
 
 TODO:
-- start video when slide change
+- listener -> observer
+- fix actions thunk slide
 - upload slides && update slide link
 - upload example code!!
-
  -->

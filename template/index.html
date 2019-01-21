@@ -6,20 +6,24 @@
   {{{style}}}
   <script src="remark.min.js"></script>
   <script>
-    function toggleBox(id) {
-      const el = document.getElementById(id);
-      el.hidden = !el.hidden;
-    }
-  </script>
-  <script>
     function create() {
-      return remark.create({
+      var slideshow = remark.create({
         {{{source}}},
         ratio: '16:9',
         highlightLines: true,
         countIncrementalSlides: false,
         highlightStyle: 'github'
       });
+      slideshow.on('showSlide', function (slide) {
+        var v = slide.properties.video;
+        if (v) {
+          var video = window[v];
+          video = video.play ? video : video[0];
+          video.currentTime = 0;
+          video.play();
+        }
+      });
+      return slideshow;
     }
   </script>
 </head>
