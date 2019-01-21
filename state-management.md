@@ -181,7 +181,7 @@ class: timeline
   - Elm
 - #### 2014
   - Flux architecture (React)
-- #### **2015**
+- #### .boom.responsive[![](images/boom.jpg)] **2015**
   - **Redux, MobX, NGRX, VueX**
 - #### 2018
   - NGXS, Akita, Unstated, "React Context/Hooks"

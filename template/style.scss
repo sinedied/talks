@@ -446,7 +446,7 @@ table {
         margin: 0;
         margin-left: $margin;
         border-left: $border-width solid $border-color;
-        width: calc(90% - #{$margin/2} + #{$border-width/2});
+        width: calc(80% - #{$margin/2} + #{$border-width/2});
         text-align: left;
         float: right;
 
@@ -484,6 +484,14 @@ table {
     //     }
     //   }
     // }
+  }
+
+  .boom {
+    position: absolute;
+    display: block;
+    left: .5em;
+    margin-top: -.75em;
+    width: 13%;
   }
 }
 
