@@ -800,7 +800,7 @@ class: middle
 store.dispatch(
   new EndTalk({
     message: 'Thank you!',
-    slides: 'TODO_URL',
+    slides: 'bit.do/state-management',
     examples: 'github.com/sinedied/md-editor
   })
 );
@@ -830,7 +830,5 @@ exclude: true
 <!-- 
 
 TODO:
-- fix actions thunk slide
-- upload slides && update slide link
 - upload example code!!
  -->
