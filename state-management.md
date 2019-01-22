@@ -40,7 +40,7 @@ class: middle, center
 .col-8.large.left[
   Yohan Lasorsa<br>
   .alt-text[{ **Fullstack Engineer @ Criteo ** }]<br>
-  Web tech geek & DIY lover
+  .small.em-text[Web tech geek & DIY lover]
 ]
 ]
 .right.bit-larger[
