@@ -654,6 +654,14 @@ class: middle, no-bullet
 - No prop drilling
 - Performance (Angular)
 ]
+???
+Also RT collaboration
+
+Gain évidents / fonctionnels:
+- time travel debug / bug reports / tracabilité
+- undo = 101 du state management
+- prop drilling > plutot React, transmission de state dans toute la hierarchie
+- perf ng > reactive mode w/o change detection
 --
 .col-6.space-left.large.float-left[
 # .big.sketch[Pain]
@@ -661,10 +669,6 @@ class: middle, no-bullet
 - More indirection levels
 - Learning curve
 ]
-
-???
-
-Also RT collaboration
 
 --
 
@@ -731,6 +735,16 @@ video: v1
 <video id="v1" width="70%" src="images/shouldi.webm"></video>
 ]
 
+???
+
+- Store === git repository
+
+=> ne garder que ce qui est nécessaire pour reconstruire un état donné
+
+=> pas d'état intermédiaire "instable"
+
+- action === commit
+
 ---
 
 video: v2
@@ -739,6 +753,12 @@ video: v2
 .center.rounded[
 <video id="v2" width="70%" src="images/sideeffects.webm"></video>
 ]
+
+???
+
+- charger 1 donnée depuis localstorage, call async dans un reducer, Date.now() dans un reducer...
+
+=> effet souvent pas immédiat, mais casse toute la chaine de promesse et tres dur a debug
 
 ---
 
@@ -750,6 +770,15 @@ video: v3
 <video id="v3" width="70%" src="images/eventbus.webm"></video>
 ]
 
+???
+
+- Actions ont un effet sur l'etat
+=> dangereux de passer en mode event, car pas fait pour ca initialement
+
+- antipattern: action qui déclenche plusieurs actions (qui elle memes...)
+
+- store et actions ne servent pas faire du découpage fonctionnel!
+
 ---
 
 # Overstorage in state
@@ -757,6 +786,14 @@ video: v3
 .center[
 .w-70.responsive.rounded[![](images/storage.jpg)]
 ]
+
+???
+
+- On stocke tout, pour tous les écrans! meme les états dérivés!
+
+=> selecteurs avec memoization
+
+=> clean unused data
 
 ---
 
@@ -768,11 +805,19 @@ video: v4
 <video id="v4" width="70%" loop src="images/overengineering.webm"></video>
 ]
 
+???
+
+SM, le nouveau joujou des devs!
+
+Tout ne doit pas s'articuler autout hein...
+ex: analytics
+ex: helpers qui mergent/trigg de multiples actions (rxjs?)
+
 ---
 
 class: impact
 # .small[Conclusion]
-## .alt-text[Not a silver bullet]
+## .alt-text[(As always) not a silver bullet]
 .w-20.responsive.middle[![](images/silver-bullet.png)]
 
 ???
@@ -830,5 +875,5 @@ exclude: true
 <!-- 
 
 TODO:
-- upload example code!!
+- fix example code!!
  -->
