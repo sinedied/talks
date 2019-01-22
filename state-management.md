@@ -39,13 +39,18 @@ class: middle, center
 ]
 .col-8.large.left[
   Yohan Lasorsa<br>
-  .alt-text[{ **Fullstack Engineer @ Criteo ** }]
+  .alt-text[{ **Fullstack Engineer @ Criteo ** }]<br>
+  Web tech geek & DIY lover
 ]
 ]
 .right.bit-larger[
   .fab.fa-github[] github.com/sinedied<br>
   .fab.fa-twitter[] @sinedied<br>
 ]
+
+???
+
+ca fait plus de 10 ans que je baigne dans le monde du web...
 
 ---
 
@@ -875,5 +880,6 @@ exclude: true
 <!-- 
 
 TODO:
+- update PDF
 - fix example code!!
  -->
