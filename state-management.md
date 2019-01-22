@@ -388,12 +388,12 @@ class: big-text, medium-code
 ```js
 function createStore(reducer) {
   let _state = reducer(undefined, '@@INIT');
-* let _listener = null;
+* let _observer = null;
   let store = {
     getState: () => _state,
-*   subscribe: listener => {
-*     _listener = listener;
-*     if (_listener) _listener(_state);
+*   subscribe: observer => {
+*     _observer = observer;
+*     if (_observer) _observer(_state);
 *   }
   };
   return store;
@@ -412,16 +412,16 @@ class: big-text, medium-code
 ```js
 function createStore(reducer) {
   let _state = reducer(undefined, '@@INIT');
-  let _listener = null;
+  let _observer = null;
   let store = {
     getState: () => _state,
-    subscribe: listener => {
-      _listener = listener;
-      if (_listener) _listener(_state);
+    subscribe: observer => {
+      _observer = observer;
+      if (_observer) _observer(_state);
     },
 *   dispatch: action => {
 *     _state = reducer(_state, action);
-*     if (_listener) _listener(_state);
+*     if (_observer) _observer(_state);
 *   }
   };
   return store;
@@ -489,15 +489,17 @@ class: big-text, medium-code
 
 ```js
 function loadContent() {
-  return { type: 'Load content' };
+* return (dispatch) => {
+*   setTimeout(
+*     () => dispatch(updateContent('Hello async!')), 1000
+*   );
+* };
 }
 
-function loadContent() {
-  return (dispatch) => {
-    setTimeout(
-      () => dispatch(updateContent('Hello async!')),
-      1000
-    );
+function updateContent(content) {
+  return {
+    type: 'Update content',
+    content
   };
 }
 ```
@@ -516,15 +518,15 @@ class: big-text, medium-code
 ```js
 function createStore(reducer) {
   let _state = reducer(undefined, '@@INIT');
-  let _listener = null;
+  let _observer = null;
   let store = {
     getState: () => _state,
-    subscribe: listener => { ... },
+    subscribe: observer => { ... },
     dispatch: action => {
 *     if (typeof action === 'function')
 *       return action(store.dispatch);
       _state = reducer(_state, action);
-      if (_listener) _listener(_state);
+      if (_observer) _observer(_state);
     }
   };
   return store;
@@ -606,11 +608,9 @@ class: center
   <br><br>
   .large.fas.fa-arrow-down[]
   <br>
-  ### @ngrx / NGXS
-  .w-40.no-margin.middle[
-  .w-90.responsive[![](images/ngrx.svg)]
-  ]
-  .w-50.responsive[![](images/ngxs.png)]
+  ### NGXS
+  <br>
+  .w-60.responsive.animated.heartBeat[![](images/ngxs.png)]
 ]
 .col-4[
   .w-40.responsive[![](images/react.svg)]
@@ -677,7 +677,7 @@ Also RT collaboration
 Gain évidents / fonctionnels:
 - time travel debug / bug reports / tracabilité
 - undo = 101 du state management
-- prop drilling > plutot Reacr, transmission de state dans toute la hierarchie
+- prop drilling > plutot React, transmission de state dans toute la hierarchie
 - perf ng > reactive mode w/o change detection
 
 ---
@@ -697,10 +697,9 @@ class: middle, no-bullet
 ]
 ???
 - change how you design/think your features
-- TDD
+- TDD / backend within frontend
 - Structure: container/pres. components, where should I...
 - Clear intentions, discoverability
-- backend within frontend
 --
 .col-6.space-left.large.float-left[
 # .alt-text[Less] .big.sketch[Pain]<sup>*</sup>
@@ -831,7 +830,6 @@ exclude: true
 <!-- 
 
 TODO:
-- listener -> observer
 - fix actions thunk slide
 - upload slides && update slide link
 - upload example code!!
