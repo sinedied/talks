@@ -300,9 +300,36 @@ class: big-text, medium-code
 
 
 ```js
-const initialState = { content: 'Hello?' };
 
-function editorApp(previousState = initialState, action) {
+
+function editorApp(previousState, action) {
+  switch(action.type) {
+
+
+
+
+
+
+    default:
+      return previousState;
+  }
+}
+```
+
+---
+
+class: big-text, medium-code
+
+.head[
+# .alt-text.fas.fa-code[]&nbsp; Reducer
+]
+.head-spacer.min[]
+
+
+```js
+*const initialState = { content: 'Hello?' };
+
+*function editorApp(previousState = initialState, action) {
   switch(action.type) {
 
 
@@ -705,6 +732,7 @@ class: middle, no-bullet
 - Self-documentation
 ]
 ???
+=> @CRITEO
 - change how you design/think your features
 - TDD / backend within frontend
 - Structure: container/pres. components, where should I...
@@ -807,7 +835,7 @@ video: v4
 ### (aka: let's make a wrapper for...)
 .center.rounded[
 <!-- .w-70.responsive.rounded[![](images/overengineering.gif)] -->
-<video id="v4" width="70%" loop src="images/overengineering.webm"></video>
+<video id="v4" width="70%" src="images/overengineering.webm"></video>
 ]
 
 ???
