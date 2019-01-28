@@ -362,7 +362,7 @@ function editorApp(previousState = initialState, action) {
 *     return {
 *       ...previousState,
 *       content: action.content
-*     }
+*     };
     default:
       return previousState;
   }
