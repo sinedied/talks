@@ -19,7 +19,7 @@ background-image: url(images/bw.jpg)
   ]
   .col-6.small.half[
   .w-90[
-  .w-70.responsive[![](images/snowcamp.png)]
+  .w-70.responsive[![](images/riviera.png)]
   ]
   ]
   .col-3.small.text-right[
@@ -51,6 +51,7 @@ class: middle, center
 ???
 
 ca fait plus de 10 ans que je baigne dans le monde du web...
+je ne vais pas vous refaire tout l'historique, car simplement...
 
 ---
 
@@ -110,6 +111,20 @@ Component Tree
 ???
 
 Et finissent rapidement comme ca!
+
+---
+
+.full-layer[
+.center[
+.w-60.responsive[![](images/component-tree-linked.png)]
+<br>
+Component Tree
+]
+]
+
+???
+
+Données liées: comment garantir qu'elle soient toujours à jour?
 
 ---
 
@@ -477,7 +492,7 @@ store.subscribe(state => {
   console.log(state.content);
 });
 
-store.dispatch(updateContent('Hello SnowCamp!'));
+store.dispatch(updateContent('Hello RivieraDev!'));
 ```
 > Result?
 
@@ -485,7 +500,7 @@ store.dispatch(updateContent('Hello SnowCamp!'));
 
 ```sh
 > Hello?
-> Hello SnowCamp!
+> Hello RivieraDev!
 ```
 
 ---
@@ -505,7 +520,7 @@ store.subscribe(state => {
 });
 
 *store.dispatch(loadContent()); // Async call here?
-store.dispatch(updateContent('Hello SnowCamp!'));
+store.dispatch(updateContent('Hello RivieraDev!'));
 ```
 
 > How to manage?
@@ -582,7 +597,7 @@ store.subscribe(state => {
 });
 
 store.dispatch(loadContent());
-store.dispatch(updateContent('Hello SnowCamp!'));
+store.dispatch(updateContent('Hello RivieraDev!'));
 ```
 
 > Result?
@@ -591,7 +606,7 @@ store.dispatch(updateContent('Hello SnowCamp!'));
 
 ```sh
 > Hello?
-> Hello SnowCamp!
+> Hello RivieraDev!
 > Hello async!
 ```
 
@@ -878,7 +893,7 @@ class: middle
 store.dispatch(
   new EndTalk({
     message: 'Thank you!',
-    slides: 'bit.do/state-management',
+    slides: 'bit.do/state-management-riviera',
     examples: 'github.com/sinedied/md-editor
   })
 );
