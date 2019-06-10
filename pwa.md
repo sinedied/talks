@@ -126,7 +126,7 @@ class: middle
 <br>
 
 .quote[
-> .span[Progressive Web Apps are] .alt-text[**user experiences**] .span[that have the reach of the web, and are fast, reliable and engaging]
+> .span[Progressive Web Apps are] .alt-text[user experiences] .span[that have the reach of the web, and are fast, reliable and engaging]
 ]
 
 ---
@@ -154,6 +154,7 @@ class: timeline
 
 - #### 2009
   - Modernizr
+--
 
 - #### 2010
   - Responsive Web Design (RWD) - *Ethan Marcott*
@@ -211,9 +212,11 @@ Full screen, Notifications, Home screen shortcut, native features...
 .w-70.float-left.top.no-margin[
 Always work, start quickly
 .em-text.margin-top.no-margin[
-Offline support, service worker, local storage, indexed DB...
+Offline support, service worker, Web Storage, Web SQL...
 ]
 ]
+
+TODO: IRON THRONE IMAGE
 
 ---
 
@@ -260,8 +263,123 @@ class: big-text
 class: impact
 
 # How?
-## Time for tech
+## .alt-text[Time for tech] 🤓
 
+---
+class: no-bullet, big-text
+
+# .sketch[PWA Checklist]
+
+- ✅ HTTPS
+- ✅ Responsive Web Design
+- ✅ Offline (ie Service Worker)
+- ✅ Web App Manifest
+- ✅ TTI < 10s on 3G
+- ✅ Cross-browser
+
+---
+class: no-bullet, big-text
+
+# .sketch[PWA Checklist]
+
+- .transparent[✅ HTTPS]
+- .transparent[✅ Responsive Web Design]
+- ✅ Offline (ie Service Worker)
+- ✅ Web App Manifest
+- ✅ TTI < 10s on 3G
+- .transparent[✅ Cross-browser]
+
+---
+
+class: big-text, center, dark
+.head.dark[
+# .fit[![](images/pwa.png)] Service Worker
+]
+<br>
+.responsive[![](images/sw-overview-1.png)]
+
+---
+
+class: big-text, center, dark
+.head.dark[
+# .fit[![](images/pwa.png)] Service Worker
+]
+<br>
+.responsive[![](images/sw-overview-2.png)]
+
+---
+
+class: big-text
+.head.dark[
+# .fit[![](images/pwa.png)] Service Worker
+]
+.head-spacer[]
+
+## Libraries
+
+- WorkBox
+- @angular/service-worker
+- UpUp
+- offline-plugin for Webpack
+
+---
+class: big-text, middle, center
+.head.dark[
+# .fit[![](images/pwa.png)] Service Worker - .alt-text[The cookbook]
+]
+<br><br>
+
+.large[https://serviceworke.rs]
+
+.w-50.responsive.rounded[![](images/tasty.gif)]
+
+---
+
+class: big-text, center, middle
+.head.dark[
+# .fit[![](images/pwa.png)] Service Worker - .alt-text[Can I use it?]
+]
+.head-spacer[]
+
+.responsive[![](images/sw-ready.png)]
+
+.small[https://jakearchibald.github.io/isserviceworkerready/]
+
+---
+
+.head.dark[
+# .fit[![](images/pwa.png)] Web App Manifest
+]
+.head-spacer[]
+
+Web App Manifest
+
+
+---
+
+.head.dark[
+# .fit[![](images/pwa.png)] TTI < 10s on 3G
+]
+.head-spacer[]
+
+Lighthouse + MC screenshot
+
+- Lighthouse
+- App Shell
+- PRPL Pattern
+- SSR (Server Side Rendering) (Angular Universal, Nuxt.js...)
+
+---
+
+# Going further
+
+Notifications
+
+PWA + Hybrid = <3
+
+- WebAPK
+- Cordova
+- Capacitor
 
 ---
 
@@ -286,8 +404,29 @@ const end = {
 
 exclude: true
 .head.dark[
-# Links
+# Some links
 ]
 .head-spacer[]
 
+- https://hnpwa.com
+- https://developers.google.com/web/progressive-web-apps/
+- https://serviceworke.rs
+- https://www.freecodecamp.org/news/progressive-web-apps-101-the-what-why-and-how-4aa5e9065ac2/
+- https://www.creativebloq.com/features/pwas-welcome-to-the-mobile-revolution
+- https://www.pwabuilder.com
+- https://medium.com/@guillaumeandre/progressive-web-app-pwa-support-et-compatibilite-manifest-39bcfc703737
 
+--
+TODO WORKSHOP
+
+- Fix manifest.json: add 192x192 icon, test add to homescreen
+- SW: add manifest.json
+
+0. Netlify account
+1. Gen without PWA, Lighthouse
+2. Gen with PWA, Lighthouse
+3. Test offline, API down :(
+4. Add API request
+5. Update homepage, deploy, refresh once
+  - talk about update, catching event, pulling...
+6. Notifications?
