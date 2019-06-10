@@ -17,6 +17,7 @@ Workshop:
 - add PWA
   * manifest / icon
   * worker/offline
+  * add offline API call
   * notifs
  -->
 
@@ -172,7 +173,7 @@ class: timeline
 ---
 
 .head.dark[
-# .fit[![](images/pwa.png)] The principles
+# .fit[![](images/pwa-color-w.png)] The principles
 ]
 .head-spacer[]
 
@@ -216,7 +217,10 @@ Offline support, service worker, Web Storage, Web SQL...
 ]
 ]
 
-TODO: IRON THRONE IMAGE
+--
+.full-layer.right[
+  .throne.responsive[![](images/iron-throne.jpg)]
+]
 
 ---
 
@@ -280,7 +284,19 @@ class: no-bullet, big-text
 ---
 class: no-bullet, big-text
 
-# .sketch[PWA Checklist]
+# .sketch[PWA .small[.small[(minimal)]] Checklist]
+
+- ✅ HTTPS
+- ✅ Responsive Web Design
+- ✅ Offline (ie Service Worker)
+- ✅ Web App Manifest
+- ✅ TTI < 10s on 3G
+- ✅ Cross-browser
+
+---
+class: no-bullet, big-text
+
+# .sketch[PWA .small[.small[(minimal)]] Checklist]
 
 - .transparent[✅ HTTPS]
 - .transparent[✅ Responsive Web Design]
@@ -293,7 +309,7 @@ class: no-bullet, big-text
 
 class: big-text, center, dark
 .head.dark[
-# .fit[![](images/pwa.png)] Service Worker
+# .fit[![](images/pwa-color-w.png)] Service Worker
 ]
 <br>
 .responsive[![](images/sw-overview-1.png)]
@@ -302,7 +318,7 @@ class: big-text, center, dark
 
 class: big-text, center, dark
 .head.dark[
-# .fit[![](images/pwa.png)] Service Worker
+# .fit[![](images/pwa-color-w.png)] Service Worker
 ]
 <br>
 .responsive[![](images/sw-overview-2.png)]
@@ -311,7 +327,7 @@ class: big-text, center, dark
 
 class: big-text
 .head.dark[
-# .fit[![](images/pwa.png)] Service Worker
+# .fit[![](images/pwa-color-w.png)] Service Worker
 ]
 .head-spacer[]
 
@@ -325,7 +341,7 @@ class: big-text
 ---
 class: big-text, middle, center
 .head.dark[
-# .fit[![](images/pwa.png)] Service Worker - .alt-text[The cookbook]
+# .fit[![](images/pwa-color-w.png)] Service Worker - .alt-text[The cookbook]
 ]
 <br><br>
 
@@ -337,7 +353,7 @@ class: big-text, middle, center
 
 class: big-text, center, middle
 .head.dark[
-# .fit[![](images/pwa.png)] Service Worker - .alt-text[Can I use it?]
+# .fit[![](images/pwa-color-w.png)] Service Worker - .alt-text[Can I use it?]
 ]
 .head-spacer[]
 
@@ -348,17 +364,52 @@ class: big-text, center, middle
 ---
 
 .head.dark[
-# .fit[![](images/pwa.png)] Web App Manifest
+# .fit[![](images/pwa-color-w.png)] Web App Manifest
 ]
-.head-spacer[]
+<br><br><br>
+.no-margin[
+```html
+<link rel="manifest" href="manifest.json"/>
+```
+]
+--
+.no-margin[
+```json
+{
+  "name": "My Awesome PWA",
+  "short_name": "My PWA",
+  "theme_color": "#488aff",
+  "background_color": "#488aff",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "assets/icon@512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    ...
+  ]
+}
+```
+]
 
-Web App Manifest
+---
 
+class: center
+.head.dark[
+# .fit[![](images/pwa-color-w.png)] Web App Manifest
+]
+<br><br><br>
+
+.responsive[![](images/manifest-can.png)]
+
+.large[Mostly Mobile browsers + Chrome only 😢]
 
 ---
 
 .head.dark[
-# .fit[![](images/pwa.png)] TTI < 10s on 3G
+# .fit[![](images/pwa-color-w.png)] TTI < 10s on 3G
 ]
 .head-spacer[]
 
@@ -371,15 +422,100 @@ Lighthouse + MC screenshot
 
 ---
 
-# Going further
+.head.dark[
+# .fit[![](images/pwa-color-w.png)] Distribution
+]
+.head-spacer[]
 
-Notifications
-
-PWA + Hybrid = <3
 
 - WebAPK
-- Cordova
-- Capacitor
+- windows store package appx
+
+---
+
+background-image: url(images/pwa-vs-hybrid.jpg)
+class: contain, dark
+
+---
+
+.head.dark[
+# .fit[![](images/pwa-color-w.png)] PWA vs hybrid
+]
+.head-spacer[]
+
+
+.table.row.no-margin.center.compare[
+.col-w20.no-margin[
+  ### Web
+  .w-50.responsive[![](images/web.png)]
+]
+.col-w20.no-margin[
+  ### PWA
+  .w-50.responsive[![](images/pwa.png)]
+]
+.col-w20.no-margin[
+  ### Web/Hybrid
+  <br>
+  .w-20.responsive[![](images/cordova.png)]
+  .w-20.responsive[![](images/capacitor.png)]
+  .w-20.responsive[![](images/electron.png)]
+]
+.col-w20.no-margin[
+  ### Native/Hybrid
+  .w-20.responsive[![](images/nativescript.png)]
+  .w-20.responsive[![](images/react.png)]
+  <br>
+  .w-20.responsive[![](images/xamarin.png)]
+  .w-20.responsive[![](images/flutter.png)]
+]
+.col-w20.no-margin[
+  ### Native
+  .w-70.responsive[![](images/native.png)]
+]
+]
+.no-margin[
+.w-80.bar[Cross-platform].w-20.bar.no[&nbsp;]
+.w-60.bar[Single codebase].w-20.bar.dashed[&nbsp;].w-20.bar.no[&nbsp;]
+.w-60.bar.dashed[Native UI].w-40.bar[&nbsp;]
+.w-20.bar.no[App store].w-20.bar.dashed[&nbsp;].w-60.bar[&nbsp;]
+.w-100.bar.gradient[Cost effectiveness .float-right[Performance]]
+]
+
+---
+
+class: center, middle, big-text
+.head.dark[
+# .fit[![](images/pwa-color-w.png)] PWA vs hybrid
+]
+.head-spacer[]
+
+.big[PWA .alt-text[+] Hybrid .alt-text[=] ❤️]
+
+<br><br>
+.col-4.float-left.center[
+  ### .alt-text.large[Cordova]
+  .w-50.responsive[![](images/cordova.png)]
+]
+.col-4.float-left.center[
+  ### .alt-text.large[Capacitor]
+  .w-50.responsive[![](images/capacitor.png)]
+]
+.col-4.float-left.center[
+  ### .alt-text.large[Electron]
+  .w-50.responsive[![](images/electron.png)]
+]
+
+---
+
+# Going further...
+
+App Lifecycle
+Notifications
+WebAuth
+WebShare
+WebUSB
+WebBluetooth
+...
 
 ---
 
@@ -415,8 +551,10 @@ exclude: true
 - https://www.creativebloq.com/features/pwas-welcome-to-the-mobile-revolution
 - https://www.pwabuilder.com
 - https://medium.com/@guillaumeandre/progressive-web-app-pwa-support-et-compatibilite-manifest-39bcfc703737
+- https://www.slideshare.net/firt/the-modern-pwa-cheat-sheet
 
---
+???
+
 TODO WORKSHOP
 
 - Fix manifest.json: add 192x192 icon, test add to homescreen

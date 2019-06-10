@@ -753,6 +753,40 @@ hr {
   opacity: 0.2;
 }
 
+.throne {
+  display: inline-block;
+  width: 91.1%;
+}
+
+@for $i from 1 through 10 {
+  .col-w#{$i * 10} { width: 10% * $i; }
+}
+
+.compare {
+  [class^="col-"] + [class^="col-"] {
+    border-left: 1px solid $grey;
+  }
+}
+
+.bar {
+  $height: 3px;
+  margin-bottom: .5em;
+  font-size: 90%;
+  border-bottom: $height solid $primary;
+  p { margin: 0 0 1em; }
+  &.dashed { border-bottom-style: dashed; }
+  &.no { border-bottom-color: $red; }
+  &.gradient {
+    border-bottom: none;
+    &::after {
+      content: '';
+      display: block;
+      background: linear-gradient(90deg, $green, $yellow);
+      height: $height;
+    }
+  }
+}
+
 // Fix PDF print with chrome
 // ---------------------------------------------------------------------------
 
