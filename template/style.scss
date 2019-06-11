@@ -787,6 +787,16 @@ hr {
   }
 }
 
+.beer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(50% - 128px);
+  font-size: 256px;
+  text-align: center;
+  z-index: 999;
+}
+
 // Fix PDF print with chrome
 // ---------------------------------------------------------------------------
 

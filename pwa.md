@@ -53,6 +53,9 @@ class: center, middle
 # Making apps
 <div style="height: 1em"></div>
 
+???
+What means do we have to make apps today?
+
 --
 .w-20.responsive.top.margin-right[
   ### Web
@@ -75,6 +78,10 @@ class: center, middle
   .w-30.responsive[![](images/react.png)]
   .w-30.responsive[![](images/flutter.png)]
 ]
+
+???
+
+Icons trivia!
 
 --
 
@@ -231,7 +238,7 @@ class: dark, contain
 
 class: big-text
 
-# .sketch[Why should I give a f*********?]
+# .sketch[Why should I give a f**?]
 - Slow internet speeds
 ???
 - Not everyone have 4G, let even 3G: 60% world on 2G
@@ -279,7 +286,7 @@ class: no-bullet, big-text
 - ✅ Offline (ie Service Worker)
 - ✅ Web App Manifest
 - ✅ TTI < 10s on 3G
-- ✅ Cross-browser
+- ✅ Cross-{browser, device}
 
 ---
 class: no-bullet, big-text
@@ -291,7 +298,7 @@ class: no-bullet, big-text
 - ✅ Offline (ie Service Worker)
 - ✅ Web App Manifest
 - ✅ TTI < 10s on 3G
-- ✅ Cross-browser
+- ✅ Cross-{browser, device}
 
 ---
 class: no-bullet, big-text
@@ -303,7 +310,7 @@ class: no-bullet, big-text
 - ✅ Offline (ie Service Worker)
 - ✅ Web App Manifest
 - ✅ TTI < 10s on 3G
-- .transparent[✅ Cross-browser]
+- .transparent[✅ Cross-{browser, device}]
 
 ---
 
@@ -398,38 +405,196 @@ class: big-text, center, middle
 
 class: center
 .head.dark[
-# .fit[![](images/pwa-color-w.png)] Web App Manifest
+# .fit[![](images/pwa-color-w.png)] Web App Manifest - .alt-text[Can I use it?]
 ]
-<br><br><br>
+<br><br>
 
 .responsive[![](images/manifest-can.png)]
 
-.large[Mostly Mobile browsers + Chrome only 😢]
+.large[Most mobile browsers + Chrome / Firefox / Edge ✊]
 
 ---
 
+class: center
+.head.dark[
+# .fit[![](images/pwa-color-w.png)] TTI < 10s on 3G
+]
+<div style="height: 4em"></div>
+
+???
+One goal
+--
+# .alt-text[GO FAST!]
+
+.w-50.responsive.rounded[![](images/fast.gif)]
+
+---
+
+class: center
 .head.dark[
 # .fit[![](images/pwa-color-w.png)] TTI < 10s on 3G
 ]
 .head-spacer[]
 
-Lighthouse + MC screenshot
+# Lighthouse
 
-- Lighthouse
-- App Shell
+.w-50.responsive[![](images/lighthouse.png)]
+
+---
+
+class: center
+.head.dark[
+# .fit[![](images/pwa-color-w.png)] TTI < 10s on 3G
+]
+<br><br><br>
+.responsive[![](images/criteo-lighthouse.png)]
+
+???
+- Chrome audit tab
+- Also NPM package for CI
+
+---
+
+class: big-text
+.head.dark[
+# .fit[![](images/pwa-color-w.png)] TTI < 10s on 3G
+]
+.head-spacer[]
+
+## Patterns
+- Bundling / Lazy loading
+- SSR (Server Side Rendering)
 - PRPL Pattern
-- SSR (Server Side Rendering) (Angular Universal, Nuxt.js...)
+- App Shell
+
+???
+Angular Universal, Next.js, Nuxt.js...
+
+---
+
+class: middle, center
+.head.dark[
+# .fit[![](images/pwa-color-w.png)] SSR
+]
+<br><br>
+
+.col-6.rounded.responsive.space-right[![](images/ssr.jpg)]
+---
+class: middle, center, middle
+.head.dark[
+# .fit[![](images/pwa-color-w.png)] SSR
+]
+<br><br>
+.col-6.rounded.responsive[![](images/why2.gif)]
+
+---
+
+class: big-text
+.head.dark[
+# .fit[![](images/pwa-color-w.png)] SSR
+]
+.head-spacer[
+]
+
+## SSR + SPA = **Universal Apps**
+
+--
+
+1. Initial render on the server
+2. Send static HTML
+3. Load SPA app bundle
+4. Rehydrate
+
+--
+
+.full-layer.right.space-right[
+  <div style="height: 4em"></div>
+  .col-4.rounded.responsive[![](images/hydrate.gif)]
+]
+
+--
+### 👉 Angular Universal, Next.js, Nuxt.js...
+
+---
+
+class: big-text, middle
+.head.dark[
+# .fit[![](images/pwa-color-w.png)] PRPL Pattern
+]
+<br><br>
+
+- .alt-text[**P**ush] .a[critical resources for the initial URL route]
+- .alt-text[**R**ender] .a[initial route]
+- .alt-text[**P**re-cache] .a[remaining routes]
+- .alt-text[**L**azy-load] .a[and create remaining routes on demand]
+
+???
+Coined by Polymer team at G I/O
+
+- Push: HTTP/2
+- Render: not necessarily SSR
+- Pre-cache: SW
+- Lazy load
+
+---
+
+class: center
+.head.dark[
+# .fit[![](images/pwa-color-w.png)] App Shell
+]
+<br><br>
+.w-70.responsive[![](images/app-shell1.png)]
+
+---
+
+class: center
+.head.dark[
+# .fit[![](images/pwa-color-w.png)] App Shell
+]
+<br><br>
+
+.w-80.responsive[![](images/app-shell2.png)]
+
+---
+
+class: big-text, middle
+
+# .a[Now] .animated.ib.rubberBand.alt-text[what].a[?]
+.full-layer.right.space-right[
+  .w-30.responsive.rounded[![](images/now-what.gif)]
+]
 
 ---
 
 .head.dark[
 # .fit[![](images/pwa-color-w.png)] Distribution
 ]
-.head-spacer[]
 
+<div style="height: 4em"></div>
 
-- WebAPK
-- windows store package appx
+## Browsers
+- Desktop: Chrome, Firefox, Edge
+- Mobile: Android Chrome (WebAPK), iOS Safari
+
+--
+
+## Stores
+- Android: TWA (Trusted Web Activities) for Play Store
+- Windows: AppX for Windows Store
+- iOS: IPA package for App Store possible
+
+.center[
+.large.middle[[pwabuilder.com](http://pwabuilder.com)] &nbsp;&nbsp;&nbsp;&nbsp; .col-2.responsive.middle[![](images/pwa-builder.svg)]
+]
+
+---
+
+class: cover
+background-image: url(images/wkwebview.jpg)
+
+???
+Not the only rant about iOS...
+Context preservation, storage persisted through uninstall...
 
 ---
 
@@ -507,15 +672,51 @@ class: center, middle, big-text
 
 ---
 
-# Going further...
+class: big-text
+.head.dark[
+# .fit[![](images/capacitor.png)] Capacitor
+]
+.head-spacer[
+]
 
-App Lifecycle
-Notifications
-WebAuth
-WebShare
-WebUSB
-WebBluetooth
-...
+## Cross-platform native bridge
+- One codebase, multi-target:<br>
+  .em-text[*PWA, iOS/Android hybrid, Electron*]
+- Native plugins with web fallbacks
+
+[capacitor.ionicframework.com](https://capacitor.ionicframework.com)
+
+.full-layer.right.space-right[
+  <div style="height: 4em"></div>
+  .col-3.responsive.rounded[![](images/capacitor-hero.jpg)]
+]
+
+???
+1.0 Stable version since 2 weeks!
+
+---
+
+class: big-text
+.head.dark[
+# .fit[![](images/pwa-color-w.png)] Going further with PWA
+]
+
+<br>
+
+- App Lifecycle
+- Push Notifications
+- Web Authentication
+- Web Share
+- Web USB
+- Web Bluetooth
+- ...
+
+--
+
+.full-layer.right.space-right[
+<div style="height: 3em"></div>
+.col-5.responsive.rounded[![](images/mind-blown.gif)]
+]
 
 ---
 
@@ -525,9 +726,10 @@ class: middle
 ```js
 const end = {
   message: 'Thank you!',
-  slides: 'bit.do/pwa',
-  code: 'github.com/sinedied/pwa-demo
+  slides: 'bit.do/pwa'
 };
+
+alert('Questions?');
 ```
 <hr class="hr-right">
 ]
@@ -538,20 +740,17 @@ const end = {
 
 ---
 
-exclude: true
-.head.dark[
-# Some links
-]
-.head-spacer[]
-
-- https://hnpwa.com
-- https://developers.google.com/web/progressive-web-apps/
+# References
+- [HackerNews PWA comparison](https://hnpwa.com)
+- [PWA @ Google Developers](https://developers.google.com/web/progressive-web-apps/)
+- [PWA 101](https://www.freecodecamp.org/news/progressive-web-apps-101-the-what-why-and-how-4aa5e9065ac2/)
+- [PWA, welcome to the mobile revolution](https://www.creativebloq.com/features/pwas-welcome-to-the-mobile-revolution)
+- [PWA support & compatibility](https://medium.com/@guillaumeandre/progressive-web-app-pwa-support-et-compatibilite-manifest-39bcfc703737)
+- [The modern PWA cheat sheet (slides)](https://www.slideshare.net/firt/the-modern-pwa-cheat-sheet)
+- [PRPL pattern](https://developers.google.com/web/fundamentals/performance/prpl-pattern/)
+- [TWA for Google Play Store](https://medium.com/@firt/google-play-store-now-open-for-progressive-web-apps-ec6f3c6ff3cc)
 - https://serviceworke.rs
-- https://www.freecodecamp.org/news/progressive-web-apps-101-the-what-why-and-how-4aa5e9065ac2/
-- https://www.creativebloq.com/features/pwas-welcome-to-the-mobile-revolution
 - https://www.pwabuilder.com
-- https://medium.com/@guillaumeandre/progressive-web-app-pwa-support-et-compatibilite-manifest-39bcfc703737
-- https://www.slideshare.net/firt/the-modern-pwa-cheat-sheet
 
 ???
 
@@ -561,10 +760,12 @@ TODO WORKSHOP
 - SW: add manifest.json
 
 0. Netlify account
-1. Gen without PWA, Lighthouse
-2. Gen with PWA, Lighthouse
+1. Gen without PWA
+  - brief project presentation
+  - -> Lighthouse
+2. Gen with PWA -> Lighthouse
 3. Test offline, API down :(
-4. Add API request
+4. Add API request, test again \o/
 5. Update homepage, deploy, refresh once
   - talk about update, catching event, pulling...
-6. Notifications?
+6. Test on mobile
