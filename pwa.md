@@ -726,7 +726,7 @@ class: middle
 ```js
 const end = {
   message: 'Thank you!',
-  slides: 'bit.do/pwa'
+  slides: 'Will post on slack later'
 };
 
 alert('Questions?');
@@ -751,21 +751,4 @@ alert('Questions?');
 - [TWA for Google Play Store](https://medium.com/@firt/google-play-store-now-open-for-progressive-web-apps-ec6f3c6ff3cc)
 - https://serviceworke.rs
 - https://www.pwabuilder.com
-
-???
-
-TODO WORKSHOP
-
-- Fix manifest.json: add 192x192 icon, test add to homescreen
-- SW: add manifest.json
-
-0. Netlify account
-1. Gen without PWA
-  - brief project presentation
-  - -> Lighthouse
-2. Gen with PWA -> Lighthouse
-3. Test offline, API down :(
-4. Add API request, test again \o/
-5. Update homepage, deploy, refresh once
-  - talk about update, catching event, pulling...
-6. Test on mobile
+- https://github.com/TalAter/awesome-service-workers
