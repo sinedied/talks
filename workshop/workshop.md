@@ -1,7 +1,13 @@
 PWA WORKSHOP
 ============
 
-0. Check Netlify account, ngx version, vscode
+# Intro: Objectives
+  - Create a web app, see how it can be turned into a PWA
+  - Use Lighthouse audit
+  - Use and understand how Angular SW works, add offline support
+  - Make your very own PWA!
+
+0. Check Netlify account, ngx --version, vscode
 
 1. NGX without PWA
   - Brief project presentation
@@ -10,9 +16,11 @@ PWA WORKSHOP
   - Test app, test offline
   - -> Lighthouse
   - Edit .yo-rc.json -> app.json
+  - COMMIT!
 
 2. NGX with PWA
   - See diff changes
+  - Re-add redirect
   - Build, deploy
   - Test app
   - -> Lighthouse
@@ -26,9 +34,11 @@ PWA WORKSHOP
   - Test on mobiles
 
 6. Update homepage, deploy, refresh once
-  - talk about update, catching event, pulling...
+  - Talk about update, catching event, pulling...
+  - Show ngsw/state
 
 7. Manage updates with `SwUpdate` service
+  - https://angular.io/guide/service-worker-communications
 
 8. Find an API, change homepage
   - https://github.com/public-apis/public-apis (go/apis)
