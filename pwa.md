@@ -726,7 +726,7 @@ class: middle
 ```js
 const end = {
   message: 'Thank you!',
-  slides: 'Will post on slack later'
+  slides: 'bit.do/pwa-slides'
 };
 
 alert('Questions?');
