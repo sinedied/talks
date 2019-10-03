@@ -2,49 +2,63 @@ title: **PWA**, Beyond the buzzword
 class: animation-fade
 layout: true
 
-<!-- 
-What's a PWA
-
-Why PWA
-  - cross P
-  - app store cluttering (but chrom PWA store)
-
-How?
-
-Workshop:
-- ng cli
-- deploy (netflify?)
-- add PWA
-  * manifest / icon
-  * worker/offline
-  * add offline API call
-  * notifs
+<!--
+Les PWA c’est cool, tout le monde en parle, mais en fait c’est quoi vraiment?
+Pourquoi ca devrait m’intéresser? Comment ca marche? 
+A travers ce talk et beaucoup de questions, découvrons les grands principes d’une PWA
+d’un point de vue technique et philosophique, et son utilité dans la construction d’un
+Web plus juste et équitable.  
  -->
+
+.twitter-handle[
+  @sinedied
+]
 
 ---
 
-class: center
+class: left, middle, hide-handle
 background-image: url(images/progressive.jpg)
-background-position: center 65%
+background-position: center center
 
 .title[
-# .light-text.large[**Progressive Web Apps**]<br>.alt-text[Beyond the buzzword]
+# .light-text.large[Progressive Web Apps]
+## .alt-text[Beyond the buzzword]
 ]
 
-.who-box[
-  .row.table.middle.text-center[
-  .col-3.small.text-left[
-  Yohan Lasorsa<br>
-  .fab.fa-github[] github.com/sinedied<br>
-  .fab.fa-twitter[] @sinedied
-  ]
-  .col-6.small.half[
-  ]
-  .col-3.small.text-right[
-  .w-90.responsive[![](images/criteo-dark.svg)]
-  ]
-  ]
+.full-layer.who.text-right.small.middle[
+  .ms.responsive[![](images/ms-full-logo.svg)]
+  |
+  Yohan Lasorsa
+  |
+  @sinedied
 ]
+
+---
+
+class: middle, center, hide-handle
+# .large[Who am I?]
+
+.table.row.middle[
+.col-4.center[
+  .w-70.responsive.avatar.tada.animated[![](images/photo.jpg)]
+]
+.col-8.bit-larger.left[
+  .e[Yohan Lasorsa]<br>
+  .bit-larger[\[ Cloud Developer Advocate .mini-img[![](images/ms.png)] \]]<br>
+  .small.em-text[Web tech geek & DIY lover]<br>
+]
+]
+.center.bit-larger[
+.large.em-text[{]
+.fab.fa-twitter[] .fab.fa-github[] .fab.fa-dev[]
+.large.em-text[}] .e[@sinedied]<br>
+]
+
+???
+
+ca fait plus de 10 ans que je baigne dans le monde du web...
+je ne vais pas vous refaire tout l'historique, car simplement...
+
 
 ---
 
@@ -111,7 +125,7 @@ class: middle
 --
 .full-layer.right.space-right[
 <div style="height: 5em"></div>
-.w-50.responsive.rounded[![](images/not-impressed.jpg)]
+.w-50.responsive.rounded.space-left[![](images/not-impressed.jpg)]
 ]
 
 --
@@ -147,36 +161,47 @@ class: timeline
 <div style="height: 3.3em"></div>
 - #### 2003
   - Progressive Enhancement
+???
+- Graceful degradation, content first & accessibility, new tech adoption (PDA)
 --
 
 - #### 2007
   - iPhone: Web 2.0 + AJAX
+???
+- 1er tel qui affiche du vrai web! (epoque N95)
 --
 
 - #### 2008
-  - SproutCore: .small[*"Building Native Look-and-Feel Web Apps"*]
+  - SproutCore
+???
+- SproutCore: "Building Native Look-and-Feel Web Apps"
 --
-
-  - iOS SDK + App Store
+, iOS SDK + App Store
 --
 
 - #### 2009
   - Modernizr
+???
+- Detection de features
 --
 
 - #### 2010
   - Responsive Web Design (RWD) - *Ethan Marcott*
+???
+- Media queries, fluid grid, images adaptation
 --
 
 - #### 2015
   - Progressive Web Apps (PWA) - *Alex Russell*
+???
+- coined by Google engineer: new web apis especially service workers, manifest
 --
 
 - #### .boom.responsive[![](images/boom.jpg)] **2018**
   - Service Workers in Edge & Safari 🍾🎉
 
 ???
-
+- Chrome et firefox ok depuis un moment...
 ---
 
 .head.dark[
@@ -184,7 +209,7 @@ class: timeline
 ]
 .head-spacer[]
 
-.w-20.float-left.top[
+.w-30.float-left.top[
 ## Fast
 ]
 .w-70.float-left.top.no-margin[
@@ -199,8 +224,8 @@ class: timeline
 
 --
 
-.w-20.float-left.top[
-## **E**ngaging
+.w-30.float-left.top[
+## Engaging
 ]
 .w-70.float-left.top.no-margin[
 Feels like a native experience
@@ -214,7 +239,7 @@ Full screen, Notifications, Home screen shortcut, native features...
 
 --
 
-.w-20.float-left.top[
+.w-30.float-left.top[
 ## Reliable
 ]
 .w-70.float-left.top.no-margin[
@@ -224,11 +249,6 @@ Offline support, service worker, Web Storage, Web SQL...
 ]
 ]
 
---
-.full-layer.right[
-  .throne.responsive[![](images/iron-throne.jpg)]
-]
-
 ---
 
 background-image: url(images/why.gif)
@@ -236,36 +256,36 @@ class: dark, contain
 
 ---
 
-class: big-text
+class: big-text, no-bullet
 
-# .sketch[Why should I give a f**?]
-- Slow internet speeds
+# .sketch[Why should I care?]
+- .eb[🐌] Slow internet speeds
 ???
 - Not everyone have 4G, let even 3G: 60% world on 2G
 --
 
-- Discoverability
+- .eb[🔍] Discoverability
 ???
 - A average user install 0 apps a month
 --
 
-- Engagement
+- .eb[💍] Engagement
 ???
 - 13% web vs 87% mobile, less context-switching, more time
 --
 
-- Cost efficiency
+- .eb[💰] Cost efficiency
 ???
 - Portable, reuse standard tech
 --
 
-- Deployment freedom
+- .eb[🙌] Deployment freedom
 ???
 - Who needs Apple approval?
 --
 
 .full-layer.space-right.right[
-  <div style="height: 1.85em"></div>
+  <div style="height: 1.95em"></div>
   .w-50.responsive.rounded[![](images/thatsit.gif)]
 ]
 
@@ -314,25 +334,26 @@ class: no-bullet, big-text
 
 ---
 
-class: big-text, center, dark
+class: big-text, center, dark, hide-handle
 .head.dark[
 # .fit[![](images/pwa-color-w.png)] Service Worker
 ]
-<br>
+<br><br>
 .responsive[![](images/sw-overview-1.png)]
-
+.fade.small.light-text[[developers.google.com/web/updates/2018/05/beyond-spa](https://developers.google.com/web/updates/2018/05/beyond-spa)]
 ---
 
-class: big-text, center, dark
+class: big-text, center, dark, hide-handle
 .head.dark[
 # .fit[![](images/pwa-color-w.png)] Service Worker
 ]
-<br>
+<br><br>
 .responsive[![](images/sw-overview-2.png)]
+.fade.small.light-text[[developers.google.com/web/updates/2018/05/beyond-spa](https://developers.google.com/web/updates/2018/05/beyond-spa)]
 
 ---
 
-class: big-text
+class: big-text, hide-handle
 .head.dark[
 # .fit[![](images/pwa-color-w.png)] Service Worker
 ]
@@ -345,28 +366,33 @@ class: big-text
 - UpUp
 - offline-plugin for Webpack
 
+.full-layer.right.space-right.through[
+  <div style="height: 3em"></div>
+  .w-40.responsive.rounded[![](images/workers.jpg)]
+]
+
 ---
 class: big-text, middle, center
-.head.dark[
+.head.dark.baseline[
 # .fit[![](images/pwa-color-w.png)] Service Worker - .alt-text[The cookbook]
 ]
 <br><br>
 
-.large[https://serviceworke.rs]
+.bit-larger[[serviceworke.rs](https://serviceworke.rs)]
 
 .w-50.responsive.rounded[![](images/tasty.gif)]
 
 ---
 
 class: big-text, center, middle
-.head.dark[
+.head.dark.baseline[
 # .fit[![](images/pwa-color-w.png)] Service Worker - .alt-text[Can I use it?]
 ]
 .head-spacer[]
 
 .responsive[![](images/sw-ready.png)]
 
-.small[https://jakearchibald.github.io/isserviceworkerready/]
+.small[[jakearchibald.github.io/isserviceworkerready/](https://jakearchibald.github.io/isserviceworkerready/)]
 
 ---
 
@@ -403,7 +429,7 @@ class: big-text, center, middle
 
 ---
 
-class: center
+class: center, hide-handle
 .head.dark[
 # .fit[![](images/pwa-color-w.png)] Web App Manifest - .alt-text[Can I use it?]
 ]
@@ -411,7 +437,7 @@ class: center
 
 .responsive[![](images/manifest-can.png)]
 
-.large[Most mobile browsers + Chrome / Firefox / Edge ✊]
+.large[Most mobile browsers + Chrome / Edge ✊]
 
 ---
 
@@ -424,7 +450,7 @@ class: center
 ???
 One goal
 --
-# .alt-text[GO FAST!]
+# .alt-text[🏎️ **GO FAST!** 🏎️]
 
 .w-50.responsive.rounded[![](images/fast.gif)]
 
@@ -442,12 +468,12 @@ class: center
 
 ---
 
-class: center
+class: center, hide-handle
 .head.dark[
 # .fit[![](images/pwa-color-w.png)] TTI < 10s on 3G
 ]
-<br><br><br>
-.responsive[![](images/criteo-lighthouse.png)]
+<div style="height: 3.1em"></div>
+.responsive[![](images/lighthouse-example.jpg)]
 
 ???
 - Chrome audit tab
@@ -459,13 +485,19 @@ class: big-text
 .head.dark[
 # .fit[![](images/pwa-color-w.png)] TTI < 10s on 3G
 ]
-.head-spacer[]
+.head-spacer[
+]
 
 ## Patterns
 - Bundling / Lazy loading
 - SSR (Server Side Rendering)
 - PRPL Pattern
 - App Shell
+
+.full-layer.right.space-right.through[
+  <div style="height: 3.5em"></div>
+  .w-30.responsive.circle[![](images/pattern.jpg)]
+]
 
 ???
 Angular Universal, Next.js, Nuxt.js...
@@ -489,7 +521,7 @@ class: middle, center, middle
 
 ---
 
-class: big-text
+class: big-text, hide-handle
 .head.dark[
 # .fit[![](images/pwa-color-w.png)] SSR
 ]
@@ -517,7 +549,7 @@ class: big-text
 
 ---
 
-class: big-text, middle
+class: big-text, middle, hide-handle
 .head.dark[
 # .fit[![](images/pwa-color-w.png)] PRPL Pattern
 ]
@@ -538,26 +570,29 @@ Coined by Polymer team at G I/O
 
 ---
 
-class: center
+class: center, hide-handle
+.head.dark[
+# .fit[![](images/pwa-color-w.png)] App Shell
+]
+<div style="height: 3.5em"></div>
+.w-60.responsive[![](images/app-shell1.png)]
+.small.em-text[[developers.google.com/web/fundamentals/architecture/app-shell](https://developers.google.com/web/fundamentals/architecture/app-shell)]
+
+---
+
+class: center, hide-handle
 .head.dark[
 # .fit[![](images/pwa-color-w.png)] App Shell
 ]
 <br><br>
-.w-70.responsive[![](images/app-shell1.png)]
+
+.w-70.responsive[![](images/app-shell2.png)]
+<div style="margin-top: -.7em"></div>
+.small.em-text[[developers.google.com/web/fundamentals/performance/prpl-pattern](https://developers.google.com/web/fundamentals/performance/prpl-pattern)]
 
 ---
 
-class: center
-.head.dark[
-# .fit[![](images/pwa-color-w.png)] App Shell
-]
-<br><br>
-
-.w-80.responsive[![](images/app-shell2.png)]
-
----
-
-class: big-text, middle
+class: big-text, middle, hide-handle
 
 # .a[Now] .animated.ib.rubberBand.alt-text[what].a[?]
 .full-layer.right.space-right[
@@ -583,13 +618,19 @@ class: big-text, middle
 - Windows: AppX for Windows Store
 - iOS: IPA package for App Store possible
 
+.full-layer.right.space-right.through[
+  <div style="height: 5em"></div>
+  .w-30.responsive.rounded[![](images/pwa-everywhere.jpg)]
+]
+
+--
 .center[
 .large.middle[[pwabuilder.com](http://pwabuilder.com)] &nbsp;&nbsp;&nbsp;&nbsp; .col-2.responsive.middle[![](images/pwa-builder.svg)]
 ]
 
 ---
 
-class: cover
+class: cover, hide-handle
 background-image: url(images/wkwebview.jpg)
 
 ???
@@ -599,7 +640,7 @@ Context preservation, storage persisted through uninstall...
 ---
 
 background-image: url(images/pwa-vs-hybrid.jpg)
-class: contain, dark
+class: contain, dark, hide-handle
 
 ---
 
@@ -619,14 +660,14 @@ class: contain, dark
   .w-50.responsive[![](images/pwa.png)]
 ]
 .col-w20.no-margin[
-  ### Web/Hybrid
+  ### .small[Web/Hybrid]
   <br>
   .w-20.responsive[![](images/cordova.png)]
   .w-20.responsive[![](images/capacitor.png)]
   .w-20.responsive[![](images/electron.png)]
 ]
 .col-w20.no-margin[
-  ### Native/Hybrid
+  ### .small[Native/Hybrid]
   .w-20.responsive[![](images/nativescript.png)]
   .w-20.responsive[![](images/react.png)]
   <br>
@@ -672,27 +713,31 @@ class: center, middle, big-text
 
 ---
 
-class: big-text
 .head.dark[
-# .fit[![](images/capacitor.png)] Capacitor
+# .fit[![](images/capacitor-logo.png)] Capacitor
 ]
 .head-spacer[
 ]
-
+.big-text[
 ## Cross-platform native bridge
-- One codebase, multi-target:<br>
-  .em-text[*PWA, iOS/Android hybrid, Electron*]
+- One codebase, multi-target &nbsp; .middle.mini-img[![](images/capacitor-targets.png)]
+  <!-- .small.em-text[👉 PWA, iOS/Android hybrid, Electron] -->
 - Native plugins with web fallbacks
-
+- Open source
+]
+<div style="height: 0em"></div>
+.center.large[
 [capacitor.ionicframework.com](https://capacitor.ionicframework.com)
+]
 
-.full-layer.right.space-right[
-  <div style="height: 4em"></div>
-  .col-3.responsive.rounded[![](images/capacitor-hero.jpg)]
+.full-layer.right.space-right.through.big-text[
+  <div style="height: 4.5em"></div>
+  .w-20.responsive.rounded[![](images/capacitor-hero.jpg)]
 ]
 
 ???
-1.0 Stable version since 2 weeks!
+- spiritual successor to Cordova/Phonegap
+- 1.0 Stable version since few months
 
 ---
 
@@ -720,25 +765,33 @@ class: big-text
 
 ---
 
-class: middle
+class: middle, hide-handle
 
 .big-text.no-bg.baseline[
 ```js
 const end = {
   message: 'Thank you!',
-  slides: 'bit.do/pwa-slides'
+  slides: 'bit.ly/pwa-slides'
 };
 
 alert('Questions?');
 ```
-<hr class="hr-right">
 ]
+<hr class="hr-right more-space">
 .right.large[
-.fab.fa-twitter[] @sinedied<br>
-.fab.fa-github[] github.com/sinedied
+.large.em-text[{]
+.fab.fa-twitter[] .fab.fa-github[] .fab.fa-dev[]
+.large.em-text[}] .e[@sinedied]<br>
 ]
 
 ---
+
+class: hide-handle, dark, light-text
+
+.side-layer.right[
+  <div style="height: 5.5em"></div>
+  .w-30.responsive[![](images/bit-learning.png)]
+]
 
 # References
 - [HackerNews PWA comparison](https://hnpwa.com)

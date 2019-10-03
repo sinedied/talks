@@ -6,16 +6,16 @@ $angular:   darken(#e80032, 7);
 $react:     darken(#66dbf9, 20);
 $vue:       darken(#4bde9c, 15);
 
-// Thales colors
-$dark-blue: #005581;
+// Brand colors
+$dark-blue: darken(#0078d7, 5%);
 $medium-blue: darken(#00A9CD, 10%);
-$blue   : #00A9CD;
-$orange : #F78B2C;
-$green  : #009e15;
+$blue   : #00A4EF;
+$orange : darken(#FFB900, 6%);
+$green  : #7FBA00;
 $yellow : #FCBC2B;
-$red    : #F1430D;
-$grey   : #727983;
-$dark-grey: #373C42;
+$red    : #F25022;
+$grey   : #717583;
+$dark-grey: #373432;
 
 // Remark theme
 $primary          : $dark-blue;
@@ -29,9 +29,9 @@ $code-background  : #F8F8F8;
 $table-border     : #ccc;
 $font-size        : 28px;
 $text-big         : 128px;
-$font             : 'Open Sans', Arial, Helvetica, sans-serif;
-$font-title       : 'Roboto', Arial, Helvetica, sans-serif;
-$font-fixed       : 'Courier', Monaco, monospace;
+$font             : 'Noto Sans', Arial, Helvetica, sans-serif;
+$font-title       : 'Quicksand', Arial, Helvetica, sans-serif;
+$font-fixed       : 'Inconsolata', monospace;
 $margin-base      : 20px;
 
 
@@ -39,8 +39,6 @@ $margin-base      : 20px;
 // ---------------------------------------------------------------------------
 
 @import 'animate.css';
-// @import url('https://fonts.googleapis.com/css?family=Lato');
-// @import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Open+Sans|Roboto:300,400');
 @import url(fonts.css);
 @import url(fontawesome-all.css);
 
@@ -49,7 +47,7 @@ body { font-family: $font; }
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 $margin-base 0;
   font-family: $font-title;
-  font-weight: 400;
+  font-weight: 500;
 }
 h1 { color: $primary; }
 h2 { color: $secondary; }
@@ -207,7 +205,7 @@ table {
     bottom: -$offset;
     left: -$offset;
     right: -$offset;
-    border: 1px solid $secondary;
+    border: 2px solid $secondary;
     border-radius: 50%;
   }
 }
@@ -241,6 +239,14 @@ table {
   left: 0;
   right: 0;
   bottom: 0;
+  &.stick-right {
+    left: auto;
+    right: 2em;
+  }
+  &.stick-bottom {
+    top: auto;
+    bottom: 1em;
+  }
 }
 .responsive {
   & > img, & > a > img { width: 100%; height: auto; };
@@ -249,6 +255,7 @@ table {
 }
 .shadow > img { box-shadow: 0 0 10px 0 rgba(0,0,0,.4); }
 .rounded > img, .rounded > video { border-radius: .5em; };
+.circle > img, .circle > video { border-radius: 100%; };
 .top { vertical-align: top; &.override { vertical-align: top !important; } };
 .middle { &, & img, & span { vertical-align: middle; } };
 .baseline { &, & img, & span { vertical-align: baseline; } };
@@ -266,9 +273,11 @@ table {
 .alt { background-color: $secondary; };
 .primary-text { color: $primary; }
 .alt-text { color: $secondary; };
-.em-text { color: $tertiary; };
+.em-text, .em-text a { color: $tertiary; };
 .dark-text { color: $dark; };
-.light-text { color: $light; };
+.light-text, .light-text a { color: $light; };
+.red-text { color: $red; };
+.green-text { color: $green; };
 .big { font-size: 2em; }
 .large { font-size: 1.5em; }
 .small { font-size: .8em; }
@@ -401,6 +410,7 @@ table {
     color: $text-light;
     font-weight: 300;
     font-size: 55px !important;
+    margin-top: -6px;
   }
 
   .logo img, .logo.fas {
@@ -413,7 +423,7 @@ table {
   .fit img {
     float: left;
     height: 3*$font-size;
-    margin: -.5*$font-size .5*$font-size 0 -.5*$font-size;
+    margin: -.3*$font-size .5*$font-size 0 -.5*$font-size;
     vertical-align: middle;
   }
 
@@ -727,6 +737,7 @@ hr {
   background: linear-gradient(90deg, $light, #ccc, $light);
 
   &.hr-right {
+    margin-top: 2em;
     background: linear-gradient(90deg, $light, $secondary);
   }
 }
@@ -746,16 +757,18 @@ hr {
   top: 0;
   left: 0;
   right: 0;
-  padding: .5em;
+  padding: .5em 1.5em;
+  h1 { font-weight: 400; }
+  h1, h2 { margin: 0; }
+  h2 { margin-left: 8px; }
 }
 
 .transparent {
   opacity: 0.2;
 }
 
-.throne {
-  display: inline-block;
-  width: 91.1%;
+.fade {
+  opacity: 0.5;
 }
 
 @for $i from 1 through 10 {
@@ -795,6 +808,48 @@ hr {
   font-size: 256px;
   text-align: center;
   z-index: 999;
+}
+
+.ms {
+  display: inline-block;
+  width: 25%;
+  margin-top: -.35em;
+}
+
+.twitter-handle {
+  &, & p { font-size: $font-size * .8 !important; }
+  position: absolute;
+  bottom: 0;
+  right: 1em;
+  opacity: 0.6;
+  .hide-handle & { display: none; }
+}
+
+.who {
+  left: 0;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  // background: linear-gradient(0, transparentize(#fff, .5),  transparentize(#fff, 1));
+  p {
+    float: right;
+    margin-right: 1em;
+  }
+}
+
+.mini-img img {
+  width: auto;
+  height: 1em;
+  vertical-align: baseline;
+}
+
+.eb {
+  display: inline-block;
+  width: 1.5em;
+}
+
+.through {
+  pointer-events: none;
 }
 
 // Fix PDF print with chrome

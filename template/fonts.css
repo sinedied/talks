@@ -5,20 +5,26 @@
   src: url(CabinSketch-Bold.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Quicksand';
   font-style: normal;
-  font-weight: 400;
-  src: url(OpenSans-Regular.ttf) format('truetype');
+  font-weight: 1 999;
+  src: url(Quicksand-Variable.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  src: url(Roboto-Light.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto';
+  font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 400;
-  src: url(Roboto-Regular.ttf) format('truetype');
+  src: url(NotoSans-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(NotoSans-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  src: url(Inconsolata-Regular.ttf) format('truetype');
 }
