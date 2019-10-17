@@ -162,7 +162,7 @@ class: timeline
 - #### 2003
   - Progressive Enhancement
 ???
-- Graceful degradation, content first & accessibility, new tech adoption (PDA)
+- vs Graceful degradation. Content first & accessibility, new tech adoption (PDA)
 --
 
 - #### 2007
@@ -357,7 +357,8 @@ class: big-text, hide-handle
 .head.dark[
 # .fit[![](images/pwa-color-w.png)] Service Worker
 ]
-.head-spacer[]
+.head-spacer[
+]
 
 ## Libraries
 
@@ -372,15 +373,13 @@ class: big-text, hide-handle
 ]
 
 ---
-class: big-text, middle, center
+class: big-text, middle, center, hide-handle
 .head.dark.baseline[
-# .fit[![](images/pwa-color-w.png)] Service Worker - .alt-text[The cookbook]
+# .fit[![](images/pwa-color-w.png)] .light-text[[serviceworke.rs](https://serviceworke.rs)] - .alt-text[The cookbook]
 ]
 <br><br>
 
-.bit-larger[[serviceworke.rs](https://serviceworke.rs)]
-
-.w-50.responsive.rounded[![](images/tasty.gif)]
+.responsive[![](images/sw-screenshot.png)]
 
 ---
 
@@ -472,7 +471,7 @@ class: center, hide-handle
 .head.dark[
 # .fit[![](images/pwa-color-w.png)] TTI < 10s on 3G
 ]
-<div style="height: 3.1em"></div>
+<div style="height: 3em"></div>
 .responsive[![](images/lighthouse-example.jpg)]
 
 ???
@@ -771,7 +770,7 @@ class: middle, hide-handle
 ```js
 const end = {
   message: 'Thank you!',
-  slides: 'bit.ly/pwa-slides'
+  slides: 'bit.ly/pwadeck'
 };
 
 alert('Questions?');
