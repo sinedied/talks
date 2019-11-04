@@ -6,16 +6,16 @@ $angular:   darken(#e80032, 7);
 $react:     darken(#66dbf9, 20);
 $vue:       darken(#4bde9c, 15);
 
-// Thales colors
-$dark-blue: #005581;
+// Brand colors
+$dark-blue: darken(#0078d7, 5%);
 $medium-blue: darken(#00A9CD, 10%);
-$blue   : #00A9CD;
-$orange : #F78B2C;
-$green  : #009e15;
+$blue   : #00A4EF;
+$orange : darken(#FFB900, 0%);
+$green  : #7FBA00;
 $yellow : #FCBC2B;
-$red    : #F1430D;
-$grey   : #727983;
-$dark-grey: #373C42;
+$red    : #F25022;
+$grey   : #717583;
+$dark-grey: #373432;
 
 // Remark theme
 $primary          : $dark-blue;
@@ -29,9 +29,9 @@ $code-background  : #F8F8F8;
 $table-border     : #ccc;
 $font-size        : 28px;
 $text-big         : 128px;
-$font             : 'Open Sans', Arial, Helvetica, sans-serif;
-$font-title       : 'Roboto', Arial, Helvetica, sans-serif;
-$font-fixed       : 'Courier', Monaco, monospace;
+$font             : 'Noto Sans', Arial, Helvetica, sans-serif;
+$font-title       : 'Quicksand', Arial, Helvetica, sans-serif;
+$font-fixed       : 'Inconsolata', monospace;
 $margin-base      : 20px;
 
 
@@ -39,8 +39,6 @@ $margin-base      : 20px;
 // ---------------------------------------------------------------------------
 
 @import 'animate.css';
-// @import url('https://fonts.googleapis.com/css?family=Lato');
-// @import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Open+Sans|Roboto:300,400');
 @import url(fonts.css);
 @import url(fontawesome-all.css);
 
@@ -249,6 +247,7 @@ table {
 .primary-text { color: $primary; }
 .alt-text { color: $secondary; };
 .em-text { color: $tertiary; };
+.blue-text { color: $blue; }
 .dark-text { color: $dark; };
 .light-text { color: $light; };
 .big { font-size: 2em; }
@@ -498,7 +497,7 @@ table {
   position: absolute;
   left: 0;
   bottom: 0;
-  padding: 0 1em;
+  padding: 0 1.5em;
   // background: transparentize(#000, .95);
   // color: $light;
 
@@ -717,6 +716,40 @@ hr {
 .dminus { background: transparentize(saturate($red, 50%), .6); }
 .dneutral { background: transparentize($grey, .7); }
 .dplus, .dminus, .dneutral { font-family: $font-fixed; padding: 0 .25em; }
+
+.ms {
+  display: inline-block;
+  width: 25%;
+  margin-top: -.35em;
+}
+
+.twitter-handle {
+  &, & p { font-size: $font-size * .8 !important; }
+  position: absolute;
+  bottom: 0;
+  right: 1em;
+  opacity: 0.6;
+  z-index: 10;
+  .hide-handle & { display: none; }
+}
+
+.who {
+  left: 0;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  // background: linear-gradient(0, transparentize(#fff, .5),  transparentize(#fff, 1));
+  p {
+    float: right;
+    margin-right: 1em;
+  }
+}
+
+.mini-img img {
+  width: auto;
+  height: 1em;
+  vertical-align: baseline;
+}
 
 // Fix PDF print with chrome
 // ---------------------------------------------------------------------------

@@ -2,50 +2,62 @@ title: The revolution in your apps is called **State Management**
 class: animation-fade
 layout: true
 
+.twitter-handle[
+  @sinedied
+]
+
 ---
 
-class: center, middle
+class: center, middle, hide-handle
 background-image: url(images/bw.jpg)
 
 # .alt-text[The revolution in your apps is called<br>.big.light-text[**State Management**]]
 <br>
 
-.who-box[
+.who-box.no-margin[
   .row.table.middle.text-center[
-  .col-3.small.text-left[
+  .col-3.small.text-left.no-margin[
   Yohan Lasorsa<br>
-  .fab.fa-github[] github.com/sinedied<br>
+  .fab.fa-github[] &nbsp;&nbsp;/sinedied<br>
   .fab.fa-twitter[] @sinedied
   ]
   .col-6.small.half[
-  .w-90[
-  .w-70.responsive[![](images/riviera.png)]
+  .w-90.no-margin[
+  .w-50.responsive[![](images/devfest-strasbourg.png)]
   ]
   ]
-  .col-3.small.text-right[
-  .w-90.responsive[![](images/criteo-dark.svg)]
+  .col-3.small.text-right.no-margin[
+  .w-80.responsive[![](images/ms-full-logo.svg)]
   ]
   ]
 ]
+<!-- .full-layer.who.text-right.small.middle[
+  .ms.responsive[![](images/ms-full-logo.svg)]
+  |
+  Yohan Lasorsa
+  |
+  @sinedied
+] -->
 
 ---
 
-class: middle, center
-# .sketch.large[Who am I?]
+class: middle, center, hide-handle
+# .large[Who am I?]
 
 .table.row.middle[
 .col-4.center[
   .w-70.responsive.avatar.tada.animated[![](images/photo.jpg)]
 ]
-.col-8.large.left[
-  Yohan Lasorsa<br>
-  .alt-text[{ **Fullstack Engineer @ Criteo ** }]<br>
-  .small.em-text[Web tech geek & DIY lover]
+.col-8.bit-larger.left[
+  .e[Yohan Lasorsa]<br>
+  .bit-larger[\[ Cloud Developer Advocate .mini-img[![](images/ms.png)] \]]<br>
+  .small.em-text[Web tech geek, OSS maintainer, DIY lover]<br>
 ]
 ]
-.right.bit-larger[
-  .fab.fa-github[] github.com/sinedied<br>
-  .fab.fa-twitter[] @sinedied<br>
+.center.bit-larger[
+.large.em-text[{]
+.fab.fa-twitter[] .fab.fa-github[] .fab.fa-dev[]
+.large.em-text[}] .e[@sinedied]<br>
 ]
 
 ???
@@ -173,7 +185,7 @@ class: timeline
 - #### .boom.responsive[![](images/boom.jpg)] **2015**
   - **Redux, MobX, NGRX, VueX**
 - #### 2018
-  - NGXS, Akita, Unstated, "React Context/Hooks"
+  - NGXS, Akita, Unstated, React Context/Hooks
 
 ???
 - RP (UI): User actions as a stream of events
@@ -182,7 +194,7 @@ class: timeline
 
 ---
 
-class: middle, center
+class: middle, center, hide-handle
 
 .responsive.bounceInDown.animated.ib[![](images/redux-logo.png)]
 
@@ -193,6 +205,7 @@ class: middle, center
 
 ---
 
+class: hide-handle
 .head.dark[
 # .fit[![](images/redux-icon.svg)] The 3 principles
 ]
@@ -211,7 +224,7 @@ To specify how the state tree is transformed by actions, you write pure **reduce
 
 ---
 
-class: center
+class: center, hide-handle
 .head.dark[
 # .fit[![](images/redux-icon.svg)] Redux data flux
 ]
@@ -220,7 +233,7 @@ class: center
 
 ---
 
-class: center
+class: center, hide-handle
 .head.dark[
 # .fit[![](images/redux-icon.svg)] Redux data flux
 ]
@@ -229,7 +242,7 @@ class: center
 
 ---
 
-class: center
+class: center, hide-handle
 .head.dark[
 # .fit[![](images/redux-icon.svg)] Redux data flux
 ]
@@ -238,7 +251,7 @@ class: center
 
 ---
 
-class: center
+class: center, hide-handle
 .head.dark[
 # .fit[![](images/redux-icon.svg)] Redux data flux
 ]
@@ -492,7 +505,7 @@ store.subscribe(state => {
   console.log(state.content);
 });
 
-store.dispatch(updateContent('Hello RivieraDev!'));
+store.dispatch(updateContent('Hello DevFest!'));
 ```
 > Result?
 
@@ -500,7 +513,7 @@ store.dispatch(updateContent('Hello RivieraDev!'));
 
 ```sh
 > Hello?
-> Hello RivieraDev!
+> Hello DevFest!
 ```
 
 ---
@@ -520,7 +533,7 @@ store.subscribe(state => {
 });
 
 *store.dispatch(loadContent()); // Async call here?
-store.dispatch(updateContent('Hello RivieraDev!'));
+store.dispatch(updateContent('Hello DevFest!'));
 ```
 
 > How to manage?
@@ -597,7 +610,7 @@ store.subscribe(state => {
 });
 
 store.dispatch(loadContent());
-store.dispatch(updateContent('Hello RivieraDev!'));
+store.dispatch(updateContent('Hello DevFest!'));
 ```
 
 > Result?
@@ -606,7 +619,7 @@ store.dispatch(updateContent('Hello RivieraDev!'));
 
 ```sh
 > Hello?
-> Hello RivieraDev!
+> Hello DevFest!
 > Hello async!
 ```
 
@@ -849,7 +862,6 @@ video: v4
 # Overengineering
 ### (aka: let's make a wrapper for...)
 .center.rounded[
-<!-- .w-70.responsive.rounded[![](images/overengineering.gif)] -->
 <video id="v4" width="70%" src="images/overengineering.webm"></video>
 ]
 
@@ -886,23 +898,24 @@ class: big-text, middle
 
 ---
 
-class: middle
+class: middle, hide-handle
 
 .big-text.no-bg.baseline[
 ```js
 store.dispatch(
   new EndTalk({
     message: 'Thank you!',
-    slides: 'bit.do/state-management-riviera',
+    slides: 'bit.ly/state-management-slides',
     examples: 'github.com/sinedied/md-editor
   })
 );
 ```
-<hr class="hr-right">
 ]
+<hr class="hr-right more-space">
 .right.large[
-.fab.fa-twitter[] @sinedied<br>
-.fab.fa-github[] github.com/sinedied
+.large.em-text[{]
+.fab.fa-twitter[] .fab.fa-github[] .fab.fa-dev[]
+.large.em-text[}] .e[@sinedied]<br>
 ]
 
 ---
