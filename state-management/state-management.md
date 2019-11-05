@@ -31,12 +31,14 @@ background-image: url(images/bw.jpg)
   ]
   ]
 ]
+
 <!-- .full-layer.who.text-right.small.middle[
   .ms.responsive[![](images/ms-full-logo.svg)]
   |
   Yohan Lasorsa
   |
   @sinedied
+  <br><br>
 ] -->
 
 ---
@@ -78,6 +80,7 @@ class: center, middle
 ]
 
 ???
+Qui fait de l'Angular? React? Vue? Pas de web?
 
 Un peu de contexte:
 - 3 gros frameworks pour faire des appli web
@@ -202,6 +205,8 @@ class: middle, center, hide-handle
 - Why?
   * Born from development needs: predicatability, time travel, debugging...
   * Simple
+
+Qui utilise Redux ici?
 
 ---
 
@@ -409,7 +414,7 @@ class: big-text, medium-code
 
 ```js
 function createStore(reducer) {
-  let _state = reducer(undefined, '@@INIT');
+  let _state = reducer(undefined, { type: '@@INIT' });
   let store = {};
   return store;
 }
@@ -427,7 +432,7 @@ class: big-text, medium-code
 
 ```js
 function createStore(reducer) {
-  let _state = reducer(undefined, '@@INIT');
+  let _state = reducer(undefined, { type: '@@INIT' });
   let store = {
 *   getState: () => _state,
   };
@@ -447,7 +452,7 @@ class: big-text, medium-code
 
 ```js
 function createStore(reducer) {
-  let _state = reducer(undefined, '@@INIT');
+  let _state = reducer(undefined, { type: '@@INIT' });
 * let _observer = null;
   let store = {
     getState: () => _state,
@@ -471,7 +476,7 @@ class: big-text, medium-code
 
 ```js
 function createStore(reducer) {
-  let _state = reducer(undefined, '@@INIT');
+  let _state = reducer(undefined, { type: '@@INIT' });
   let _observer = null;
   let store = {
     getState: () => _state,
@@ -577,7 +582,7 @@ class: big-text, medium-code
 
 ```js
 function createStore(reducer) {
-  let _state = reducer(undefined, '@@INIT');
+  let _state = reducer(undefined, { type: '@@INIT' });
   let _observer = null;
   let store = {
     getState: () => _state,
@@ -701,6 +706,13 @@ class: impact
 On a deja bcp de libs!
 
 - Non tant que le besoin ne s'est fait pas ressortir...
+
+---
+
+class: dark, light-text, contain
+background-image: url(images/so-far.jpg)
+
+???
 ... mais souvent c'est alors trop tard :(
 
 ---
@@ -905,7 +917,7 @@ class: middle, hide-handle
 store.dispatch(
   new EndTalk({
     message: 'Thank you!',
-    slides: 'bit.ly/state-management-slides',
+    slides: 'bit.ly/sm-deck',
     examples: 'github.com/sinedied/md-editor
   })
 );

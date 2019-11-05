@@ -249,7 +249,7 @@ table {
 .em-text { color: $tertiary; };
 .blue-text { color: $blue; }
 .dark-text { color: $dark; };
-.light-text { color: $light; };
+.light-text, .light-text a { color: $light; };
 .big { font-size: 2em; }
 .large { font-size: 1.5em; }
 .small { font-size: .8em; }
