@@ -957,6 +957,11 @@ hr {
   animation: rotating 60s linear infinite;
 }
 
+.clist ul {
+  display: inline-block;
+  text-align: left;
+}
+
 // Fix PDF print with chrome
 // ---------------------------------------------------------------------------
 

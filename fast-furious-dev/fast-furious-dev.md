@@ -520,14 +520,15 @@ You will never win...
 class: middle
 .baseline.big-text.no-bullet[
 # Estimate vs time spent
-- .eb[😱] **Under** 🠢 bye bye tests & quality
-- .eb[🤫] **Slightly over** 🠢 let's catch up UT/refactoring
-- .eb[😎] **Way over** 🠢 what's next story?
+- .eb[😱] **Under** > bye bye tests & quality
+- .eb[🤫] **Slightly over** > let's catch up UT/refactoring
+- .eb[😎] **Way over** > what's next story?
 ]
 
 ---
 
-class: middle, center, big-text
+class: middle, center, big-text, full, cover
+background-image: url(images/underwater.jpg)
 # .small[Leave room for breathing]
 
 --
@@ -559,10 +560,25 @@ background-image: url(images/button2.png)
 
 ---
 
+class: middle, center, clist
+# Don't challenge to **retrofit** your backlog
+--
+
+.big-text[
+- Ask about tech difficulties
+- Aim lower and adapt
+]
+
+---
+
 class: cover, full, center
 background-image: url(images/measure.jpg)
 ## .large[.large[Measure]]
 Otherwise it's just a lucky guess
+
+???
+ce qui est important c'est de mesurer l'avancement,
+pas de
 
 ---
 
@@ -611,12 +627,21 @@ Measure what's meaningful to you
 ---
 
 class: impact
-## .large[Learn & share]
+## .large[Growth culture]
+
+---
+
+class: full, center, over
+background-image: url(images/grow.jpg)
+
+# Learn & share
 
 ???
 - Et si machin se casse une jambe?
 - La connaissance doit etre partagée
 - Prevoyez du temps de partage! doc, meeting, pair
+- Pair programming
+- Voyager
 
 ---
 
@@ -625,7 +650,63 @@ class: center, middle
 
 ???
 - pas seulement un mantra du TDD, c'est pour le bien de VOS APPS
--
+- refactoring = dette, qui se paye a chaque nouvelle feature
+
+---
+
+class: right, full, cover, big-text, no-bullet, overlay-dark, light-text
+background-image: url(images/tools.jpg)
+
+# **Tools**
+--
+
+- "We only use **OSS**" .small[(because it's free 😓)]
+
+--
+
+## .alt-text[You should consider]
+
+- Premium tools for **productivity**
+--
+
+- **Off-the-shelf** before homemade
+--
+
+- Tailored **helper tools**
+
+???
+## TOOLS
+- OSS tools vs premium tools
+- Lib licences
+- Recode your own thing vs on-the-shelf
+- Invest in your own tooling!
+
+---
+
+# "We tried, but nobody listens..."
+--
+
+.large[Potential gain: **15 min/day** for **500€ yearly** license]<br><br>
+
+--
+.float-left.w-30.space-right.no-margin[
+  .responsive[![](images/calc.jpg)]
+]
+
+--
+.float-left[
+### Cost of *not having* this license
+- Minute cost: 500€ / (8 * 60) = __1.04€__
+- Yearly cost: 200 \* 15 * 1.04 = __3120€__
+
+]
+--
+
+.float-left[
+### Gain of *buying* licences for the team
+- 5 devs * (3120 - 500) = __13100€__
+
+]
 
 ---
 
@@ -637,27 +718,23 @@ class: middle, light-all, light-text
   # #angry
   - Pair prog. is a waste of time
   - Refactoring is a waste of time
-  - No work flexibility
+  - Wasting time with unsuited tools
 ]
 
+---
+
+class: cover, center, full, big-text
+background-image: url(images/focus.jpg)
+
+# Focus
+
+---
+
+class: contain, dark, no-handle
+background-image: url(images/interrupt.jpg)
+
 ???
-
----
-
-## TOOLS
-- OSS tools vs premium tools
-- Lib licences
-- Recode your own thing vs on-the-shelf
-- Invest in your own tooling!
-
----
-
-# Focusing
-- presentiel
-- off-topic remote work
-- interrupt
-
-## The zone
+La zone!
 - interruptions are bad => we need continuous focus time
 - context switching COST A LOT
 - open (shouting) spaces
@@ -665,22 +742,34 @@ class: middle, light-all, light-text
 
 ---
 
-## Maintain
+class: big-text, center, clist, middle, no-bullet
+# Improve focus
+.baseline[
+- .eb[🤝] Focus days/meeting days
+- .eb[🧹] Interrupt chore (with rotation)
+- .eb[💬] Async messaging: Slack, Teams...
+- .eb[🏠] Remote work
+]
 
+???
+- "Hey t'as vu mon message sur slack?"
+- Presentiel, rester tard = bien vu
 
-<!--
-# Wrapping up
+---
 
-Dev = Understand, Challenge, Design, Estimate, Build, Test, Learn, Write docs, Deliver, Maintain
+class: middle, light-all, light-text
+.full-layer.full-left.v-center-flex.w-30[
+  .responsive[![](images/angry.jpg)]
+]
+.full-layer.v-center-flex.full-right.w-70.red.space.big-text[
+  # #angry
+  - Open shouting spaces
+  - Headphones = please come later
+  - Hey, did you see my email?
+]
 
-1. Write feature code
-2. Rewrite existing code (maintain, fix, perf...)   | write other code
-2. Write tests                                      |
-3. Read code, docs, specs                           | understand & learn
-3. Learn: pair, docs, share                         |
-4. Write docs                                       | collaborate
-4. Discuss: challenge, design, estimate, share      |
--->
+???
+- Hey, t'en es ou sur la tache XXX?
 
 ---
 
@@ -751,3 +840,17 @@ Slides: [bit.ly/fastdev](https://bit.ly/fastdev)
 .fab.fa-twitter[] .fab.fa-github[] .fab.fa-dev[]
 .large.em-text[}] .e[@sinedied]<br>
 ]
+
+<!--
+# Wrapping up
+
+Dev = Understand, Challenge, Design, Estimate, Build, Test, Learn, Write docs, Deliver, Maintain
+
+1. Write feature code
+2. Rewrite existing code (maintain, fix, perf...)   | write other code
+2. Write tests                                      |
+3. Read code, docs, specs                           | understand & learn
+3. Learn: pair, docs, share                         |
+4. Write docs                                       | collaborate
+4. Discuss: challenge, design, estimate, share      |
+-->
