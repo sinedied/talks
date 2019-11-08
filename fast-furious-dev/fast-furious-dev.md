@@ -41,7 +41,7 @@ background-position: center center
 ---
 
 class:  center, middle
-# .large[Developer time allocation]
+# .large[Developer time]
 
 ???
 Parlons de l'utilisation du temps d'un dev
@@ -50,7 +50,7 @@ Parlons de l'utilisation du temps d'un dev
 ---
 
 class:  center, middle
-# .large[Developer time allocation]
+# .large[Developer time]
 
 .devtime[
 .w-100.tbar.progress[100% Writing code]
@@ -163,9 +163,11 @@ Now I started working as a dev advocate, and I'll do just that: advocate for dev
 
 class: left, middle
 # Why "solo-style" development is bad?
+.bit-larger[
 - Product communication (estimates, specs, feedback)
 - Dev communication (knowledge sharing, tech decisions)
-- Code quality (tests, breaking things, conflicts)
+- Code quality (reviews, breaking changes, conflicts)
+]
 
 ---
 
@@ -260,7 +262,7 @@ class: middle, light-all, light-text
 ---
 
 class:  center, middle
-# .large[Developer time allocation]
+# .large[Developer time]
 
 .devtime[
 .w-50.tbar[50% Coding].w-50.tbar.alt[50% Communication]
@@ -753,6 +755,7 @@ class: big-text, center, clist, middle, no-bullet
 
 ???
 - "Hey t'as vu mon message sur slack?"
+- Etiquette Slack
 - Presentiel, rester tard = bien vu
 
 ---
@@ -779,7 +782,7 @@ class: impact
 ---
 
 class:  center, middle
-# .large[Developer time allocation]
+# .large[Developer time]
 
 .devtime[
 .w-50.tbar[50% Coding].w-50.tbar.alt[50% Communication]
@@ -821,6 +824,9 @@ Don't **micro-manage**<br><br>
 class: center, middle
 ### Otherwise...
 .w-50.responsive[![](images/rageface.png)]
+
+???
+Devs content = 12% plus productifs
 
 ---
 
