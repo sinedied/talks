@@ -38,6 +38,12 @@ background-position: center center
   @sinedied
 ]
 
+???
+On parler efficacité: comment rendre plus efficace et ne pas aliéner vos équipes de dev?
+
+- Qui est dev?
+Ce talk s'adresse a tous: non-dev, mais dev aussi!
+
 ---
 
 class:  center, middle
@@ -94,7 +100,7 @@ class: middle, center, hide-handle, dark, light-text
 - Vous avez peut etre deja vu ce thread?
 - Si non, je vous invite a aller le lire un peu plus tard...
 
-- Il decrit les carac d'un dev 10x:
+- Un business angel decrit un dev 10x:
   * pas de meeting
   * travaillent en solo
   * du code de qualité qui n'a pas besoin d'etre refactoré
@@ -117,7 +123,7 @@ class: primary, light-text, center, middle
 # .baseline.light-text[Development is all about]<br>.alt-text.large[**communication**]
 
 ???
-- Le developpement c'est du teamplay
+- Le developpement avant tout une histoire de communication!
 - Meme pour le side projects perso (github, twitter etc...)
 
 ---
@@ -169,6 +175,11 @@ class: left, middle
 - Code quality (reviews, breaking changes, conflicts)
 ]
 
+???
+
+Pkoi c'est un pb?
+Pour savoir ce qu'on fait et avancer, il faut communiquer!!!
+
 ---
 
 class: cover, impact, middle, center
@@ -179,14 +190,21 @@ background-image: url(images/tunnel.jpg)
 
 ???
 
-Effet tunnel
-Anecdote du gars qui s'est enfermé 3 semaines pour coder une API estimée a 3 mois par son équipe
+Le truc a éviter!
+- Quitte ou double
+- == risque
+- Ca nous est tous arrivé un moment ou un autre...
+- Anecdote du gars qui s'est enfermé 3 semaines pour coder une API estimée a 3 mois par son équipe
 
 ---
 
 class: middle, center
 
 .w-30.responsive[![](images/dev-com-code.svg)]
+
+???
+
+Certes, un dev doit communiquer avec des machines
 
 ---
 
@@ -199,11 +217,12 @@ class: center
 .col-5.responsive[![](images/dev-com-full.svg)]
 
 ???
-- with machine
-- with other devs
-- with stakeholders
-- with end-users
-- with PMs
+Mais pas que!
+- machines
+- autres devs
+- utilisateurs
+- PMs
+- toutes parties prenantes
 
 ---
 
@@ -233,8 +252,8 @@ class: center
 
 ???
 - projet
-- entreprise
-- communautés
+- entreprise(s) (/autres projets)
+- communautés (OSS, confs, meetups...)
 
 En general, plus un dev prend de l'experience, plus son cercle de communication s'agrandit
 
@@ -259,6 +278,8 @@ class: middle, light-all, light-text
 - All in, nothing out
 - Aucune contribution/echange externe au projet
 
+Anecdote 2j de conf = vacances
+
 ---
 
 class:  center, middle
@@ -272,10 +293,8 @@ class:  center, middle
 
 - Moitié echange, moitié du temps aux activités de codage
 - Non exclusif: pair programming = les 2 en meme temps
-- Maintain: (refactor, update, fix...)
-- “Indeed, the ratio of time spent reading versus writing is well over 10 to 1. We are constantly reading old code as part of the effort to write new code. ...making it easy to read makes it easier to write.”
 
-Robert C. Martin, Clean Code: A Handbook of Agile Software Craftsmanship
+La qualité/efficacité de la com est importante pour que le code avance
 
 ---
 
@@ -285,15 +304,22 @@ background-image: url(images/teamplay.jpg)
 ## .large[Development<br> = <br>.alt-text[Communication]<br> + <br>.red-text[Teamplay]] 
 
 ???
-* code communities (OSS...)
+
+Je rajoute un autre ingrédient non mesurable en terme de temps
+
 * stakeholders
 * clients, end-users
 * manager
+* code communities (OSS...)
 
 ---
 
 class: impact
 # .ib.animated.zoomIn[Team size]
+
+???
+Le 1e élément le + important, c'est la taille d'équipe
+Scrum recommande entre 5 et 10
 
 ---
 
@@ -320,6 +346,8 @@ Frederick Brooks
 - Il faut savoir quand faire entrer des nouvelles personnes sur un projet
 - Plus de gens ne veut pas dire plus rapide/efficace
 
++ de 40 ans! (1975)
+
 ---
 
 class: middle, light-all, light-text
@@ -341,6 +369,9 @@ class: middle, light-all, light-text
 class: center, middle
 
 # Microservices, Microfrontends
+???
+- Pourquoi je vous parle technique?
+- Oui, c'est principalement pour du passage a l'échelle...
 --
 
 # .large.alt-text.animated.ib.bounceIn[.large[MICROTEAMS]]
@@ -364,6 +395,8 @@ background-image: url(images/balance.jpg)
 ???
 composition d'equipe
 
+=> on veux les meilleurs!
+
 ---
 
 class: cover, center
@@ -371,6 +404,8 @@ background-image: url(images/junior.jpg)
 # You need senior devs
 
 ???
+Lead/Senior
+
 - Need to learn
 - Quality
 - Senior != I'm always right
@@ -384,9 +419,10 @@ background-image: url(images/senior.jpg)
 # But you also need juniors
 
 ???
+pas une question d'age!
+- Faites tourner vos equipes
 - Seniors devs (with project legacy) tend to overestimate
 - Juniors devs tend to underestimate
-- Faites tourner vos equipes
 
 ---
 
@@ -421,18 +457,20 @@ class: middle, light-all, light-text
   # #angry &nbsp; .w-40.responsive.rounded[![](images/big-brother.jpg)]
   - Daily standup as report duty
   - Micro management
-  - No work flexibility
+  - Dishonesty
 ]
 
 ???
 - agile = reporting
-- flexible work
-twweet shirley teletravail
+- flexible work (si pas confiance, embauchez pas!)
+- Oui oui tout va bien > dans le dos bam!
 
 ---
 
 class: impact
 ## .large[Estimate & deliver]
+???
+Passons au nerf de la guerre de bcp de projets...
 
 ---
 
@@ -443,7 +481,7 @@ class: middle, center, hide-handle, dark, light-text
 .small[https://twitter.com/nick_craver/status/1180624053805240326]
 
 ???
-Deadline-driven development
+En vrai, qui travaille sans deadline ici?
 
 ---
 
@@ -452,13 +490,17 @@ class: middle, center
 # .bit-larger[Planning with estimations]
 .ib.left.no-margin.big-text[
 - Aknowledge **uncertainty**
-- Need to refine? **Split** up
+- **Priorities** are evertything
+<!-- - Need to refine? **Split** up -->
 - Don't **micro-estimate**
 ]
 ]
 
 ???
-- senior vs junior, balance your teams
+Accepter qu'on va se planter!
+- On est mauvais pour estimer
+- L'important c'est les priorités
+- On ne raffine pas une roadmap 6-12 mois!
 
 ---
 
@@ -487,6 +529,8 @@ background-image: url(images/man-month.png)
 # .light-text[Man month drama]
 
 ???
+- Bien sur, une fois chiffrée la roadmap colle pas et...
+
 Mythical Man Month
 - more people, more complexity != more speed
 
@@ -515,6 +559,10 @@ background-image: url(images/sad.jpg)
 # Estimates in hours/days impact **morale**
 <br>
 ???
+- On se sent pourri a force, et moins efficace
+- Ca depasse a chaque fois, donc autant pas faire d'efforts...
+- Surchiffrage par la suite
+
 You will never win...
 
 ---
@@ -630,6 +678,8 @@ Measure what's meaningful to you
 
 class: impact
 ## .large[Growth culture]
+???
+Un élément important c'est la culture d'amelioration et de croissance
 
 ---
 
@@ -653,6 +703,7 @@ class: center, middle
 ???
 - pas seulement un mantra du TDD, c'est pour le bien de VOS APPS
 - refactoring = dette, qui se paye a chaque nouvelle feature
+- pas de valeur immediate, mais valeur + rapidement sur le long terme
 
 ---
 
@@ -669,18 +720,17 @@ background-image: url(images/tools.jpg)
 ## .alt-text[You should consider]
 
 - Premium tools for **productivity**
+???
+- Gain de temps et santé mentale pour vos devs
 --
 
 - **Off-the-shelf** before homemade
+???
+- License, ne pas redévelopper vos composants ca coutera presque toujours plus cher (et + support)
 --
 
 - Tailored **helper tools**
-
 ???
-## TOOLS
-- OSS tools vs premium tools
-- Lib licences
-- Recode your own thing vs on-the-shelf
 - Invest in your own tooling!
 
 ---
@@ -738,9 +788,8 @@ background-image: url(images/interrupt.jpg)
 ???
 La zone!
 - interruptions are bad => we need continuous focus time
+- 25min (23m15s) = cout d'une interruption
 - context switching COST A LOT
-- open (shouting) spaces
-- plan ahead (we are agile)
 
 ---
 
@@ -754,6 +803,7 @@ class: big-text, center, clist, middle, no-bullet
 ]
 
 ???
+- plannifier, eviter meeting de derniere minute
 - "Hey t'as vu mon message sur slack?"
 - Etiquette Slack
 - Presentiel, rester tard = bien vu
@@ -804,6 +854,15 @@ class:  center, middle
 - .w-5.ibar.alt[.s[5%]].w-15[] Write docs
 ]
 ]
+
+???
+
+Ces chiffres sont faux! -> ordres d'idées
+
+- Maintain: (refactor, update, fix...)
+- “Indeed, the ratio of time spent reading versus writing is well over 10 to 1. We are constantly reading old code as part of the effort to write new code. ...making it easy to read makes it easier to write.”
+
+Robert C. Martin, Clean Code: A Handbook of Agile Software Craftsmanship
 
 ---
 
