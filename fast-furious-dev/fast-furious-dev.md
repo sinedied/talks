@@ -385,7 +385,7 @@ Si votre projet n'avance pas assez vite, commencez par voir si il n'y a pas trop
 Pas intuitif, et pourtant!!!
 
 ---
-
+exclude: true
 class: cover, full, hide-handle, middle
 background-image: url(images/balance.jpg)
 
@@ -398,7 +398,7 @@ composition d'equipe
 => on veux les meilleurs!
 
 ---
-
+exclude: true
 class: cover, center
 background-image: url(images/junior.jpg)
 # You need senior devs
@@ -413,7 +413,7 @@ Lead/Senior
 - Key is open discussion, everyone with equal weight
 
 ---
-
+exclude: true
 class: cover, full, hide-handle, center, bottom, bg-offset-bottom
 background-image: url(images/senior.jpg)
 # But you also need juniors
@@ -441,11 +441,6 @@ Everything depends on
 
 ???
 Ne pas oublier la CONFIANCE!
-- recoder derriere son collegue
-- "surveiller" son equipe / micromanagement
-- avoir confiance dans les choix produits/UX
-
-MAIS ca fonctionne dans les 2 sens
 
 ---
 
@@ -462,13 +457,17 @@ class: middle, light-all, light-text
 
 ???
 - agile = reporting
-- flexible work (si pas confiance, embauchez pas!)
+- "surveiller" son equipe / micromanagement, flexible work (si pas confiance, embauchez pas!)
 - Oui oui tout va bien > dans le dos bam!
+- recoder derriere son collegue
+- avoir confiance dans les choix produits/UX
+
+MAIS ca fonctionne dans les 2 sens
 
 ---
 
 class: impact
-## .large[Estimate & deliver]
+## .large.middle[Estimates &nbsp; .big.mini-img[![](images/vs.png)] &nbsp; roadmaps]
 ???
 Passons au nerf de la guerre de bcp de projets...
 
@@ -490,7 +489,7 @@ class: middle, center
 # .bit-larger[Planning with estimations]
 .ib.left.no-margin.big-text[
 - Aknowledge **uncertainty**
-- **Priorities** are evertything
+- **Priorities** are everything
 <!-- - Need to refine? **Split** up -->
 - Don't **micro-estimate**
 ]
@@ -509,7 +508,7 @@ class: middle, center
 # .sketch.large[Estimation tips]
 .ib.left.no-margin.larger[
 - Roadmaps: use **buckets**
-- Sprints: split and use **points**
+<!-- - Sprints: split and use **points** -->
 - Do **short sessions** (1-2h)
 - Unclear about spec/tech? **put aside**
 ]
@@ -524,6 +523,7 @@ class: middle, center
 
 ---
 
+exclude: true
 class: contain, hide-handle, dark, center
 background-image: url(images/man-month.png)
 # .light-text[Man month drama]
@@ -552,7 +552,7 @@ class: contain, dark, light-text
 background-image: url(images/spent-time.jpg)
 
 ---
-
+exclude: true
 class: cover, full, light-text, bottom, overlay-dark, center
 background-image: url(images/sad.jpg)
 
@@ -582,10 +582,12 @@ background-image: url(images/underwater.jpg)
 # .small[Leave room for breathing]
 
 --
+exclude: true
 & define sprint **goals**
 
 ---
 
+exclude: true
 class: middle
 .quote.large[
 > It's just a [button]?
@@ -600,20 +602,24 @@ class: middle
 
 ---
 
+exclude: true
 class: center, botton, contain
 background-image: url(images/button1.png)
 
 ---
 
+exclude: true
 class: center, botton, contain
 background-image: url(images/button2.png)
 
 ---
 
+exclude: true
 class: middle, center, clist
 # Don't challenge to **retrofit** your backlog
 --
 
+exclude: true
 .big-text[
 - Ask about tech difficulties
 - Aim lower and adapt
@@ -621,6 +627,7 @@ class: middle, center, clist
 
 ---
 
+exclude: true
 class: cover, full, center
 background-image: url(images/measure.jpg)
 ## .large[.large[Measure]]
@@ -632,6 +639,7 @@ pas de
 
 ---
 
+exclude: true
 .col-6.ib.left[
 # .green-text[We measure (KPI)]
 
@@ -655,6 +663,7 @@ pas de
 ]
 ]
 --
+exclude: true
 .col-6.float-right.space-left.left[
 # .red-text[We don't watch]
 
@@ -701,6 +710,7 @@ class: center, middle
 # .baseline[.red-text[Test,] .green-text[code,] refactor]
 
 ???
+- 3 elements indispensable dans un projet!
 - pas seulement un mantra du TDD, c'est pour le bien de VOS APPS
 - refactoring = dette, qui se paye a chaque nouvelle feature
 - pas de valeur immediate, mais valeur + rapidement sur le long terme
@@ -720,17 +730,11 @@ background-image: url(images/tools.jpg)
 ## .alt-text[You should consider]
 
 - Premium tools for **productivity**
-???
-- Gain de temps et santé mentale pour vos devs
---
-
 - **Off-the-shelf** before homemade
-???
-- License, ne pas redévelopper vos composants ca coutera presque toujours plus cher (et + support)
---
-
 - Tailored **helper tools**
 ???
+- Gain de temps et santé mentale pour vos devs
+- License, ne pas redévelopper vos composants ca coutera presque toujours plus cher (et + support)
 - Invest in your own tooling!
 
 ---
@@ -786,7 +790,7 @@ class: contain, dark, no-handle
 background-image: url(images/interrupt.jpg)
 
 ???
-La zone!
+Un dev a besoin de concentrer
 - interruptions are bad => we need continuous focus time
 - 25min (23m15s) = cout d'une interruption
 - context switching COST A LOT
@@ -840,16 +844,16 @@ class:  center, middle
 
 .w-50.float-left.no-bullet.baseline[
 .left[
-- .w-20.ibar[.s[20%]] Read code
-- .w-10.ibar[.s[10%]].w-10[] Write feature code
-- .w-10.ibar[.s[10%]].w-10[] Write test code
-- .w-10.ibar[.s[10%]].w-10[] Fix, update, refactor code
+- .w-35.ibar[.s[35%]] Read code
+- .w-5.ibar[.s[5%]].w-30[] Write feature code
+- .w-5.ibar[.s[5%]].w-30[] Write test code
+- .w-5.ibar[.s[5%]].w-30[] Fix, update, refactor code
 ]
 ]
 .w-50.float-left.no-bullet.baseline[
 .left[
-- .w-20.ibar.alt[.s[20%]] Design, estimate, challenge
-- .w-15.ibar.alt[.s[15%]].w-5[] Learn, share
+- .w-20.ibar.alt[.s[20%]] Learn, share
+- .w-15.ibar.alt[.s[15%]].w-5[] Design, estimate
 - .w-10.ibar.alt[.s[10%]].w-10[] Read docs, specs
 - .w-5.ibar.alt[.s[5%]].w-15[] Write docs
 ]
