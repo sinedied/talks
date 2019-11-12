@@ -886,7 +886,7 @@ Don't **micro-manage**<br><br>
 
 class: center, middle
 ### Otherwise...
-.w-50.responsive[![](images/rageface.png)]
+.w-50.responsive.rage[![](images/rageface.png)]
 
 ???
 Devs content = 12% plus productifs

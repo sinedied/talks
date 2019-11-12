@@ -990,4 +990,13 @@ hr {
     -webkit-animation-duration: 0 !important;
     animation-duration: 0 !important;
   }
+  .full {
+    text-shadow: none !important;
+  }
+  .zoom-out-circle {
+    visibility: hidden !important;
+  }
+  .rage {
+    width: 45%;
+  }
 }
