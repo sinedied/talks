@@ -115,7 +115,7 @@ const end = {
 
 <hr class="hr-right more-space">
 
-.side-layer.right[
+.side-layer.right.through[
   .w-15.responsive[![](images/bit-learning.png)]
 ]
 
