@@ -24,5 +24,9 @@
     "typescript"
   ],
   "author": "Yohan Lasorsa",
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "*.d.ts"
+  ]
 }

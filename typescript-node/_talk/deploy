@@ -1,0 +1,2 @@
+zip -r app.zip
+az webapp deployment source config-zip --resource-group nodejs-demo --name nodets --src app.zip

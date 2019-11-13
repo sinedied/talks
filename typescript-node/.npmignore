@@ -1,8 +1,0 @@
-/.vs-code/
-_talk
-package/
-*.tgz
-
-tsconfig.json
-*.ts
-!*.d.ts

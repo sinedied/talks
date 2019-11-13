@@ -22,8 +22,8 @@
   "terminal.integrated.fontWeight": "800",
   "terminal.integrated.fontSize": 20,
   "terminal.integrated.shell.osx": "/bin/bash",
-  "terminal.integrated.shellArgs.osx": [
-    "--rcfile", "<(echo \"PS1='\\W $ '\")"
-  ],
+  // "terminal.integrated.shellArgs.osx": [
+  //   "--rcfile", "<(echo \"PS1='\\W $ '\")"
+  // ],
   "editor.formatOnSave": false,
 }
