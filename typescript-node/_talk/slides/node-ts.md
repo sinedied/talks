@@ -115,6 +115,10 @@ const end = {
 
 <hr class="hr-right more-space">
 
+.side-layer.right[
+  .w-15.responsive[![](images/bit-learning.png)]
+]
+
 - [bit.ly/nodets-example](http://bit.ly/nodets-example) → Example Node.js + TypeScript repo
 - [bit.ly/fuzzrun](http://bit.ly/fuzzrun) → NPM scripts runner with fuzzy matching
 - [bit.ly/vscode-rest](http://bit.ly/vscode-rest) → REST Client extension for VSCode
