@@ -1,4 +1,4 @@
-title: The fast and the furious developer
+title: How I found my own path
 class: animation-fade
 layout: true
 
@@ -142,12 +142,13 @@ class: big-text, no-bullet
 - .eb[❌] DEUG Sciences de Matière
 --
 
-- .eb[✔️] IUT Info option Génie Logiciel
+- .eb[✅] IUT Info option Génie Logiciel
 --
 
-- .eb[✔️] Polytech'Grenoble - RICM/Multimédia
+- .eb[✅] Polytech'Grenoble - RICM/Multimédia
 ???
 Année d'échange a l'etranger!
+
 ---
 class: cover, hide-handle, bottom, center, big-text, no-hmargin, black-border
 background-image: url(images/surf.jpg)
@@ -167,9 +168,9 @@ class: big-text, no-bullet
 - .eb[💙] Electronic music & Programming
 - .eb[❌] BTS Audio Visuel option Son
 - .eb[❌] DEUG Sciences de Matière
-- .eb[✔️] IUT Info option Génie Logiciel
-- .eb[✔️] Polytech'Grenoble - RICM/Multimédia
-- .eb[✔️] Université de Montréal - Master Info
+- .eb[✅] IUT Info option Génie Logiciel
+- .eb[✅] Polytech'Grenoble - RICM/Multimédia
+- .eb[✅] Université de Montréal - Master Info (exchange)
 --
 
 - .eb[💿] Debut album
@@ -210,7 +211,7 @@ class: middle, hide-handle
 .table.row.middle[
 .col-6[
 # .large[Thank you!]
-.large[bit.ly/ylcareer]
+.large[bit.ly/ylacareer]
 ]
 .col-6.right[
   .w-50.responsive[![](images/bit-learning.png)]
