@@ -958,9 +958,17 @@ hr {
   border: 1em solid #000;
 }
 
+.black {
+  background-color: #000;
+}
+
 .up {
   position: relative;
   top: -.5em;
+}
+
+.full-banner {
+  margin: 0 -1.5em;
 }
 
 // Fix PDF print with chrome
