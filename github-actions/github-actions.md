@@ -57,6 +57,7 @@ class: impact
 class: center, clist, middle, big-text
 # There's more!
 
+- Run in Docker container
 - Write your custom actions
 - Use your own runner
 - Use `docker compose` to spawn testing env
