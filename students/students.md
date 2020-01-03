@@ -22,8 +22,21 @@ class: middle, black, right, hide-handle
 
 ---
 
+class: big-text, center
+# .small[\#mustKnow websites]
+.large.middle[💰] &nbsp; [free-for.dev](https://free-for.dev)
+
+----
+
+.w-10.responsive.middle[![](images/awesome.svg)] [bit.ly/awesome-lists](http://bit.ly/awesome-lists)
+
+-----
+.w-5.responsive.middle[![](images/dev.png)] &nbsp; [dev.to](https://dev.to)
+
+---
+
 # Microsoft Azure
-.bit-larger.up[[aka.ms/student/azure](https://student/azure)]
+.bit-larger.up[[aka.ms/student/azure](https://aka.ms/student/azure)]
 
 ## Partner school?
 Go to https://portal.azure.com and search for "Education" in the search bar
@@ -40,7 +53,7 @@ Go to https://portal.azure.com and search for "Education" in the search bar
 ---
 
 # Microsoft Learn
-.bit-larger.up[[aka.ms/student/learn](https://student/learn)]
+.bit-larger.up[[aka.ms/student/learn](https://aka.ms/student/learn)]
 
 .row[
 .col-5[
@@ -67,12 +80,17 @@ Go to https://portal.azure.com and search for "Education" in the search bar
 class: contain, dark, bottom, full, center
 background-image: url(images/learn-module.png)
 .primary.full-banner[
-# .light-text[[aka.ms/student/learn](https://student/learn)]
+# .light-text[[aka.ms/student/learn](https://aka.ms/student/learn)]
 ]
 
 ---
-exclude: true
+
 # Microsoft Student Partner
+.bit-larger.up[[aka.ms/student/msp](https://aka.ms/student/msp)]
+
+.responsive[![](images/msp.jpg)]
+???
+Also MVP!
 
 ---
 
@@ -82,7 +100,7 @@ exclude: true
 .responsive[![](images/imaginecup.png)]
 
 ---
-
+exclude: true
 # Women In Tech
 .bit-larger.up[[womenintechnologyfrance.com](http://www.womenintechnologyfrance.com) | @WiTWomenFrance]
 
@@ -94,7 +112,7 @@ exclude: true
 Reseau mondial
 
 ---
-
+exclude: true
 # Duchess France
 .bit-larger.up[[duchess-france.org](https://www.duchess-france.org) | @duchessfr]
 
@@ -105,7 +123,7 @@ Reseau mondial
 Coaching, conseils carriere, soutien
 
 ---
-
+exclude: true
 # ngGirls
 .bit-larger.up[[ng-girls.org](http://ng-girls.org/) | @angulargirls]
 
@@ -121,4 +139,4 @@ workshops + communauté
 
 class: middle, center
 # Good luck for your adventure!
-.large[👉 [aka.ms/simplonGrenoble2019](https://aka.ms/simplonGrenoble2019)]
+.large[👉 [aka.ms/polytechGre2020](https://aka.ms/polytechGre2020)]
