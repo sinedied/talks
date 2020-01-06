@@ -211,7 +211,7 @@ class: middle, hide-handle
 .table.row.middle[
 .col-6[
 # .large[Thank you!]
-.large[bit.ly/ylacareer]
+Slides:<br> .large[bit.ly/ylacareer]
 ]
 .col-6.right[
   .w-50.responsive[![](images/bit-learning.png)]

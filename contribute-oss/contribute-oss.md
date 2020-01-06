@@ -96,6 +96,8 @@ class: middle, center, hide-handle
 ---
 class: middle, center
 # What is Open Source Software?
+???
+Quelqu'un peut me donner une definition?
 --
 
 <br>
