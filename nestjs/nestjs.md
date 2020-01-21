@@ -86,6 +86,9 @@ Il existe beaucoup de framework pour faire des APIs
 background-image: url(images/knife.jpg)
 ???
 
+- Largué dans la jungle avec juste un couteau pour survivre
+
+-> bien utilisé ca passe, mais...
 
 ---
 
@@ -105,27 +108,65 @@ class: middle, center
 .w-25.space-right.space-left[
   .responsive[![](images/sailsjs-logo.png)]  
 ]
+???
+
+Il existe d'autre framework de plus haut niveau, mais y'a toujours un truc qui cloche a l'usage: robustesse, archi, flexibilité, quand c'est pas simplement une usine a gaz...
 
 ---
 
 class: contain, dark
 background-image: url(images/new-framework.jpg)
+???
+Dans la communauté JS, on a plutot tendance a célébrer l'arrivée d'un nouveau FW
 
 ---
 
 class: contain, dark
 background-image: url(images/backend-new-framework.jpg)
+???
+- A l'inverse, en général les dev backend préfèrent s'appuyer sur des techno matures et éprouvées
+- voient rarement d'un bon oeil la nouveauté
 
 ---
 
 class: middle, center
 
 .w-30.responsive[![](images/nest-logo.svg)]
+???
+Aujourd'hui on va parler NestJS.
 
 ---
 
 class: full
 background-image: url(images/oops.gif)
+???
+- Bon j'espere froisser personne,
+- et peut etre convaincre que c'est techno intéressante
+
+---
+
+class: middle, center, hide-handle
+# .large[Who are we?]
+
+.table.row.middle[
+.col-4.center[
+  .w-50.responsive.avatar.bounceInLeft.animated[![](images/photo.jpg)]
+]
+.col-8.bit-larger.left[
+  .e[Yohan Lasorsa |] .fab.fa-twitter[] .e[@sinedied]<br>
+  .bit-larger.baseline[\[ .mini-img.mini-ms[![](images/ms.png) Cloud Developer Advocate ] \]]<br>
+]
+]
+
+.table.row.middle[
+.col-4.center[
+  .w-50.responsive.avatar.red.bounceInUp.animated[![](images/olivier.jpg)]
+]
+.col-8.bit-larger.left[
+  .e[Olivier Leplus |] .fab.fa-twitter[] .e[@olivierleplus]<br>
+  .bit-larger.baseline[\[ .mini-img.mini-ms[![](images/ms.png) Developer Relations PM ] \]]<br>
+]
+]
 
 ---
 
@@ -191,15 +232,21 @@ class: middle, center, impact
 --
 
 ## .alt-text[+]
-## Structure & Abstraction
+## Architecture
+???
++ Abstraction, Structure & Best practices
 --
 
 ## .alt-text[+]
-## Integration & Tooling
+## Tooling
+???
+Outillage qui passe par l'integration directe de 
 ---
 
 class: contain, dark
 background-image: url(images/nest-tweet.png)
+???
+C'est le FW Node.js avec la croissance la plus rapide jamais vue
 
 ---
 
@@ -697,9 +744,9 @@ class: impact
 class: big-text, middle, center, clist, no-bullet
 
 # Why Serverless?
-- .eb[💵] Pay as you go
-- .eb[📈] Auto-scale
 - .eb[🙌] Fully managed
+- .eb[📈] Auto-scale
+- .eb[💵] Pay as you go
 - .eb[🌱] No wasted resources
 
 ---
@@ -726,8 +773,7 @@ class: hide-handle, middle
 ]
 
 .baseline[
-- .w-30[[nestjs.com](https://nestjs.com)] → NestJS website
-- .w-30[[nitr.ooo](https://nitr.ooo)] → Discover Nitro
+- .w-30[[aka.ms/snowcamp-fb](https://aka.ms/snowcamp-fb)] → Give **YOUR** feedback! ⚠️
 - .w-30[[aka.ms/nitro-ws](https://aka.ms/nitro-ws)] → Nitro workshop
 - .w-30[[aka.ms/go/serverless](https://aka.ms/go/serverless)] → Learn more about Azure Serverless
 ]

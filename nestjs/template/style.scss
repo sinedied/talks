@@ -210,6 +210,9 @@ table {
     border: 2px solid $secondary;
     border-radius: 50%;
   }
+  &.red::after {
+    border-color: $red;
+  }
 }
 
 .full {
@@ -988,6 +991,10 @@ hr {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.mini-ms img {
+  margin-bottom: -5px;
 }
 
 // Fix PDF print with chrome
