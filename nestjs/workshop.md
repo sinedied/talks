@@ -7,6 +7,28 @@ layout: true
 ]
 
 ---
+
+class: center, hide-handle, full
+background-image: url(images/fast.jpg)
+background-position: center center
+
+.float-left.w-15.responsive.margin-right.space-right[![](images/nest-logo.svg)]
+.float-right.w-15.responsive.margin-right.space-left[![](images/nitro.png)]
+
+# Blast off with Nitro!
+#### .alt-text[Build a Serverless API with NestJS at top speed]
+
+.full-layer.who.darkened.text-right.small.middle.light-text[
+  <br><br>
+  .ms.responsive[![](images/ms-full-logo-light.svg)]
+  |
+  Yohan Lasorsa
+  |
+  @sinedied
+]
+
+---
+exclude: true
 class: left, hide-handle, full
 background-image: url(images/cat.jpg)
 background-position: center center
@@ -156,6 +178,7 @@ background-image: url(images/oops.gif)
 
 ---
 
+exclude: true
 class: middle, center, hide-handle
 # .large[Who am I?]
 
@@ -167,9 +190,6 @@ class: middle, center, hide-handle
   .e[Yohan Lasorsa]<br>
   .bit-larger[\[ Cloud Developer Advocate .mini-img[![](images/ms.png)] \]]<br>
   .small.em-text[Web tech geek, OSS maintainer, DIY lover]<br>
-  .left[
-  .w-40.responsive[![](images/ngx-rocket.png)]
-  ]
 ]
 ]
 .center.bit-larger[
@@ -213,11 +233,6 @@ class: clist, middle, center, big-text
 
 ---
 
-class: dark, contain
-background-image: url(images/finally.jpg)
-
----
-
 class: middle, center, impact
 ## .big[NestJS]
 ## .alt-text[=]
@@ -245,15 +260,6 @@ C'est le FW Node.js avec la croissance la plus rapide jamais vue
 
 class: impact
 # Let's dive in! 🤿
-## DEMO TIME
-
-???
-- nest new demo
-- nest start --watch
-- show structure
-- show module
-- show controller
-- add controller, query param, POST+body, status + http requests.http
 
 ---
 
@@ -711,6 +717,9 @@ async function bootstrap() {
 ```
 ]
 
+
+
+
 ---
 
 class: center, no-bullet
@@ -742,7 +751,7 @@ class: impact
 
 class: big-text, middle, center, clist, no-bullet
 
-# Serverless?
+# Why Serverless?
 - .eb[🙌] Fully managed
 - .eb[📈] Auto-scale
 - .eb[💵] Pay as you go
@@ -756,6 +765,12 @@ background-image: url(images/nitro-web.png)
 
 ---
 
+class: middle, center, big-text
+# .sketch[Let's get started!]
+.large[👉 [aka.ms/nitro-ws](https://aka.ms/nitro-ws)]
+
+---
+
 class: hide-handle, middle
 
 # Thank you!
@@ -766,19 +781,20 @@ class: hide-handle, middle
 ]
 
 .baseline[
-- .w-30[[nestjs.org](https://nestjs.org)] → NestJS website
-- .w-30[[aka.ms/nitro-ws](https://aka.ms/nitro-ws)] → Hands-on Nitro workshop
+- .w-30[[aka.ms/nitro-fb](https://aka.ms/nitro-fb)] → Give **YOUR** feedback! ⚠️
+- .w-30[[aka.ms/nitro-ws](https://aka.ms/nitro-ws)] → Nitro workshop
 - .w-30[[aka.ms/go/serverless](https://aka.ms/go/serverless)] → Learn more about Azure Serverless
+- .w-30[[aka.ms/go/hexa](https://aka.ms/go/hexa)] → CLI for quick & easy Azure integration
 ]
 <hr class="hr-right more-space">
 
 .col-4.small.text-left.float-left[
 <div style="height: .5em"></div><br>
 Slides:<br>
-.large[bit.ly/nest-intro]
+.large[bit.ly/nest-workshop]
 ]
 .col-3.float-left[
-  &nbsp;
+  .responsive[![](images/bit-octocat.png)]
 ]
 .col-5.right.large.middle.float-left[
 .large.em-text[{]
