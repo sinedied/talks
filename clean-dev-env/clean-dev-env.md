@@ -15,7 +15,7 @@ ma machine propre :)
 
 1. Slides
 2. cd demo/donet
-3. code .
+3. code-insiders .
 4. disable all ext workspace + enable only remote dev extension
 5. show icon in bottom left
 6. add dev container for .net 2.1
@@ -83,13 +83,20 @@ background-image: url(images/showme.gif)
 
 ---
 
-.big-text[
+class: cover, full, center, middle
+background-image: url(images/vs-online.png)
+
+## <br>online.visualstudio.com
+
+---
+
+.bit-larger[
 # Links
 
-- [Remote Development Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack&WT.mc_id=humantalks1009-event-yolasorsa)
-- [Visual Studio Code](https://code.visualstudio.com?WT.mc_id=humantalks1009-event-yolasorsa)
-- [Getting Started with Remote Development](https://code.visualstudio.com/docs/remote/containers#_getting-started?WT.mc_id=humantalks1009-event-yolasorsa)
-- [Advanced Container Configuration](https://code.visualstudio.com/docs/remote/containers-advanced?WT.mc_id=humantalks1009-event-yolasorsa)
+- [aka.ms/remote-dev-ext](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack&WT.mc_id=meetup-event-yolasorsa) ➡️ Remote Development Extension
+- [aka.ms/get-vscode](https://code.visualstudio.com?WT.mc_id=meetup-event-yolasorsa) ➡️ Visual Studio Code
+- [aka.ms/start-remote-dev](https://code.visualstudio.com/docs/remote/containers#_getting-started?WT.mc_id=meetup-event-yolasorsa) ➡️ Getting Started with Remote Dev.
+- [aka.ms/remote-advanced](https://code.visualstudio.com/docs/remote/containers-advanced?WT.mc_id=meetup-event-yolasorsa) ➡️ Advanced Container Configuration
 ]
 
 .who-box[
