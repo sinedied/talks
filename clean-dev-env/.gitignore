@@ -1,3 +1,4 @@
 dist/
+demo/dotnet/*
 .tmp/
 .DS_Store
