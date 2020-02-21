@@ -43,15 +43,23 @@ class: center
 ???
 - Actions = GH Events -> Workflow -> jobs -> steps
 - Platforms: linux, mac windows & arm/64
-- CI/CD, mais pas que
-- Completement intégré à Github
+- CI/CD, but not only
+- Fully integrated to Github
 
 ---
 class: impact
 # Demo time
 
 ???
-
+- Repo to be prepared in advance, see prepare.sh
+- Click on "Actions" tab on GH
+- CI is the default workflow proposed
+- Show other proposed workflows
+- Explain editor, show completion, platforms & archs
+- CD -> github pages
+- show actions marketplace
+- talk about custom actions
+- talk about docker compose
 ---
 
 class: center, clist, middle, big-text
@@ -67,7 +75,7 @@ class: center, clist, middle, big-text
 - SDK
 - Bring your own env/server (on-premise or cloud-based)
 - E2E testing
-- auto labelling/closing/need more info/CLA
+- Auto labelling/closing/need more info/CLA
 
 ---
 
@@ -99,8 +107,8 @@ class: clist
 ]
 
 ???
-- Actions utilisent AZ Pipelines
-- Example avec GitHub mais fonctionne avec git externe (Gitlab, Bitbucket...)
+- Actions use AZ Pipelines under the hood but shhh
+- Example with GitHub but using an external git repo (Gitlab, Bitbucket...)
 
 ---
 
