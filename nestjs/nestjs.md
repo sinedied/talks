@@ -713,6 +713,31 @@ async function bootstrap() {
 
 ---
 
+class: center
+# Pipes
+
+.ib.no-margin[
+### Type-based validation
+```ts
+import { IsNotEmpty, IsOptional, IsDate, MaxLength } from 'class-validator';
+
+export class BookDto {
+  @IsNotEmpty()
+  name: string;
+
+  @IsOptional()
+  @MaxLength(240)
+  description: string;
+
+  @IsOptional()
+  @IsDate()
+  createdAt: Date;
+}
+```
+]
+
+---
+
 class: center, no-bullet
 # There's .large[**MORE**!] 🤩
 
