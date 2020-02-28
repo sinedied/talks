@@ -57,7 +57,7 @@ class: middle, center
 ]
 
 ???
-Il existe beaucoup de framework pour faire des APIs
+Il existe beaucoup de libaries pour faire des APIs
 
 ---
 
@@ -234,6 +234,10 @@ class: middle, center, impact
 ## Tooling
 ???
 Outillage qui passe par l'integration directe de 
+- Authentication
+- ORM
+- Loggers
+
 ---
 
 class: contain, dark
