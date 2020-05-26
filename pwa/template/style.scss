@@ -38,9 +38,9 @@ $margin-base      : 20px;
 // CSS Base
 // ---------------------------------------------------------------------------
 
-@import 'animate.css';
-@import url(fonts.css);
-@import url(fontawesome-all.css);
+@import 'animate';
+@import 'fonts';
+@import 'fontawesome-all';
 
 * { box-sizing: border-box; }
 body { font-family: $font; }
@@ -613,25 +613,6 @@ table {
   background-color: #009530;
 }
 
-.true-badge, .false-badge, .maybe-badge {
-  position: absolute;
-  top: 0.3em;
-  right: 1em;
-  height: 4em;
-  width: 100%;
-  z-index: 10;
-  background: url(images/true.png) no-repeat right;
-  background-size: contain;
-}
-
-.false-badge {
-  background-image: url(images/false.png);
-}
-
-.maybe-badge {
-  background-image: url(images/maybe.png);
-}
-
 .dark-box {
   background-color: transparentize(#000, 0.4);
   padding: 1em;
@@ -752,9 +733,9 @@ hr {
 .dplus, .dminus, .dneutral { font-family: $font-fixed; padding: 0 .25em; }
 
 .title {
-  background: linear-gradient(180deg,  transparentize(#000, .5) 80%,  transparentize(#000, 1));
+  // background: linear-gradient(180deg,  transparentize(#000, .75) 80%,  transparentize(#000, 1));
   position: absolute;
-  top: 0;
+  top: 5%;
   left: 0;
   right: 0;
   padding: .5em 1.5em;

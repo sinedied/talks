@@ -17,15 +17,15 @@ Web plus juste et équitable.
 ---
 
 class: left, middle, hide-handle
-background-image: url(images/progressive.jpg)
-background-position: center center
+background-image: url(images/telescope-bg.jpg)
+background-position: bottom center
 
 .title[
+## .alt-text[A fair web for everyone with]
 # .light-text.large[Progressive Web Apps]
-## .alt-text[Beyond the buzzword]
 ]
 
-.full-layer.who.text-right.small.middle[
+.full-layer.who.text-right.small.middle.light-text[
   .ms.responsive[![](images/ms-full-logo.svg)]
   |
   Yohan Lasorsa
@@ -45,7 +45,7 @@ class: middle, center, hide-handle
 .col-8.bit-larger.left[
   .e[Yohan Lasorsa]<br>
   .bit-larger[\[ Cloud Developer Advocate .mini-img[![](images/ms.png)] \]]<br>
-  .small.em-text[Web tech geek & DIY lover]<br>
+  .small.em-text[Web tech geek, OSS maintainer, DIY lover]<br>
 ]
 ]
 .center.bit-larger[
@@ -58,7 +58,6 @@ class: middle, center, hide-handle
 
 ca fait plus de 10 ans que je baigne dans le monde du web...
 je ne vais pas vous refaire tout l'historique, car simplement...
-
 
 ---
 
@@ -100,6 +99,20 @@ Icons trivia!
 --
 
 ### .alt-text[Cost vs Performance vs Reach?]
+
+---
+
+class: alt, middle, impact
+
+## .large[Who **can** use your app?]
+
+???
+
+Qui peut utiliser votre app?
+
+- platform restrictions
+- device performance
+- network performance
 
 ---
 
@@ -764,13 +777,21 @@ class: big-text
 
 ---
 
+class: impact, middle
+
+## .baseline.large[Speed is a form of .alt-text[accessibility]]
+## .baseline.large[User experience drives .alt-text[success]]
+## .baseline.large[Web gives .alt-text[freedom]]
+
+---
+
 class: middle, hide-handle
 
 .big-text.no-bg.baseline[
 ```js
 const end = {
   message: 'Thank you!',
-  slides: 'bit.ly/pwadeck'
+  slides: 'bit.ly/fairpwa'
 };
 
 alert('Questions?');
