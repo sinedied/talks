@@ -60,6 +60,9 @@ pre, code {
   background: $code-background;
   white-space: pre-wrap;
   .full &, .impact &, .no-bg & { background: transparent !important; }
+  .alt-code & {
+    color: $primary;
+  }
 }
 a, a:visited, a:hover, a:active { color: $text-dark; }
 img { vertical-align: inherit; }
@@ -154,7 +157,7 @@ table {
   font-size: 0.8em;
   z-index: 2;
   transform: translate3d(0,0,0);
-  .no-counter & { display: none; }
+  .no-counter & { display: none !important; }
 }
 
 // Overrides
@@ -178,6 +181,7 @@ table {
   right: 0;
   font-size: 20px;
   padding: .8em;
+  padding-right: 5em;
   text-align: left;
   z-index: 1;
   transform: translate3d(0,0,0);
@@ -377,6 +381,11 @@ table {
 
 .remark-slide-number {
   display: none;
+  .show-number & {
+    display: block;
+    bottom: 15px;
+    right: .8em;
+  }
 }
 
 .head-spacer {
@@ -831,6 +840,15 @@ hr {
 
 .through {
   pointer-events: none;
+}
+
+.clist ul {
+  display: inline-block;
+  text-align: left;
+}
+
+.up {
+  margin-top: -.25em;
 }
 
 // Fix PDF print with chrome

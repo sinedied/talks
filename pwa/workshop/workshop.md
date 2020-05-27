@@ -1,6 +1,10 @@
 PWA WORKSHOP
 ============
 
+Prop: instead of NGX
+-> https://angular.io/guide/service-worker-getting-started
+-> Make a GH repo
+
 # Intro: Objectives
   - Create a web app, see how it can be turned into a PWA
   - Use Lighthouse audit
