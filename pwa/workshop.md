@@ -173,7 +173,7 @@ class: impact, left
 
 2. Open DevTools with `F12` or `CTRL+OPTION+COMMAND` (Mac)
 
-3. Navigate to **Audits** tab
+3. Navigate to **Lighthouse** tab (**Audits** on older versions)
 
 4. Click on **Generate report**
 
@@ -234,7 +234,7 @@ mkdir quote && cd quote
 ```
 
 .do[
-> **Tip**: if you install Azure Functions Core tools () you can just use `func init` instead. You can also test your functions locally with `func start`.
+> **Tip**: if you install Azure Functions Core Tools ([aka.ms/tools/func](https://aka.ms/tools/func)) you can just use `func init` instead. You can also test your functions locally with `func start`.
 ]
 
 ---
@@ -482,17 +482,17 @@ git add . && git commit -m "minor update" && git push
 
 # Make your own PWA 😎
 
-### Public APIs
+### Public APIs .small[(or make your own!)]
 - https://github.com/public-apis/public-apis
 - https://apilist.fun
-- Or make your own!
 
 ### Ngx Rocket generator .small[(example app: [bit.ly/ngx-pwa](https://bit.ly/ngx-pwa))]
 https://github.com/ngx-rocket/generator-ngx-rocket
 
 - Responsive PWA starter with Material/Ionic, i18n and more
 
-📢 **Tweet about it and mention us!** `@sinedied @olivierleplus @manekinekko @msdevs_fr`
+📢 **Tweet about it and mention us!** 📢<br>
+`@sinedied @olivierleplus @manekinekko @msdevs_fr`
 
 ---
 
