@@ -414,7 +414,7 @@ class: big-text, center, middle
 <br><br><br>
 .no-margin[
 ```html
-<link rel="manifest" href="manifest.json"/>
+<link rel="manifest" href="manifest.webmanifest"/>
 ```
 ]
 --
