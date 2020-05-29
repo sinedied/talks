@@ -230,7 +230,7 @@ mkdir api && cd api
 echo "{ \"version\": \"2.0\" }" > host.json
 
 # Create function folder
-mkdir quote && cd quote
+mkdir hello && cd hello
 ```
 
 .do[
