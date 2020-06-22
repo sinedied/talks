@@ -2,9 +2,9 @@ title: Discover NestJS
 class: animation-fade
 layout: true
 
-.twitter-handle[
+<!-- .twitter-handle[
   @sinedied
-]
+] -->
 
 ---
 
@@ -20,12 +20,67 @@ background-position: center center
 
 .full-layer.who.darkened.text-right.small.middle.light-text[
   <br><br>
-  .ms.responsive[![](images/ms-full-logo-light.svg)]
-  |
+  .ms.w-50.responsive[![](images/ms-full-logo-light.svg)]
+  <!-- |
   Yohan Lasorsa
   |
-  @sinedied
+  @sinedied -->
 ]
+
+---
+
+# Who are we?
+
+.table.row.middle[
+.col-3.center[
+  .w-70.responsive.avatar.bounceInLeft.animated[![](images/maud.jpg)]
+
+  **Maud Levy**<br>
+  .fab.fa-twitter[]<br> .e[@maudstweets]
+]
+.col-3.center[
+  .w-70.responsive.avatar.bounceInUp.animated[![](images/glaucia.jpg)]
+
+  **Glaucia Lemos**<br>
+  .fab.fa-twitter[]<br> .e[@glaucia_lemos86]
+]
+.col-3.center[
+  .w-70.responsive.avatar.bounceInDown.animated[![](images/photo.jpg)]
+
+  **Yohan Lasorsa**<br>
+  .fab.fa-twitter[]<br> .e[@sinedied]
+]
+.col-3.center[
+  .w-70.responsive.avatar.bounceInRight.animated[![](images/olivier.jpg)]
+
+  **Olivier Leplus**<br>
+  .fab.fa-twitter[]<br> .e[@olivierleplus]
+]
+]
+
+---
+
+class: big-text, center, middle
+
+# Join the slack
+
+Ask questions & get personal support
+
+.big[👉 [aka.ms/nitro-ws-slack](https://aka.ms/nitro-ws-slack)]
+
+---
+
+# Agenda
+
+## NestJS Intro (30min)
+## Hands-on workshop (2h30)
+
+.center.big-text[
+<br>
+Don't hesitate to ask questions on slack!<br>
+.big[🙋]
+]
+
 
 ---
 exclude: true
@@ -767,7 +822,11 @@ background-image: url(images/nitro-web.png)
 
 class: middle, center, big-text
 # .sketch[Let's get started!]
-.large[👉 [aka.ms/nitro-ws](https://aka.ms/nitro-ws)]
+.large[👉 [aka.ms/nitro-ws](https://aka.ms/nitro-ws)<br><br>]
+
+----
+
+.small[Slides:]<br>[aka.ms/nitro-ws-slides](https://aka.ms/nitro-ws-slides)
 
 ---
 
@@ -791,15 +850,15 @@ class: hide-handle, middle
 .col-4.small.text-left.float-left[
 <div style="height: .5em"></div><br>
 Slides:<br>
-.large[bit.ly/nest-workshop]
+.large[aka.ms/nitro-ws-slides]
 ]
 .col-3.float-left[
   .responsive[![](images/bit-octocat.png)]
 ]
-.col-5.right.large.middle.float-left[
+<!-- .col-5.right.large.middle.float-left[
 .large.em-text[{]
 .fab.fa-twitter[] .fab.fa-github[] .fab.fa-dev[]
-.large.em-text[}] .e[@sinedied]<br>
+.large.em-text[}] .e[@sinedied]<br> -->
 ]
 
 <!--

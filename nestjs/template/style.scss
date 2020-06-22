@@ -835,6 +835,10 @@ hr {
   display: inline-block;
   width: 25%;
   margin-top: -.35em;
+
+  &.w-50 {
+    width: 50%;
+  }
 }
 
 .twitter-handle {
