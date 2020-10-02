@@ -211,7 +211,7 @@ table {
 }
 
 .full {
-  text-shadow: 0 0 .5em rgba(0,0,0,.9);
+  text-shadow: 0 0 .5em rgba(0,0,0,.9), 0 0 1em rgba(0,0,0,.9);
   &, h1, h2 { color: $text-light; }
 }
 
@@ -254,6 +254,10 @@ table {
   &.stick-bottom {
     top: auto;
     bottom: 1em;
+  }
+  &.stick-top {
+    top: 1em;
+    bottom: auto;
   }
   &.full-right {
     left: auto;
@@ -964,6 +968,11 @@ hr {
 .clist ul, .clist ol {
   display: inline-block;
   text-align: left;
+}
+
+.logos img {
+  height: 100px;
+  margin-right: .5em;
 }
 
 // Fix PDF print with chrome
