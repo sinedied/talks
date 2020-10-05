@@ -211,7 +211,7 @@ table {
 }
 
 .full {
-  text-shadow: 0 0 .5em rgba(0,0,0,.6);
+  text-shadow: 0 0 .5em rgba(0,0,0,.9), 0 0 1em rgba(0,0,0,.9);
   &, h1, h2 { color: $text-light; }
 }
 
@@ -958,7 +958,7 @@ hr {
   animation: rotating 60s linear infinite;
 }
 
-.clist ul {
+.clist ul, .clist ol {
   display: inline-block;
   text-align: left;
 }
