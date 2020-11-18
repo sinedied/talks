@@ -215,7 +215,7 @@ table {
 }
 
 .full {
-  text-shadow: 0 0 .5em rgba(0,0,0,.6);
+  text-shadow: 0 0 .5em rgba(0,0,0,.6), ;
   &, h1, h2 { color: $text-light; }
 }
 
@@ -250,6 +250,11 @@ table {
   &.stick-bottom {
     top: auto;
     bottom: 1em;
+  }
+  &.full-right {
+    left: auto;
+    right: 0;
+    padding: 2em;
   }
 }
 .responsive {
@@ -753,6 +758,17 @@ hr {
   h2 { margin-left: 8px; }
 }
 
+.title-new {
+  text-shadow: 0 0 .5em rgba(0,0,0,.6), 0 0 .5em rgba(0,0,0,.6);
+  h1 { font-weight: 400; }
+  h1, h2 { margin: 0; }
+  h2 { margin-left: 8px; }
+}
+
+.larger {
+  font-size: 1.9em;
+}
+
 .transparent {
   opacity: 0.2;
 }
@@ -849,6 +865,64 @@ hr {
 
 .up {
   margin-top: -.25em;
+}
+
+.split-slide {
+  .split {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    overflow: hidden;
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .bg {
+      img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -15%;
+        height: 100%;
+        width: auto;
+      }
+
+      &.width img {
+        left: 0;
+        height: auto;
+        width: 100%
+      }
+
+      &.overlay::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: rgba(0,0,0,.4);
+      }
+    }
+
+    > *:not(.bg) {
+      z-index: 2;
+    }
+
+    .large {
+      position: relative;
+      top: .16em;
+    }
+  }
+}
+
+.flex-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 // Fix PDF print with chrome
