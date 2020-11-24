@@ -32,6 +32,11 @@ background-image: url(images/love.jpg)
   @sinedied
 ]
 
+???
+
+Hi everyone!
+In this session I'll talk about a subject that's dear to me: Progressive Web Apps, why they're important in the app landscape, and how they work to make the web one of the most inclusive platform to date.
+
 ---
 
 exclude: true
@@ -126,7 +131,6 @@ Qui peut utiliser votre app?
 .responsive[![](images/survivorship-bias.png)]
 
 ???
-
 Your data may not tell the whole story, and your interpretation of it may biased.
 
 In particular, it's easy to not account for the survivor bias.
@@ -137,12 +141,18 @@ Let me illustrate this:
 - Statistic research group looked at the same data and said that parts where plane were not gunned according to the data should be reinforced.
 - Because the data was only from returning planes: they could have sustained the damagae and get back home.
 
-This may be the same with your users!
+It can be the same with your users!
+
+That may seem a bit of a strech, but the way today to be sure your app can be used by everyone is to make a PWA, and we'll see why!
 
 ---
 
 class: impact
 # .small[What's a .animated.jackInTheBox.ib.alt-text[**PWA**]?]
+
+???
+
+First let's start with some definition.
 
 ---
 
@@ -166,8 +176,16 @@ class: middle
 .w-50.responsive.rounded.space-left[![](images/not-impressed.jpg)]
 ]
 
+???
+
+Don't leave yet!
+
 --
 ### With a better user experience
+
+???
+
+It's a web app that aims to provide a top notch user experience, by following some best practices, using the best of what the web can do today.
 
 ---
 class: middle
