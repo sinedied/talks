@@ -130,10 +130,6 @@ class: middle, center
 - REX
 - Ideas for building your own communication model
 
-# Disclaimer
-- No magic hat solutions
-- Fun :)
-
 ---
 
 class: big-text, middle, clist, center
@@ -143,7 +139,7 @@ class: big-text, middle, clist, center
 - .sketch[Reliability]
 
 ???
-On va aborder les archi distribuées sous 3 points:
+On va aborder les systemes distribuées sous 3 points:
   * Distribution géographique
   * Scalabilité
   * Robustesse et failover
@@ -314,6 +310,8 @@ A distance, pas vraiment faisable...
 ???
 Chat, emails
 
+// Questions????
+
 ---
 
 class: center, middle, big-text, impact
@@ -447,6 +445,10 @@ class: center, middle
 - Decoupling -> make team autonomous, sometimes conflict with sharding // duplicate specialty? (ex. devops, design)
 - Caching -> All hands / Town Hall
 - Map reduce -> Manager / AMA
+
+???
+
+=> Questions?
 
 ---
 
@@ -587,6 +589,9 @@ class: center, middle
 - queue -> backlog
 - retry -> retry! | differents channels [mail bailout / skip meetings]
 - health checks -> status reports, ping, remote coffee, eNPS, surveys, let the team know your leaves
+
+ENPS: Recommanderiez-vous à l’une de vos connaissances de venir travailler dans notre entreprise ?
+
 - monitoring -> measure what matters: OKRs / transparency / dashboard partagé (avoid ladders!), 1-1
 
 Transparency!!
@@ -616,7 +621,7 @@ class: center, middle
 
 ???
 Il faut pas perdre de vue quelque chose d'essentiel,
-dans un monde distant, on l'on a tendance a devenir essentiellement ce que l'on produit
+dans un monde distant, on l'on a tendance a ne plus exister uniquement qu'a travers ce que l'on produit
 
 ---
 
@@ -633,6 +638,7 @@ We need to tell when something's wrong!
 - Share status: fun fact? are you ok?
 - Share success (Kudos!)
 - Team activities (Games, Cooking, Remote coffee)
+- BREAKS!
 
 ---
 
