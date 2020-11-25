@@ -7,7 +7,7 @@ Design patterns for building distributed, resilient, and scalable web applicatio
 
 What would happen if you could take inspiration from the architecture of your applications to improve the communication of your teams?
 
-Microservices, queue messages, load balancers, caches, sharding, arbitration, decoupling... These architectural concepts are designed to improve digital exchanges within our apps, and above all to anticipate and manage failures.
+Microservices, message queues, load balancers, caches, sharding, decoupling... These architectural concepts are designed to improve digital exchanges within our apps, and above all to anticipate and manage failures.
 By modeling the exchanges within your team as software architecture, we will see how these design patterns can also be effective in solving our communication issues, very human this time.
 
 Les design patterns pour concevoir des applications web distribuées, robustes et qui passent à l'échelle sont bien connus aujourd'hui. L'organisation de projet permettant de les mettre en place de manière efficace reste cependant un challenge, le facteur "humain" étant source de problèmes difficile à prevoir.
@@ -113,7 +113,7 @@ class: middle, center, hide-handle
 
 ---
 
-class: full, center, bottom
+class: full, center, bottom, hide-handle
 background-image: url(images/team.png)
 
 # .sketch[My team]
@@ -318,7 +318,7 @@ class: center, middle, big-text, impact
 # .sketch[Scalability]
 
 ???
-=> 20min
+=> 15min
 
 Ce qui nous amène a d'autres problèmes...
 
@@ -398,6 +398,7 @@ Reduce service to service communication
 
 ---
 
+exclude: true
 class: center, middle
 # .sketch[Overcoming communication issues]
 .w-90.responsive[
@@ -620,6 +621,8 @@ class: center, middle
 ]
 
 ???
+Modeliser une organisation sous la forme d'une archi logicielle peut aider a trouver des solutions pragmatiques
+
 Il faut pas perdre de vue quelque chose d'essentiel,
 dans un monde distant, on l'on a tendance a ne plus exister uniquement qu'a travers ce que l'on produit
 
