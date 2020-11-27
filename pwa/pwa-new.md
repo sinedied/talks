@@ -39,7 +39,6 @@ In this session I'll talk about a subject that's dear to me: Progressive Web App
 
 ---
 
-exclude: true
 class: middle, center, hide-handle
 # .large[Who am I?]
 
