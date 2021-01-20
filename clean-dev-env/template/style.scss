@@ -9,6 +9,7 @@ $vue:       darken(#4bde9c, 15);
 // Thales colors
 $dark-blue: #0078d7;
 $medium-blue: darken(#00A9CD, 10%);
+$light-blue: #17D5FF;
 $blue   : #00A4EF;
 $orange : #FFB900;
 $green  : #7FBA00;
@@ -198,6 +199,10 @@ table {
 .full {
   text-shadow: 0 0 .5em rgba(0,0,0,.6);
   &, h1, h2 { color: $text-light; }
+
+  &.contrast {
+    text-shadow: 0 0 .5em rgba(0,0,0,.6), 0 0 1em rgba(0,0,0,.6), 0 0 2em rgba(0,0,0,.6);
+  }
 }
 
 .impact {
@@ -716,6 +721,10 @@ hr {
 
   &.hr-right {
     background: linear-gradient(90deg, $light, $secondary);
+
+    &.blue {
+      background: linear-gradient(90deg, $light, $light-blue);
+    }
   }
 }
 
@@ -737,6 +746,53 @@ hr {
   margin-top: -.35em;
   // margin-top: 1.1em;
   // margin-right: 1em;
+}
+
+.sep {
+  margin: 1.2em 0 1.2em 0;
+  height: 4px;
+  position: relative;
+  
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    border-top: 4px solid #fff;
+    width: 220px;
+    right: 0;
+  }
+}
+
+.credits {
+  color: #fff;
+  opacity: 30%;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  font-size: .4em;
+  background: transparent;
+
+  &.dark {
+    color: #000;
+  }
+}
+
+.clist ul {
+  display: inline-block;
+  text-align: left;
+
+  li, li span {
+    vertical-align: baseline;
+  }
+}
+
+.darktab {
+  background-color: transparentize(#000, 0.5);
+  padding: .25em;
+  margin-left: -2em;
+  margin-right: -2em;
+
+  h1 { margin: 0; }
 }
 
 // Fix PDF print with chrome
