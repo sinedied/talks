@@ -47,9 +47,9 @@ background-image: url(images/clean.jpg)
 ]
 
 ???
-Hi everyone, I'm Yohan and if like me you like working in a clean environment, you'll probably like this talk.
+Hi everyone, I'm Yohan and if like me you like working in a clean environment, then this talk is for you.
 
-I'll start by telling you the story of developer, that has been dropped on a new project.
+I'll start by telling you the story of developer, that lands on a new project.
 
 ---
 
@@ -73,7 +73,11 @@ class: contain, full, middle, center
 ]
 .credits.dark[Credits: Christie's]
 ???
-- Here's the manual to setup your environment, provided there's one
+- Here's the doc to setup your environment, provided there's one
+
+Now, you take some time to install all the required tools and prepare your environment to work on the project.
+
+And what usually happens next is...
 
 ---
 
@@ -86,7 +90,7 @@ class: full, middle, center
 ???
 - Fews days later, you still don't have a working environment
 
-I have been that developer a few times.
+I have been that developer a few times already.
 
 ---
 
@@ -127,7 +131,29 @@ Thanks to the remove development extension for VS Code, you can make project onb
 DEMO
 
 ???
-- code dotnet-webapi
+You can do exactly that with VS Code thanks to the Remote Development extension.
+
+Now, I'll show you how that works on a project.
+
+Prepare:
+- browser localhost:5000
+- browser https://github.com/sinedied/codespaces-demo
+- `code dotnet-webapi`
+  * open new cloned project
+  * show local env: no `dotnet` tools
+  * reopen in container
+  * show `dotnet` tool available
+  * detail .devcontainer files
+  * build and run app
+  * open URL in browser
+  * reopen locally, show no impact on local env
+- `code new-project`
+  * show local `node -v` (old version)
+  * init NodeJS 14 container from extension
+  * reopen in container
+  * show `node -v` (new version)
+  * explain project files are local
+- show dotnet project on GitHub, open Codespaces
 
 ---
 
