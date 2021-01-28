@@ -12,21 +12,6 @@ faire lorsqu'un nouvel arrivant débarque sur votre projet?
 C'est maintenant possible avec l'extension Remote Development de Visual Studio
 Code! Venez découvrir comment tout ca fonctionne en live, et tout ca en gardant
 ma machine propre :)
-
-1. Slides
-2. cd demo/donet
-3. code-insiders .
-4. disable all ext workspace + enable only remote dev extension
-5. show icon in bottom left
-6. add dev container for .net 2.1
-7. show dockerfile
-8. show .devcontainer config
-9. init dotnet: dotnet new webapi
-10: dotnet run, url https://localhost:5001/api/values
-11. oups, port not exposed! -> forward port
-12. show port to enable in .devcontainer config
-13. talk about extension
-
 -->
 
 ---
