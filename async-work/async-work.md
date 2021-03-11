@@ -110,6 +110,7 @@ class: middle, center, hide-handle
 ]
 
 ???
+Who are you? answer in the chat!
 
 ---
 
@@ -222,7 +223,7 @@ class: center, middle
 
 ???
 This one is a bit more tricky...
---
+---
 exclude: true
 ### .sketch[Which consistency model?]
 ???
