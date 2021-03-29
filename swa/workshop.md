@@ -5,6 +5,8 @@ layout: true
   .light-text[Create your online portfolio | [aka.ms/swa-portfolio](aka.ms/swa-portfolio)] <!-- .float-right[@sinedied] -->
 ]
 
+<!-- Latest version: https://github.com/sinedied/swa-portfolio-workshop -->
+
 ---
 
 class: left, no-bar, primary, no-counter
