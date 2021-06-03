@@ -21,7 +21,7 @@ background-image: url(images/clean.jpg)
 ### Working every time, everywhere
 .sep[
 ]
-.w-20.responsive[![](images/vscode-day.svg)]
+.w-20.responsive[![](images/pcd.svg)]
 
 .full-layer.bottom.right.text-right.small[
   .ms.responsive[![](images/ms-full-logo.svg)]
