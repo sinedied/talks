@@ -1,0 +1,6 @@
+.tmp/
+dist/
+pdf/
+.DS_Store
+workshop/app/
+workshop/ngx/
