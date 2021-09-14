@@ -4,3 +4,4 @@ pdf/
 .DS_Store
 workshop/app/
 workshop/ngx/
+node_modules/

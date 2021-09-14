@@ -1,9 +1,15 @@
 @font-face {
+  font-family: 'Tangerine';
+  font-style: normal;
+  font-weight: 600;
+  src: url(Tangerine-Bold.ttf) format('truetype');
+}
+/* @font-face {
   font-family: 'Cabin Sketch';
   font-style: normal;
   font-weight: 700;
   src: url(CabinSketch-Bold.ttf) format('truetype');
-}
+} */
 @font-face {
   font-family: 'Quicksand';
   font-style: normal;
