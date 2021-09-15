@@ -11,6 +11,13 @@ layout: true
 Prep:
 - 1 Ecran: slides
 - 1 Ecran: browser edge avec devtools et demo foldable gallery, ngx-foldable
+  * https://sinedied.github.io/ngx-foldable/demo/
+  * https://foldable-devices.github.io/demos/battleship/build/
+  * https://foldable-devices.github.io/demos/photo-gallery/build/
+  * https://github.com/foldable-devices/demos
+  * edge://flags/#enable-experimental-web-platform-features
+  * https://sinedied.github.io/surface-duo-photo-gallery/
+  * https://github.com/sinedied/ngx-foldable
 - 1 Ecran: emulateur duo
 - 1 Ecran: VS Code avec code demo ngx-foldable gallery sur branche before
 
@@ -432,8 +439,6 @@ background-image: url(./images/dive.jpg)
 
 - ngx-foldable github page
 - Gallery app source code
-
----
 
 ---
 
