@@ -43,11 +43,12 @@ class: center
 ???
 - Actions = GH Events -> Workflow -> jobs -> steps
 - Platforms: linux, mac windows & arm/64
-- CI/CD, but not only
+- CI/CD, but not only (issue triage...)
 - Fully integrated to Github
 
 ---
-class: impact
+class: impact, full
+background-image: url(./images/demo.jpg)
 # Demo time
 
 ???
@@ -70,6 +71,7 @@ class: center, clist, middle, big-text
 - Use your own runner
 - Use `docker compose` to spawn testing env
 - Triage issues and clean up backlog
+- GitOps
 
 ???
 - SDK
@@ -117,11 +119,13 @@ class: middle, center, big-text
 
 ---
 
+class: no-margin
 .center[
 .quote.bit-larger.ib[
 > Hey Google, release a new version
 ]
 ]
+
 --
 
 - Conventional commits: `feat: | fix: | docs: | refactor: | ci: | ...`
@@ -139,7 +143,7 @@ class: middle, center, big-text
 - GitHub Action with HTTP trigger (`on: repository_dispatch`)
 --
 
-- IFTTT + Google Home
+- IFTTT + Google Home 👉 Full example: [aka.ms/gha-release](https://aka.ms/gha-release)
 
 ---
 
