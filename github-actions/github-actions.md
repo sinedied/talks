@@ -34,6 +34,27 @@ Plutot qu'un long discours, rien ne vaut une belle démo live pour découvrir to
 
 ---
 
+class: middle, center, hide-handle
+# .large[Who am I?]
+
+.table.row.middle[
+.col-4.center[
+  .w-70.responsive.avatar.tada.animated[![](images/photo.jpg)]
+]
+.col-8.bit-larger.left[
+  .e[Yohan Lasorsa]<br>
+  .bit-larger[\[ Cloud Developer Advocate .mini-img[![](images/ms.png)] \]]<br>
+  .small.em-text[Web tech geek, OSS maintainer, DIY lover]<br>
+]
+]
+.center.bit-larger[
+.large.em-text[{]
+.fab.fa-twitter[] .fab.fa-github[] .fab.fa-dev[]
+.large.em-text[}] .e[@sinedied]<br>
+]
+
+---
+
 class: center
 # GitHub Actions
 .expand[

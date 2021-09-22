@@ -1,7 +1,7 @@
 #/bin/sh
 
 # Clean old repo
-hub delete gha-demo
+#hub delete gha-demo
 hub create gha-demo
 
 # Init new repo for GHA demo
