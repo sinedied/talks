@@ -57,7 +57,7 @@ class: middle, center, hide-handle, full
 background-image: url(images/seeds.jpg)
 background-position: center center
 
-## How to become an
+## How and **why** become an
 # .bit-larger[**Open Source Contributor**]
 
 
@@ -72,7 +72,6 @@ background-position: center center
 ???
 
 ---
-exclude: true
 
 class: middle, center, hide-handle
 # .large[Who am I?]
@@ -92,6 +91,16 @@ class: middle, center, hide-handle
 .fab.fa-twitter[] .fab.fa-github[] .fab.fa-dev[]
 .large.em-text[}] .e[@sinedied]<br>
 ]
+
+---
+
+class: big-text, middle, center
+
+# Let's make it interactive!
+
+.w-30.responsive[![](./images/qr-code.svg)]
+
+.bit-larger[bit.ly/oss-ama]
 
 ---
 class: middle, center
@@ -161,7 +170,7 @@ class: impact
 ---
 
 class: center, middle
-# .baseline[OSS drives .alt-text[**YOUR**] (next) company]
+# .baseline[OSS drives .alt-text[**YOUR**] company]
 ???
 - Vous utilisez deja beaucoup de logiciels OSS au quotidien:
   * PC, smartphone, TV, voiture, frigo...
@@ -176,6 +185,8 @@ class: middle
 
 ???
 L'open source est une culture, qui sert de pilier à beaucoup de domaine et qui ouvre beaucoup de porte.
+
+Part of bigger culture of knowledge sharing that drives innovation and communities.
 ---
 
 class: big-text, clist, center, no-bullet, middle
@@ -194,6 +205,15 @@ class: big-text, clist, center, no-bullet, middle
 ???
 - rencontrer des gens qui partagent vos valeurs et centres d'intérets
 - trouver votre prochain boulot
+
+--
+
+- .eb[💰] Make money
+???
+- Bounties!
+- https://www.bountysource.com/
+- https://issuehunt.io/
+
 --
 
 - .eb[🙂] Fun!
@@ -207,6 +227,8 @@ class: middle, center
 ???
 
 Certes, un dev doit communiquer avec des machines
+
+In general knowledge, a dev is alone with his machine. That's what we're teached at school.
 
 ---
 
@@ -308,17 +330,17 @@ background-image: url(images/ok.jpg)
 class: center
 # **Step 1** - Choose a project
 <br>
-.large[.fab.fa-github[] &nbsp; [aka.ms/first-contrib](https://aka.ms/first-contrib)]
+.large[.fa.fa-globe[] &nbsp; [aka.ms/first-contrib](https://aka.ms/first-contrib)]
 
 --
 
-or 
+<hr>
 
 .large[.fas.fa-terminal[] &nbsp; `npx good-first-issue` (requires [Node.js](https://nodejs.org))]
 
 --
 
-or
+<hr>
 
 .large[.fas.fa-search[] &nbsp; On [GitHub.com](), look for .middle.mini-img[![](images/good-first-issue.png)]]
 
@@ -385,8 +407,9 @@ class: clist, hide-handle
 ]
 
 ---
+
 class: contain, dark
-background-image: url(images/why2.gif)
+background-image: url(images/sad.gif)
 ???
 ca ne marche pas a tous les coups
 
@@ -417,7 +440,7 @@ events: hacktoberfest
  -->
 ---
 class: full, center
-background-image: url(images/hacktoberfest.png)
+background-image: url(images/hacktoberfest21.jpg)
 
 ---
 class: center, bottom, contain
