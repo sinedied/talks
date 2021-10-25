@@ -52,10 +52,11 @@ KILI34
 ---
 
 class: hide-handle, middle, full, center
-background-image: url(images/remote.jpg)
+background-image: url(images/remote-devfest.jpg)
 
 .title-new[
-# .baseline.light-text.large.sketch[Highly available, .alt-text[distributed] <br>& resilient software... .alt-text[team]]<br><br>&nbsp;
+  <br>
+# .baseline.light-text.graffiti[Highly available, .alt-text[distributed] <br>& resilient software... .alt-text[team]]<br><br>&nbsp;
 ]
 
 .full-layer.who.text-right.small.middle.light-text.darkened[
@@ -68,13 +69,13 @@ background-image: url(images/remote.jpg)
 
 ---
 
-class: middle, full
+class: middle, center, full
 background-image: url(images/7laux.jpg)
-# .sketch[Back story]
+# .graffiti[Back story]
 
 ???
 
-Je suis un dev qui a grandi dans la région Grenobloise, et j'aime beaucoup partager avec les autres. Il y un peu plus de 2 ans maintenant, j'ai voulu tenter un changement pour un poste qui m'attirait de plus en plus, celui de Developer Advocate. Le pb, c'est que:
+Je suis un dev qui vient de la région Grenobloise, et j'aime decouvert que j'aimais beaucoup partager avec les autres. Il y a un peu plus de 2 ans maintenant, j'ai voulu tenter un changement pour un poste qui m'attirait de plus en plus, celui de Developer Advocate. Le pb, c'est que:
 - c'est un club très fermé, avec peu de postes ouverts
 - la quasi totalité des postes en France sont à Paris
 
@@ -82,11 +83,15 @@ C'est ce qui m'a finalement amené à passer en full-remote, bien que je sois a 
 
 ---
 
-class: impact
-# .sketch[Why this talk?]
+class: middle, center, full
+background-image: url(images/confetti.jpg)
+<!-- # .graffiti.more-shadow[Why this talk?] -->
+# .graffiti.more-shadow[What this talk is (really) about]
 
 ???
-J'avais envie de partager un peu de mon expérience, et ce que j'en ai appris sur ce qui marche ou pas.
+- Qui bosse en remote ici? Qui a eu des galeres?
+
+J'avais envie de partager mon expérience, et ce que j'en ai appris sur ce qui marche ou pas, ayant eu la chance d'avoir vecu un passage en remote non forc,.
 
 Et comme je trouve ca extremement dur de faire un talk qui parle de soft skills pour moi qui suis plutot tech, j'ai voulu raccrocher ce talk autour de concepts tech qui sont beaucoup plus facile pour moi à aborder.
 
@@ -110,6 +115,7 @@ class: middle, center, hide-handle
 ]
 
 ???
+Et vous?
 Who are you? answer in the chat!
 
 ---
@@ -121,9 +127,11 @@ background-image: url(images/team.png)
 ???
 - Je travaille dans une equipe distribuée mondialement
 - ~ 150p
+- Qui bosse dans une equipe internationale?
 
 ---
 
+exclude: true
 class: middle, center
 # .large.sketch[What this talk is (really) about]
 
@@ -273,6 +281,8 @@ class: center, middle
 - Centralization -> Wiki-like system / Backlog
   * il faut éviter une persone SPOF!
 - Transation -> Meeting
+
+On s'est demandé a quoi servaient les managers...
 
 ---
 

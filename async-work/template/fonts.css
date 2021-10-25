@@ -5,6 +5,12 @@
   src: url(CabinSketch-Bold.ttf) format('truetype');
 }
 @font-face {
+  font-family: 'Tag';
+  font-style: normal;
+  font-weight: 700;
+  src: url('turnb.ttf') format('truetype');
+}
+@font-face {
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 1 999;

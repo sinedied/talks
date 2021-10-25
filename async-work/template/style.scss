@@ -218,6 +218,9 @@ table {
 .full {
   text-shadow: 0 0 .5em rgba(0,0,0,.6);
   &, h1, h2 { color: $text-light; }
+  .more-shadow {
+    text-shadow: 0 0 .5em rgba(0,0,0,.6), 0 0 .5em rgba(0,0,0,.6);
+  }  
 }
 
 .impact {
@@ -586,6 +589,10 @@ table {
 
 .sketch {
   font-family: 'Cabin Sketch', cursive;
+}
+
+.graffiti {
+  font-family: 'Tag', cursive;
 }
 
 .big-text {
