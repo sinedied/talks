@@ -52,11 +52,10 @@ KILI34
 ---
 
 class: hide-handle, middle, full, center
-background-image: url(images/remote-devfest.jpg)
+background-image: url(images/remote.jpg)
 
 .title-new[
-  <br>
-# .baseline.light-text.graffiti[Highly available, .alt-text[distributed] <br>& resilient software... .alt-text[team]]<br><br>&nbsp;
+# .baseline.light-text.sketch.large[Highly available, .alt-text[distributed] <br>& resilient software... .alt-text[team]]<br><br>&nbsp;
 ]
 
 .full-layer.who.text-right.small.middle.light-text.darkened[
@@ -71,7 +70,7 @@ background-image: url(images/remote-devfest.jpg)
 
 class: middle, center, full
 background-image: url(images/7laux.jpg)
-# .graffiti[Back story]
+# .sketch[Back story]
 
 ???
 
@@ -86,7 +85,7 @@ C'est ce qui m'a finalement amené à passer en full-remote, bien que je sois a 
 class: middle, center, full
 background-image: url(images/confetti.jpg)
 <!-- # .graffiti.more-shadow[Why this talk?] -->
-# .graffiti.more-shadow[What this talk is (really) about]
+# .sketch.more-shadow[What this talk is (really) about]
 
 ???
 - Qui bosse en remote ici? Qui a eu des galeres?
