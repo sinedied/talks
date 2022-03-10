@@ -11,6 +11,11 @@ background-image: url(images/github-actions-hero.jpg)
 ]
 
 <!-- 
+
+TODO:
+- actionslint?
+- Find/Create docker image for create your own runner
+
 Devenez un GitHub Actions Hero!
 
 GitHub Actions, c'est le nouveau système de worflow intégré à GitHub pour automatiser tous vos projets, CI/CD mais pas que! Et en plus, ca ne coute rien pour les projets open source, c'est le moment de s'y mettre non?
@@ -30,10 +35,33 @@ Plutot qu'un long discours, rien ne vaut une belle démo live pour découvrir to
 - pricing, laius Az DevOps
 - semantic release, Google home...
 
+----
+DEPLOY:
+  deploy:
+    runs-on: ubuntu-latest
+    needs: [build]
+    
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: 14.x
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run build --if-present
+      env:
+        PUBLIC_URL: 'https://sinedied.github.io/gha-demo'
+    - uses: crazy-max/ghaction-github-pages@v2.6.0
+      with:
+        build_dir: build
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 -->
 
 ---
 
+exclude: true
 class: middle, center, hide-handle
 # .large[Who am I?]
 
