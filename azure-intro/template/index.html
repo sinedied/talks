@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+  {{{style}}}
+  <script src="remark.min.js"></script>
+  <script>
+    function create() {
+      var slideshow = remark.create({
+        {{{source}}},
+        ratio: '16:9',
+        highlightLines: true,
+        countIncrementalSlides: false,
+        highlightStyle: 'github'
+      });
+      slideshow.on('showSlide', function (slide) {
+        var v = slide.properties.video;
+        if (v) {
+          var video = window[v];
+          video = video.play ? video : video[0];
+          video.currentTime = 0;
+          video.play();
+        }
+      });
+      return slideshow;
+    }
+  </script>
+  <!-- <script>
+    const beerTime = new Date();
+    beerTime.setHours(17);
+    beerTime.setMinutes(0);
+    beerTime.setSeconds(0);
+
+    function checkBeer() {
+      if (Date.now() > beerTime.getTime()) {
+        const div = document.createElement('div');
+        div.textContent = '🍻';
+        div.id = 'beer';
+        div.setAttribute('class', 'beer animated heartBeat infinite');
+        div.classList.add('beer');
+        document.body.appendChild(div);
+        setTimeout(() => { document.body.removeChild(div); }, 3000);
+      } else {
+        setTimeout(checkBeer, 1000);
+      }
+    }
+    setTimeout(checkBeer, 1000);
+  </script> -->
+</head>
+<body onload="slideshow = create()">
+</body>
+</html>
