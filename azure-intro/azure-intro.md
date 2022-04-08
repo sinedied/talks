@@ -493,7 +493,7 @@ class: center
 background-image: url(./images/cloud.jpg)
 
 # .large.light-text.animated.zoomInUp.ib[Cloud native]
-### .bit-larger.primary-text[Building from the ground up for the cloud.]
+### .bit-larger[Building from the ground up for the cloud.]
 
 ???
 - Eviter de se lancer tete baissée
@@ -506,7 +506,7 @@ class: center
 background-image: url(./images/cloud.jpg)
 
 # .large.light-text[Cloud native]
-### .bit-larger.primary-text[Building from the ground up for the cloud.]
+### .bit-larger[Building from the ground up for the cloud.]
 
 .full-layer.stick-bottom[
 ### .light-text[[12-factor methodology](https://12factor.net/)]
@@ -519,17 +519,29 @@ background-image: url(./images/cloud.jpg)
 
 ---
 
-class: center
-# Getting started with Azure
+class: center, middle, light-text, bg-gradient
+# .light-text.large[Using Azure]
 
+---
+
+class: center
+# Getting started
+
+<br>
 .col-4.float-left.center[
-  Azure Portal
+  ### Azure Portal
+
+  .w-90.responsive[![](./images/portal.png)]
 ]
 .col-4.float-left.center[
-  Azure CLI
+  ### Azure CLI
+
+  .w-90.responsive[![](./images/cli.png)]
 ]
 .col-4.float-left.center[
-  VS Code extensions
+  ### VS Code extensions
+
+  .w-90.responsive[![](./images/vscode.png)]
 ]
 
 ???
@@ -542,7 +554,7 @@ class: center
 class: center
 # Azure Resource Management
 
-.w-85.responsive[![](./images/arm.png)]
+.w-80.responsive[![](./images/arm.png)]
 
 ???
 En pratique il y a plein de facons de créer des resources Azure mais toutes passent par ARM.
@@ -551,24 +563,52 @@ En pratique il y a plein de facons de créer des resources Azure mais toutes pas
 
 class: center
 # Repeatable infrastructure
-Infrastructure as code (IaC)
+### Infrastructure as code (IaC)
 
 ```bicep
-sdf
+param prod bool = true
+param appName string = 'myapp'
+var suffix = prod ? '' : uniqueString(resourceGroup().id)
+
+resource storageAccount 'Microsoft.Storage/storageAccounts@2021-02-01' = {
+  name: '${appName}${suffix}'
+  location: location
+  kind: 'StorageV2'
+  sku: { name: 'Standard_LRS' }
+  properties: {
+    allowBlobPublicAccess: false
+    supportsHttpsTrafficOnly: true
+  }
+}
 ```
 
-ARM, Bicep
-
-But also Terraform
+.ib.up[👉 ARM (JSON), Bicep (DSL), Terraform, Pulumi...]
 
 ---
 
 class: center
 # Automation
 
-CI/CD
+### CI/CD Pipelines
 
-GitHub Actions
+```yml
+name: continous_integration
+on:
+  push:
+    branches: [main]
+jobs:
+  build:
+    strategy:
+      matrix:
+        platform: [ubuntu-latest, macos-latest, windows-latest]
+        node-version: ['12', '14', '>=16']
+    runs-on: ${{ matrix.platform }}
+    steps:
+    - uses: actions/checkout@v1
+...
+```
+
+👉 GitHub Actions
 
 ???
 - Tools: Portal / CLI / VS Code
@@ -580,6 +620,14 @@ GitHub Actions
 class: center
 # Observability & alerting
 
+<br><br><br>
+
+.quote[
+> You want .blue-text[**metrics**] to see how your systems are running, .blue-text[**alerts**] to know when something goes wrong and unified .blue-text[**logs**] to trace back your issues.
+]
+
+<br><br><br><br>
+👉 Azure App Insights, Azure Monitor
 
 ---
 
