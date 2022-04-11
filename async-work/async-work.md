@@ -224,30 +224,6 @@ class: center, middle
 
 ---
 
-exclude: true
-class: center, middle
-# .sketch[Overcoming synchronization]
-
-???
-This one is a bit more tricky...
----
-exclude: true
-### .sketch[Which consistency model?]
-???
-Dans un systeme distribué, il n'existe pas de modele parfait pour synchroniser des données, on parle plutot de modele de consistence, et il en existe beaucoup:
-- strict -> tout le monde est synchro des changements dans un meme cycle (instantané), impossible a réaliser quand on a des écritures parraleles possibles
-- sequentiel
-- causal, -> on détermine les liens relatifs
-...
-
---
-
-.w-60.responsive[
-<object data="images/complicated.svg"></object>
-]
-
----
-
 class: center, middle
 # .sketch[Overcoming "synchronization"]
 .w-80.responsive[

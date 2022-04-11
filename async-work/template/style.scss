@@ -93,32 +93,21 @@ blockquote {
 iframe {
   $scale: 1.5;
   height: calc(#{100%/$scale} - 1.2em);
-  width: 100%/$scale;
+  width: calc(100%/$scale);
   border: 0;
   transform: scale($scale);
   transform-origin: 0 0;
-  &.hide-plunkr-ads { height: calc(#{100%/$scale} - .3em); }
   &.no-zoom {
     $scale: 1.0;
     transform: scale($scale);
     height: calc(#{100%/$scale} - 1.2em);
-    width: 100%/$scale;
+    width: calc(100%/$scale);
   }
   &.smaller {
     $scale: 1.2;
     transform: scale($scale);
     height: calc(#{100%/$scale} - 1.2em);
-    width: 100%/$scale;
-    &.ts-playground {
-      margin: -5em 0;
-      height: calc(#{100%/$scale} - 1.2em + 5em);
-    }
-  }
-  &.fe-demo {
-    $scale: 0.85;
-    transform: scale($scale);
-    height: 100%/$scale;
-    width: 100%/$scale;
+    width: calc(100%/$scale);
   }
 }
 table {

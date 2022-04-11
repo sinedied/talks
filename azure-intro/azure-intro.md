@@ -10,108 +10,6 @@ layout: true
 Okay, Azure is Microsoft's cloud platform. What does it means from a developer standpoint, and how do you get started to find what you need in the myriad of services offered?
 
 After a quick tour of the basics, we'll dive into the most important question when working through any cloud platform: what are your options, and how to pick the best one? From developers tools, to getting your apps from zero to up and running at scale with full CI/CD pipelines, we'll explore how you can build your apps while leveraging benefits from the cloud, and avoiding its usage becoming a constraint.
-
-
-- Azure?
-  * CNCF Cloud lanscape
-  * Azure = Cloud Platform
-  * Basics: compute, storage, networking, everything else is built from that.
-  * Side: security, reliability, monitoring, disaster recovery...
-  * PAAS: Serverless, AI, DB...
-
-- Cloud Strategies
-  * On-premise: no cloud/private cloud
-  * Hybrid: private+public cloud
-  * Cloud-native: built for the cloud
-  * Multi-cloud: portable and host independant cloud apps
-
-- Developping App for the cloud
-  * VMs: Lift & Shift, temp migration
-  * Containers: Managed or through K8s
-  * PAAS: Managed Service, incl. Serverless
-  * Serverless: Pay as you go, auto-scale, no runtime management
-
-1 question: which cloud service can make your app developement faster and cheaper?
-
-- What do you need?
-  * Gateways
-    - Portal, VS Code, CLI
-  * Dev Tools
-    * GitHub: code hosting, CI/CD & online dev env
-    * App Configuration
-    * Key Vault
-    * Bicep/ARM IAC
-  * Compute/hosting
-    - VM, AKS, App Services, Functions, SWA
-  * Data
-    - Azure Storage, CosmosDB, SQL Server, Synapse
-  * AI
-    - Cognitive Services
-  * Monitoring
-    - App Insights, Azure Monitor
-  * Governance, Security
-    - Sentinel, Policies
-  
-- Learn modules
-- AZ-900
-
-*******************************************
-
-- Azure AFUN10
-  * Cloud? Compute, storage, network
-  * Side tracks: security, monitoring, devops/automation
-  * And more....
-
-- IaaS / PaaS / SaaS
-           \-> Caas, Serverless
-
-- Now you understand a bit how it works, and what you can find but it won't help you do anything.
-
-- What are you trying to achieve? Which part of your app generates VALUE for you?
-  * Azure is a toolbox | like your hardware store
-  * When you build a house, you won't go to HW store and read the product labels to find the right parts, right?
-
-- Tools: Portal / CLI / VS Code
-  * IaC => CI/CD / DevOps. Bicep or Terraform or (insert fav. tool)
-  * GitHub: Source control, Project management, Actions (CI/CD)
-
-- An Azure (example) Journey
-
-
-- What do you need?
-  * Gateways
-    - Portal, VS Code, CLI
-  * Dev Tools
-    * GitHub: code hosting, CI/CD & online dev env
-    * App Configuration
-    * Key Vault
-    * Bicep/ARM IAC
-  * Compute/hosting
-    - VM, AKS, App Services, Functions, SWA
-  * Data
-    - Azure Storage, CosmosDB, SQL Server, Synapse
-  * AI
-    - Cognitive Services
-  * Monitoring
-    - App Insights, Azure Monitor
-  * Governance, Security
-    - Sentinel, Policies
-  
-- Learn modules
-- AZ-900
-
-- Service: 
-  * Identity
-  * Storage
-  * Hosting/API
-  * Containers
-  * Configuration
-  * Security/secrets
-
-- https://12factor.net/
-
-
-
 -->
 
 ---
@@ -188,6 +86,7 @@ class: hide-handle
 - Storage is bit special in Azure:
   * Built on a unified and distributed storage system
   * Durability, encryption at rest, strongly consistent replication, fault tolerance, auto load-balancing
+  * 5PiO by default (can be increased to more)
 
 
 --
@@ -561,6 +460,21 @@ En pratique il y a plein de facons de créer des resources Azure mais toutes pas
 
 ---
 
+class: center, clist
+# Azure .blue-text[lingo]
+
+- **Subscription:** a billing group for Azure services.
+
+- **Resource group:** a container holding related resources for an application.
+
+- **Region / location:** an area within a country that contains one or more datacenters.
+
+- **Resource:** any item that is part of your Azure solution.
+
+- **Storage account:** a container for storing data objects, needed by many Azure services.
+
+---
+
 class: center
 # Repeatable infrastructure
 ### Infrastructure as code (IaC)
@@ -697,11 +611,13 @@ class: center, middle, light-text, bg-gradient
 - **Azure Portal, VS Code, Azure CLI**
 
 ### DevOps
-- **GitHub**: code, project management, CI/CD
+- **GitHub**: code, project management
+- **GitHub Actions**: CI/CD, automation
+- **GitHub Packages**: artifacts, containers
+- **Bicep**, **ARM**: infrastructure as code
 - **Azure App Configuration**: feature flags, A/B testing
 - **Azure Key Vault**: secrets
-- **Bicep**, **ARM**: infrastructure as code
-- **App Insights, Azure Monitor**: monitoring
+- **Azure Monitor, App Insights**: observability
 - **Azure Policy, Azure Sentinel**: governance & security
 ]
 .col-6.float-left.small[
@@ -712,7 +628,7 @@ class: center, middle, light-text, bg-gradient
 
 ### Data
 - **Azure Storage**: files, blobs 
-- **Cosmos DB**, **Azure SQL**: database
+- **Cosmos DB**, **Azure SQL DB**: database
 - **Azure Synapse**: big data
 
 ### AI/ML
@@ -724,14 +640,14 @@ class: center, middle, light-text, bg-gradient
 class: center, clist
 # Learning .blue-text[fundamentals]
 
-### Azure Fundamentals Learn Path / [AZ-900 certification](https://docs.microsoft.com/en-us/learn/certifications/exams/az-900) 
+### Azure Fundamentals Learn Path / [AZ-900 certification](https://docs.microsoft.com/learn/certifications/exams/az-900?WT.mc_id=javascript-0000-yolasors)
 
-- [1. Describe core Azure concepts](https://docs.microsoft.com/en-us/learn/paths/az-900-describe-cloud-concepts/)
-- [2. Describe core Azure services](https://docs.microsoft.com/en-us/learn/paths/az-900-describe-core-azure-services/)
-- [3. Describe core solutions and management tools on Azure](https://docs.microsoft.com/en-us/learn/paths/az-900-describe-core-solutions-management-tools-azure/)
-- [4. Describe general security and network security features](https://docs.microsoft.com/en-us/learn/paths/az-900-describe-general-security-network-security-features/)
-- [5. Describe identity, governance, privacy, and compliance features](https://docs.microsoft.com/en-us/learn/paths/az-900-describe-identity-governance-privacy-compliance-features/)
-- [6. Describe Azure cost management and service level agreements](https://docs.microsoft.com/en-us/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/)
+- [1. Describe core Azure concepts](https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/?WT.mc_id=javascript-0000-yolasors)
+- [2. Describe core Azure services](https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/?WT.mc_id=javascript-0000-yolasors)
+- [3. Describe core solutions and management tools on Azure](https://docs.microsoft.com/learn/paths/az-900-describe-core-solutions-management-tools-azure/?WT.mc_id=javascript-0000-yolasors)
+- [4. Describe general security and network security features](https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features/?WT.mc_id=javascript-0000-yolasors)
+- [5. Describe identity, governance, privacy, and compliance features](https://docs.microsoft.com/learn/paths/az-900-describe-identity-governance-privacy-compliance-features/?WT.mc_id=javascript-0000-yolasors)
+- [6. Describe Azure cost management and service level agreements](https://docs.microsoft.com/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/?WT.mc_id=javascript-0000-yolasors)
 
 ???
 - Learn modules
@@ -760,3 +676,104 @@ sendToAll('room', 'Any questions?');
 .fab.fa-twitter[] .fab.fa-github[] .fab.fa-dev[]
 .large.em-text[}] .e[@sinedied]
 ]
+
+<!-- 
+- Azure?
+  * CNCF Cloud lanscape
+  * Azure = Cloud Platform
+  * Basics: compute, storage, networking, everything else is built from that.
+  * Side: security, reliability, monitoring, disaster recovery...
+  * PAAS: Serverless, AI, DB...
+
+- Cloud Strategies
+  * On-premise: no cloud/private cloud
+  * Hybrid: private+public cloud
+  * Cloud-native: built for the cloud
+  * Multi-cloud: portable and host independant cloud apps
+
+- Developping App for the cloud
+  * VMs: Lift & Shift, temp migration
+  * Containers: Managed or through K8s
+  * PAAS: Managed Service, incl. Serverless
+  * Serverless: Pay as you go, auto-scale, no runtime management
+
+1 question: which cloud service can make your app developement faster and cheaper?
+
+- What do you need?
+  * Gateways
+    - Portal, VS Code, CLI
+  * Dev Tools
+    * GitHub: code hosting, CI/CD & online dev env
+    * App Configuration
+    * Key Vault
+    * Bicep/ARM IAC
+  * Compute/hosting
+    - VM, AKS, App Services, Functions, SWA
+  * Data
+    - Azure Storage, CosmosDB, SQL Server, Synapse
+  * AI
+    - Cognitive Services
+  * Monitoring
+    - App Insights, Azure Monitor
+  * Governance, Security
+    - Sentinel, Policies
+  
+- Learn modules
+- AZ-900
+
+*******************************************
+
+- Azure AFUN10
+  * Cloud? Compute, storage, network
+  * Side tracks: security, monitoring, devops/automation
+  * And more....
+
+- IaaS / PaaS / SaaS
+           \-> Caas, Serverless
+
+- Now you understand a bit how it works, and what you can find but it won't help you do anything.
+
+- What are you trying to achieve? Which part of your app generates VALUE for you?
+  * Azure is a toolbox | like your hardware store
+  * When you build a house, you won't go to HW store and read the product labels to find the right parts, right?
+
+- Tools: Portal / CLI / VS Code
+  * IaC => CI/CD / DevOps. Bicep or Terraform or (insert fav. tool)
+  * GitHub: Source control, Project management, Actions (CI/CD)
+
+- An Azure (example) Journey
+
+
+- What do you need?
+  * Gateways
+    - Portal, VS Code, CLI
+  * Dev Tools
+    * GitHub: code hosting, CI/CD & online dev env
+    * App Configuration
+    * Key Vault
+    * Bicep/ARM IAC
+  * Compute/hosting
+    - VM, AKS, App Services, Functions, SWA
+  * Data
+    - Azure Storage, CosmosDB, SQL Server, Synapse
+  * AI
+    - Cognitive Services
+  * Monitoring
+    - App Insights, Azure Monitor
+  * Governance, Security
+    - Sentinel, Policies
+  
+- Learn modules
+- AZ-900
+
+- Service: 
+  * Identity
+  * Storage
+  * Hosting/API
+  * Containers
+  * Configuration
+  * Security/secrets
+
+- https://12factor.net/
+
+-->
