@@ -1,11 +1,12 @@
 {
   "name": "talks",
   "private": true,
+  "type": "module",
   "scripts": {
     "start": "bs s",
     "clean": "rm -rf dist",
     "predeploy": "./build.sh",
-    "deploy": "gh-pages -d dist -u \"sinedied <node@free.fr>\""
+    "deploy": "gh-pages -d dist -u \"sinedied <noda@free.fr>\""
   },
   "dependencies": {
     "backslide": "^3.1.0"

@@ -13,5 +13,8 @@ rm -rf dist
 
 # Presentations to export
 mk_slides azure-intro azure-intro.md
+mk_slides async-work async-work.md
 
-
+# Generate index
+echo "Generating index..."
+./_scripts/generate-index.js dist

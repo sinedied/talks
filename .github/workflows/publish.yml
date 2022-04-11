@@ -1,0 +1,21 @@
+name: Publish
+on:
+  push:
+    branches: [main]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - run: git config --global core.autocrlf false  # Preserve line endings
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 16
+    - run: |
+        npm ci
+        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/sinedied/talks.git
+        npm run deploy
+      env:
+        CI: true
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
