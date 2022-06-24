@@ -1,3 +1,5 @@
+@use "sass:math";
+
 // Theme
 // ---------------------------------------------------------------------------
 
@@ -92,21 +94,21 @@ blockquote {
 }
 iframe {
   $scale: 1.5;
-  height: calc(#{100%/$scale} - 1.2em);
-  width: calc(100%/$scale);
+  height: calc((100% / $scale) - 1.2em);
+  width: calc(100% / $scale);
   border: 0;
   transform: scale($scale);
   transform-origin: 0 0;
   &.no-zoom {
     $scale: 1.0;
     transform: scale($scale);
-    height: calc(#{100%/$scale} - 1.2em);
+    height: calc((100%/$scale) - 1.2em);
     width: calc(100%/$scale);
   }
   &.smaller {
     $scale: 1.2;
     transform: scale($scale);
-    height: calc(#{100%/$scale} - 1.2em);
+    height: calc((100%/$scale) - 1.2em);
     width: calc(100%/$scale);
   }
 }
@@ -366,7 +368,7 @@ table {
 }
 
 @for $i from 1 through 12 {
-  .col-#{$i} {width: 100% / 12 * $i; }
+  .col-#{$i} {width: math.div(100%, 12) * $i; }
 }
 
 @for $i from 1 through 20 {
@@ -491,7 +493,7 @@ table {
         margin: 0;
         margin-left: $margin;
         border-left: $border-width solid $border-color;
-        width: calc(80% - #{$margin/2} + #{$border-width/2});
+        width: calc(80% - math.div($margin, 2) + math.div($border-width, 2));
         text-align: left;
         float: right;
 
@@ -502,7 +504,7 @@ table {
         &::after {
           content: '';
           display: block;
-          width: $margin/2;
+          width: math.div($margin, 2);
           height: $border-width;
           background: $border-color;
           position: absolute;

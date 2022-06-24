@@ -54,6 +54,10 @@ KILI34
 class: hide-handle, middle, full, center
 background-image: url(images/remote.jpg)
 
+.full-layer.top.left.space-left[
+.w-20.responsive[![](images/voxxed-lu-logo.png)]
+]
+
 .title-new[
 # .baseline.light-text.sketch.large[Highly available, .alt-text[distributed] <br>& resilient software... .alt-text[team]]<br><br>&nbsp;
 ]
@@ -74,7 +78,7 @@ background-image: url(images/7laux.jpg)
 
 ???
 
-Je suis un dev qui vient de la région Grenobloise, et j'aime decouvert que j'aimais beaucoup partager avec les autres. Il y a un peu plus de 2 ans maintenant, j'ai voulu tenter un changement pour un poste qui m'attirait de plus en plus, celui de Developer Advocate. Le pb, c'est que:
+Je suis un dev qui vient de la région Grenobloise, et j'aime decouvert que j'aimais beaucoup partager avec les autres. Il y a un peu plus de 3 ans maintenant, j'ai voulu tenter un changement pour un poste qui m'attirait de plus en plus, celui de Developer Advocate. Le pb, c'est que:
 - c'est un club très fermé, avec peu de postes ouverts
 - la quasi totalité des postes en France sont à Paris
 
@@ -628,6 +632,7 @@ We need to tell when something's wrong!
 - Share success (Kudos!)
 - Team activities (Games, Cooking, Remote coffee)
 - BREAKS!
+- Aristote: L'humain est un animal social
 
 ---
 
