@@ -12,6 +12,9 @@ set -e
 rm -rf dist
 
 # Presentations to export
+mk_slides state-management state-management.md
+mk_slides pwa pwa-new.md
+mk_slides contribute-oss contribute-oss.md
 mk_slides azure-intro azure-intro.md
 mk_slides async-work async-work.md
 
