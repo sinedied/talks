@@ -60,7 +60,7 @@ class: middle, center, hide-handle
 
 ???
 
-ca fait plus de 10 ans que je baigne dans le monde du web...
+ca fait plus de 15 ans que je baigne dans le monde du web...
 je ne vais pas vous refaire tout l'historique, car simplement...
 
 ---
@@ -547,6 +547,7 @@ class: center, hide-handle
 
 .responsive[![](images/manifest-can.png)]
 .no-margin[
+  <br>
   [caniuse.com/web-app-manifest](https://caniuse.com/web-app-manifest)
 ]
 
@@ -835,12 +836,27 @@ class: contain, dark, hide-handle
 
 ---
 
+class: center
+
+.head.dark[
+# .fit[![](images/pwa-color-w.png)] PWA native integrations demo
+]
+.head-spacer[]
+
+.no-margin.up[
+.w-60.responsive[![](images/build-demo.png)]
+]
+
+.large[https://aka.ms/build/pwa-demo]<br>
+(in French with CC)
+
+---
+exclude: true
 class: center, big-text, middle, hide-handle, impact
 
 ![](images/shouldbe-pwa.png)
 
 .fab.fa-twitter[] @ShouldBePWA
-
 ---
 
 class: impact, middle, cover, overlay-dark
@@ -849,7 +865,9 @@ background-image: url(images/wormhole.jpg)
 
 ## .baseline.large[The Web gives .alt-text[freedom]]
 ## .baseline.large[Speed is a form of .alt-text[accessibility]]
-## .baseline.large[User experience drives .alt-text[success]]
+## .baseline.large[User experience drives .alt-text[success]] -->
+
+
 
 ---
 
