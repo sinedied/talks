@@ -55,7 +55,7 @@ class: hide-handle, middle, full, center
 background-image: url(images/remote.jpg)
 
 .full-layer.top.left.space-left[
-.w-10.responsive[![](images/sunny-tech.svg)]
+.w-20.responsive[![](images/devoxx-logo-white.png)]
 ]
 
 .title-new[
@@ -639,5 +639,5 @@ We need to tell when something's wrong!
 class: middle, center, hide-handle
 
 .w-70.responsive[
-<object data="images/thanks-fb.svg"></object>
+<object data="images/thanks.svg"></object>
 ]
