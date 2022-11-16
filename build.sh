@@ -17,6 +17,7 @@ mk_slides pwa pwa-new.md
 mk_slides contribute-oss contribute-oss.md
 mk_slides azure-intro azure-intro.md
 mk_slides async-work async-work.md
+mk_slides chaos chaos.md
 
 # Generate index
 echo "Generating index..."

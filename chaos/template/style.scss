@@ -75,6 +75,18 @@ blockquote {
   margin: 1em 0;
   & > p { margin: 0; }
 
+  .light-text & {
+    color: $light;
+    text-shadow: 0 0 .5em rgba(0,0,0,.6),
+      0 0 1em rgba(0,0,0,1),
+      0 0 1em rgba(0,0,0,1),
+      0 0 1em rgba(0,0,0,1);
+  }
+
+  .inline-block & {
+    margin-left: -2.5em;
+  }
+
   .quote & {
     position: relative;
     border-left: none;
@@ -1054,6 +1066,16 @@ hr {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	animation: hue 15s infinite linear;
+}
+
+.credits {
+  position: absolute;
+  top: auto;
+  bottom: .5em;
+  right: 2em;
+  left: 2em;
+  font-size: 0.7em;
+  opacity: 0.7;
 }
 
 @keyframes hue {

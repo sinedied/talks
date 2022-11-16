@@ -89,9 +89,6 @@ self organized -> agile -> hard scrum -> self organized teams
   * write for yourself
   * what you'll probably forgot in a few months!
 
-
-Ref: cathédrale et le bazaar
-
 -->
 
 ---
@@ -314,9 +311,9 @@ rough('.striked', { type: 'crossed-off', color: '#f22', strokeWidth: 4 }, 2000);
 class: impact, big-text, all-sketch, middle, clist, center
 # .alt-text[Agenda]
 
-1. Context and project tasks
+1. Context and tasks
 2. .a[Impact of .chaos[chaos]]
-2. Demos
+2. Examples
 3. Tools and tips
 
 ???
@@ -332,9 +329,9 @@ class: impact, big-text, all-sketch, middle, clist, center
 class: impact, big-text, all-sketch, middle, clist, center
 # .alt-text[Agenda]
 
-1. Context and project tasks
+1. Context and tasks
 2. .a[Impact of .chaos[chaos]]
-2. Demos
+2. Examples
 3. Tools and tips
 
 <script>
@@ -348,6 +345,121 @@ rough('.chaos', { type: 'underline', color: '#FFB900', strokeWidth: 4 }, 0);
   WANT TO / NEED TO progress bar
 
 ## Chaos at work, work-life ⚖️ and efficiency impact
+
+---
+
+class: all-sketch, center
+# Project development cycle
+.w-95.responsive[
+<object data="images/dev-cycle.svg"></object>
+]
+
+---
+
+class: all-sketch, center, middle
+# Time allocation vs tasks
+.responsive[
+<object data="images/want-need.svg"></object>
+]
+
+???
+- Besoin de passer du temps vs envie de passer du temps
+
+---
+
+class: all-sketch, center, middle
+# Time allocation vs tasks
+.responsive[
+<object data="images/want-need-2.svg"></object>
+]
+
+???
+- Most of the time in a project is spent on the "need to" tasks
+
+---
+
+class: all-sketch, center, middle
+# Time allocation vs tasks
+.responsive[
+<object data="images/want-need-3.svg"></object>
+]
+
+???
+- OSS at the beginning
+
+---
+
+class: all-sketch, huge-text, center, middle, full, cover
+background-image: url(./images/sonic-chaos.jpg)
+
+# CHAOS<br><br>
+
+---
+
+class: all-sketch, center, middle
+# .large[What's .alt-text[chaos]?]
+
+.quote.large[
+> Chaos is a state of disorder and confusion.<br><br>
+> ― Collin's English Dictionary
+]
+
+???
+Clairement, ca s'applique bien à la définition de jeune parent.
+Par contre ca nous aide pas beaucoup ici.
+
+---
+
+class: contain, dark
+background-image: url(./images/oops.jpg)
+
+???
+Clairement, ca s'applique bien à la définition de jeune parent.
+Par contre ca nous aide pas beaucoup ici.
+
+TODO: pic jeune parent confus
+
+---
+
+class: all-sketch, center, middle, clist
+# .baseline[.large[What's .alt-text[chaos]?]<br>.small[(*in science*)]]
+
+.quote.large[
+> Chaos implies the existence of .chaos[unpredictable] or random behavior.
+]
+
+<script>
+rough('.chaos', { type: 'underline', color: '#FFB900', strokeWidth: 4 }, 500);
+</script>
+
+---
+
+exclude: true
+class: all-sketch, big-text, center, middle, clist
+
+# 3 principles
+- Extreme sensitivity to initial conditions
+- Cause and effect are not proportional
+- Nonlinearity
+
+???
+- Si mon fils joue au foot dans le jardin ou dans le salon à coté de la TV...
+- TODO FIND anecdotical example!!!!!!!!!! 
+- 1 enfant vs 2 enfants, c'est pas 2x le chaos...
+
+---
+
+class: all-sketch, big-text, center, middle, clist
+# .small[Chaos in software projects]
+
+- Chaos engineering
+- Monkey testing
+- Last minute changes
+- Company reorganizations
+- ...
+
+???
+- Mise en place des méthodes agiles :D
 
 ---
 
@@ -377,44 +489,82 @@ class: all-sketch, center
 
 ---
 
-class: all-sketch, center
+class: impact, big-text, all-sketch, middle, center
+# Benefits of chaos?
 
-# Project development cycle
+???
+C'est aussi le lien en parent, OSS et le travail
+
+- Formulé autrement: quel est l'intéret de ne pas imposer un ordre ou des contraintes strictes?
+
+---
+
+class: huge-text, all-sketch, middle, center
+# .red-text[Survival]
+
+???
+- C'est de faire appel, à plus ou moins fort degré, à notre instinct de survie
+- le mot est fort, mais c'est bien ce qui pousse a un changement de priorités
+- ca force à s'adapter!
+- ca aide à éliminer les tâches/process inutiles
+- Moins d'affect, plus de pragmatisme
+
+---
+
+class: all-sketch, center
+# Project development cycle?
 .w-95.responsive[
 <object data="images/dev-cycle.svg"></object>
 ]
+???
+Repartons de la base
 
----
-
-class: all-sketch, center
-
-# Is it worth the time?
-
-.w-55.responsive[![](images/worth.png)]<br>
-.small.em-text[https://xkcd.com/1205/]
-
----
-
-class: all-sketch, center
-
-# Time vs results
-
-.w-70.responsive[![](images/time-vs-quality.jpg)]<br>
-.small.em-text[Mo Selim Art - https://youtu.be/x9wn633vl_c]
+- Si je vous dis qu'on peut releaser 5 fois par jour, n'importe quand (meme un vendredi)?
+- Sur que votre process va changer!
 
 ---
 
 class: alt, big-text, all-sketch, middle, clist, center
 
-# .light-text[DEMO]
+# .light-text[Examples]
 
 <script>
 rough('.light-text', { type: 'underline', color: '#f22', padding: 10, strokeWidth: 4 });
 </script>
 
 ???
+- https://github.com/azure/static-web-apps-cli
+  * codespaces/devcontainers
+  * issues/PRs
+  * dependencies/audit
+    - talk about dependabot hell / who has automated dep updates?
+  * CI + release
+  * conventional commits, changelog + manual release
+  * talks about SWA Deploy GH Action v1 breaking change
+  
+- https://github.com/angular/angular
+  * monorepo
+  * issues templates + outil de debug
+  * commit message format
+  * bot lock issues
+  * CODEOWNERS files (.pullapprove)
 
-Repo: TODO
+- https://github.dev/sinedied/devto-cli
+  * github .
+  * typescript
+  * format/lint: xo
+  * commitizen / semantic-release
+  * update & publish release locally?
+
+- https://github.com/jdubois/jhipster-lite/tree/env-demo
+  * terraform  IaC
+
+- https://github.com/sinedied/azure-checkin
+  * CD / infra as code
+
+- https://github.com/Azure/aca-java-runtimes-workshop
+  * SHA versioning
+
 - Codespaces
 - Update dependencies
 - Create PR
@@ -425,8 +575,181 @@ Repo: TODO
 
 ---
 
-class: middle, center, hide-handle
+class: huge-text, all-sketch, middle, center
+# Chaos<br>.small[⬇]
+# Automation?
+
+???
+I was surprised to find to find how much more automation is used on OSS vs the company projects I worked on, including enterprise OSS projects!
+
+- Update dependencies->
+   dependabot, Snyk (greenkeeper)
+   -> screenshort dependabot hell
+   => reduce 3rd party dependencies to a minimum!
+- Define version -> semver semantic versioning, calver, build #, git hash... XXX no passionated debates
+- Create PR -> PR template, bots
+- Run tests -> CI, test envs, pre-commit hooks [linters, code formatters, tests]
+- Update infra -> terraform, pulumi, bicep, ... IaC / DB migrations
+- Changelog -> conventional commits, changelog generator
+- Release -> semantic release, release-it, release drafter, ...
+
+---
+
+class: all-sketch, center, clist
+# Examples of induced changes
+
+- Triage -> templates, bots
+- Dev environment setup/switch -> cloud IDE, devcontainers
+- Conventional commits
+- TypeScript
+- xo (prettier + eslint + more)
+- Git pre-commit hooks<br>
+  - xo
+  - commitlint
+- Pull requests
+  - templates
+  - bots (auto-assign, auto-label, auto-close, auto-merge)
+- GitHub Actions<br>
+  * Build & test (CI)
+  * Release
+- Semantic release<br>
+  * version
+  * changelog
+  * NPM publish
+  * GitHub release
+
+---
+
+class: all-sketch, center
+
+# Is it worth the time?
+
+.w-55.responsive[![](images/worth.png)]<br>
+.small.em-text[https://xkcd.com/1205/]
+
+???
+- Souvent le ratio/temps passé vs gain est pas évident à évaluer
+- Effet d'echelle
+- Impact sur la motivation
+* Anecdote GHA deploiement breaking change v1 -> v2
+
+---
+
+class: all-sketch, center
+# Time vs results
+
+.w-70.responsive[![](images/time-vs-quality.jpg)]<br>
+.small.em-text[Mo Selim Art - https://youtu.be/x9wn633vl_c]
+
+???
+Not every piece of code needs to be perfect
+"Good enough" is sometimes better than perfect
+
+Example: this slides! made with backslide
+
+- Bad ex: twitter with 8$ in a week
+- Good ex: rien a manger, pates au beurre en 7min
+
+---
+
+class: all-sketch, center, middle
+# Chaos is .not[not] a bad thing
+
+<script>
+rough('.not', { type: 'underline', color: '#f22', padding: 0, strokeWidth: 4 });
+</script>
+
+???
+It highlights the painful parts, and the amount of efforts needed in tasks
+
+---
+
+class: all-sketch, center, middle
+# It's already part of your projects!
+
+???
+Build qui casse, sprint qui change, collegue qui part, ...
+
+---
+
+class: all-sketch, center, middle
+# .use[Use] it instead of fighting it!
+
+<script>
+rough('.use', { type: 'circle', color: '#f22', padding: 15, strokeWidth: 4 });
+</script>
+
+???
+- Changes and uncertainty are part of life, and we can't avoid them. Just like in our projects.
+Trying to over-engineer and over-structure everything is not the answer, something a bit of that chaos is just what you need to better adjust your priorities.
+- Allowing for some chaos also helps responsibilize the team, and make them more autonomous.
+
+---
+
+class: all-sketch, bottom, center, full
+background-image: url(images/art.jpg)
+
+.inline-block.quote.large.light-text[
+> Out of chaos comes order<br>
+> ― Friedrich Nietzsche
+]
+
+.credits.left[
+  Art by ddraw on Freepik
+]
+
+---
+
+class: middle, center, hide-handle, clist
 
 .w-70.responsive[
 <object data="images/thanks.svg"></object>
 ]
+
+???
+Feedback please!
+
+---
+
+class: all-sketch
+# References (1/3)
+- [The Cathedral and the Bazaar](http://www.catb.org/~esr/writings/cathedral-bazaar/) (ebook)
+- Triage
+  * [GitHub Issue and Pull Request templates](https://docs.github.com/en/github/building-a-strong-community/about-issue-and-pull-request-templates) (docs)
+  * [Awesome Issue and PR templates](https://github.com/devspace/awesome-github-templates) (repo)
+- Dev environment setup/switch
+  * [GitHub Codespaces](https://github.com/features/codespaces) / [Gitpod](https://www.gitpod.io/)
+  * [Developing inside a Container](https://code.visualstudio.com/docs/devcontainers/containers) (docs)
+- Find vulnerabilities and update dependencies
+  * [Dependabot](https://github.com/features/security) / [Snyk](https://snyk.io/)
+- Tests and CI
+  * [GitHub Actions](https://github.com/features/actions) / [Gitlab CI](https://docs.gitlab.com/ee/ci/)
+  * [Prettier pre-commit hook](https://prettier.io/docs/en/precommit.html) (docs)
+
+---
+
+class: all-sketch
+# References (2/3)
+- Pull requests and reviews
+ - [Pull approve](https://pullapprove.com/)
+ - [GitHub CODEOWNERS](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-ownerss) (docs)
+ - [Gitlab CODEOWNERS](https://docs.gitlab.com/ee/user/project/code_owners.html) (docs)
+- Define version
+  * [SemVer (Semantic Versioning)](https://semver.org/) / [CalVer (Calendar Versioning)](https://calver.org/)
+- Infrastructure as Code
+  * [Terraform](https://www.terraform.io/) / [Pulumi](https://www.pulumi.com/) / [Bicep](https://learn.microsoft.com/azure/azure-resource-manager/bicep/overview?tabs=bicep)
+
+---
+
+class: all-sketch
+# References (3/3)
+- Release
+  * [Semantic Release](https://github.com/semantic-release/semantic-release) / [Release-it](https://github.com/release-it/release-it) / [Release Drafter](https://github.com/release-drafter/release-drafter)
+  * Shareable configs I used for my projects:
+      - [Automated package publication to NPM and GitHub](https://github.com/sinedied/semantic-release-npm-github)
+      - [Node.js package versioning with changelog generation](https://github.com/sinedied/semantic-release-node-prep)
+- Changelog
+  * [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) (docs)
+  * [Semantic Release Changelog plugin](https://github.com/semantic-release/changelog) (repo)
+  * [GitHub Changelog Generator](https://github.com/github-changelog-generator/github-changelog-generator) (repo)
+  * [Release Please](https://github.com/googleapis/release-please) (repo)
