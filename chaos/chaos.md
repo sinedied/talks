@@ -92,7 +92,7 @@ self organized -> agile -> hard scrum -> self organized teams
 -->
 
 ---
-title: Highly available, distributed & resilient software... team
+title: Embracing chaos for more efficient projects
 class: animation-fade
 layout: true
 
