@@ -100,6 +100,38 @@ background-image: url(images/chaos5.jpg)
 .tmatch { font-size: 1.17em; }
 .grad-text { color: #F25022; }
 </style>
+???
+- https://github.com/azure/static-web-apps-cli
+  * codespaces/devcontainers
+  * issues/PRs
+  * dependencies/audit
+    - talk about dependabot hell / who has automated dep updates?
+  * CI + release
+  * conventional commits, changelog + manual release
+  * talks about SWA Deploy GH Action v1 breaking change
+  
+- https://github.com/angular/angular
+  * monorepo
+  * issues templates + outil de debug
+  * commit message format
+  * bot lock issues
+  * CODEOWNERS files (.pullapprove)
+
+- https://github.com/sinedied/devto-cli
+  * github .
+  * typescript
+  * format/lint: xo
+  * commitizen / semantic-release
+  * update & publish release locally?
+
+- https://github.com/jdubois/jhipster-lite/tree/env-demo
+  * terraform  IaC
+
+- https://github.com/sinedied/azure-checkin
+  * CD / infra as code
+
+- https://github.com/Azure/aca-java-runtimes-workshop
+  * SHA versioning
 
 ---
 
@@ -545,7 +577,7 @@ rough('.light-text', { type: 'underline', color: '#f22', padding: 10, strokeWidt
   * bot lock issues
   * CODEOWNERS files (.pullapprove)
 
-- https://github.dev/sinedied/devto-cli
+- https://github.com/sinedied/devto-cli
   * github .
   * typescript
   * format/lint: xo
