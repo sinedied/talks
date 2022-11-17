@@ -133,6 +133,9 @@ class: big-text, all-sketch, clist, center
 - Startup
 - Big tech company
 - Open source (maintainer & contributor)
+???
+Je vais commencer par parler un peu de mon expérience,
+J'ai la chance d'avoir pu travailler dans des contextes très différents
 --
 
 - .dad.relative[**Dad 🍼**]
@@ -140,6 +143,8 @@ class: big-text, all-sketch, clist, center
 <script>
 rough('.dad', { type: 'highlight', color: '#fd4' })
 </script>
+???
+Mais l'experience la plus importante, c'est celle là
 
 ---
 
@@ -155,8 +160,11 @@ class: big-text, all-sketch, middle, center
   .w-50.responsive[![](images/oliver.jpg)]
 ]
 ???
+- Voici mon 1er fils Oliver!
+- Il est un peu plus grand maintenant, la photo date de 2015
+- Si je vous parle de cela, c'est parce devenir papa a eu un gros impact sur ma vie de dev
 
-Ceci n'est pas talk sur la parentalité!
+(Ceci n'est pas talk sur la parentalité!)
 
 ---
 
@@ -242,6 +250,10 @@ class: all-sketch, middle, center
 > Life is nothing without a little .dark-text.gradient-text[chaos] to make it interesting.<br><br>
 > ― Amelia Atwater-Rhodes
 ]
+???
+Bon je vous parle ici uniquement sur un certains prisme de cet impact!
+- Bien sur qu'à coté il y a eu bien d'autres changements positifs!
+- Notamment un petit frere venu un peu plus tard
 
 ---
 
@@ -254,6 +266,8 @@ rough('.circled', { type: 'circle', color: '#f22', strokeWidth: 4, padding: 50, 
 </script>
 
 ???
+- Aujourd'hui j'ai la chance de pouvoir passer une grande partie de mon temps pro sur de l'OSS,
+ca n'a pas toujours été le cas
 - Envie de continuer!
 - Mais... comment?
 
@@ -283,6 +297,7 @@ rough('.striked', { type: 'crossed-off', color: '#f22', strokeWidth: 4 }, 2000);
 
 - Ceci n'est pas un talk sur la gestion du temps!
 - Je serais incapable de vous donner des conseils là-dessus!
+- J'ai essayé a peu près toutes les methodes de TM: GTD, pomodoro, todo...
 
 ---
 
@@ -295,12 +310,10 @@ class: impact, big-text, all-sketch, middle, clist, center
 3. Tools and tips
 
 ???
-## Why am I telling you my life?
+Bref, why am I telling you my life?
 - Au dela de la vie perso, avoir des contraintes fortes sur le temps, c'est le cas dans le monde du travail
   * avec une difference: on a pas le choix sur certains aspects (kids), le reste c'est: ce qu'on a envie de faire
-  WANT TO / NEED TO progress bar
-
-## Chaos at work, work-life ⚖️ and efficiency impact
+- work-life ⚖️
 
 ---
 
@@ -317,12 +330,7 @@ rough('.chaos', { type: 'underline', color: '#FFB900', strokeWidth: 4 }, 0);
 </script>
 
 ???
-## Why am I telling you my life?
-- Au dela de la vie perso, avoir des contraintes fortes sur le temps, c'est le cas dans le monde du travail
-  * avec une difference: on a pas le choix sur certains aspects (kids), le reste c'est: ce qu'on a envie de faire
-  WANT TO / NEED TO progress bar
 
-## Chaos at work, work-life ⚖️ and efficiency impact
 
 ---
 
@@ -331,6 +339,12 @@ class: all-sketch, center
 .w-95.responsive[
 <object data="images/dev-cycle.svg"></object>
 ]
+???
+- This is the heart of the talk, I tried to generalize it as much as possible
+- A focus on the dev cycle tasks
+- I used GitHub naming (issues, PRs)
+- Explain
+- Important VALUE!
 
 ---
 
@@ -342,6 +356,8 @@ class: all-sketch, center, middle
 
 ???
 - Besoin de passer du temps vs envie de passer du temps
+
+(pas tache envie vs pas envie)
 
 ---
 
@@ -364,13 +380,16 @@ class: all-sketch, center, middle
 
 ???
 - OSS at the beginning
+- What we should seek in a project!
 
 ---
 
 class: all-sketch, huge-text, center, middle, full, cover
 background-image: url(./images/sonic-chaos.jpg)
-
 # CHAOS<br><br>
+
+???
+Of course, there's always more fun in a project
 
 ---
 
@@ -450,7 +469,6 @@ class: all-sketch, center
 .small.em-text[Inspired by https://blog.pragmaticengineer.com/project-management-at-big-tech/]
 
 ???
-
 - Attention, tentative de vulgarisation!
 - General idea, not a ground thruth
 - What about OSS? (see next slide)
@@ -499,11 +517,11 @@ Repartons de la base
 
 - Si je vous dis qu'on peut releaser 5 fois par jour, n'importe quand (meme un vendredi)?
 - Sur que votre process va changer!
+- OSS -> issues n'importe qd, PRs le WE, release n'importe quand
 
 ---
 
 class: alt, big-text, all-sketch, middle, clist, center
-
 # .light-text[Examples]
 
 <script>
@@ -543,14 +561,6 @@ rough('.light-text', { type: 'underline', color: '#f22', padding: 10, strokeWidt
 - https://github.com/Azure/aca-java-runtimes-workshop
   * SHA versioning
 
-- Codespaces
-- Update dependencies
-- Create PR
-- Update infra
-- Conventional commits
-- Semantic release
-- Release in GH
-
 ---
 
 class: huge-text, all-sketch, middle, center
@@ -560,7 +570,7 @@ class: huge-text, all-sketch, middle, center
 ???
 I was surprised to find to find how much more automation is used on OSS vs the company projects I worked on, including enterprise OSS projects!
 
-- Update dependencies->
+<!-- - Update dependencies->
    dependabot, Snyk (greenkeeper)
    -> screenshort dependabot hell
    => reduce 3rd party dependencies to a minimum!
@@ -569,7 +579,7 @@ I was surprised to find to find how much more automation is used on OSS vs the c
 - Run tests -> CI, test envs, pre-commit hooks [linters, code formatters, tests]
 - Update infra -> terraform, pulumi, bicep, ... IaC / DB migrations
 - Changelog -> conventional commits, changelog generator
-- Release -> semantic release, release-it, release drafter, ...
+- Release -> semantic release, release-it, release drafter, ... -->
 
 ---
 
@@ -579,6 +589,8 @@ class: all-sketch, center, clist
 <object data="images/example-tools.svg"></object>
 ]
 ???
+* Not exhaustive
+
 - Triage -> templates, bots
 - Dev environment setup/switch -> cloud IDE, devcontainers
 - Conventional commits
@@ -641,7 +653,7 @@ rough('.not', { type: 'underline', color: '#f22', padding: 0, strokeWidth: 4 });
 </script>
 
 ???
-It highlights the painful parts, and the amount of efforts needed in tasks
+It highlights the painful/boring/difficult parts, and the amount of efforts needed in tasks
 
 ---
 
@@ -661,7 +673,7 @@ rough('.use', { type: 'circle', color: '#f22', padding: 15, strokeWidth: 4 });
 </script>
 
 ???
-- Changes and uncertainty are part of life, and we can't avoid them. Just like in our projects.
+- Changes and uncertainty are part of life, and we can't avoid them, we can't control them. Just like in our projects.
 Trying to over-engineer and over-structure everything is not the answer, something a bit of that chaos is just what you need to better adjust your priorities.
 - Allowing for some chaos also helps responsibilize the team, and make them more autonomous.
 
