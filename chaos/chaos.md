@@ -1,10 +1,6 @@
 exclude: true
 
 <!--
-D&D map: chaotics neutral good evil, OSS/closed source/ SCRUM etc
-
-Witcher references (chaos)
-
 Embracing chaos for more efficient projects
 Une touche de chaos pour plus d'efficacité
 
@@ -13,31 +9,19 @@ What do young parents and open source softwares have in common? Not much at firs
 With my triple hat of dad, open source maintainer, and enterprise developer, I will share my experience, the mistakes I made and everything I learnt from it for the benefit of prioritization, time management and tools for different projects.
 
 ### Benefits
-
 - Understand the intrinsic functioning of open source projects
 - Discover simple ways to automate often manual tasks (onboarding, documentation, updating dependencies, writing a changelog, sorting the backlog...)
 - Find new sources of inspiration to remove/modernize/simplify the dev cycle
 - Know how to wisely introduce a little chaos into your project, to stimulate the creativity and efficiency of the team :)
 
 # 1. Intro
-
-- Can you do this?
-
-## Me before
-## Me after kids
-## Making plan -> ~~Plans~~
-
 ## Why am I telling you my life?
 - Au dela de la vie perso, avoir des contraintes fortes sur le temps, c'est le cas dans le monde du travail
   * avec une difference: on a pas le choix sur certains aspects (kids), le reste c'est: ce qu'on a envie de faire
   WANT TO / NEED TO progress bar
-
 - Projet logiciel
 
 ## Need to      / ## Want to
-
-
-
 ## Context: research/esn/startup/microsoft/oss
 
 ## Some OSS dev tasks
@@ -58,20 +42,8 @@ With my triple hat of dad, open source maintainer, and enterprise developer, I w
 * **Oops, something broke!**
 * go to step 1
 
-# 2. Time vs efficiency
-## More time, less efficiency
-Ex du dessin Spiderman
-
-## Fake study
-micro -> small -> big -> gafam
-self organized -> agile -> hard scrum -> self organized teams
-
 ## (A litlle) Chaos can do good
 ## More time =/= better
-
-- 
-
-## 3. Demo
 
 ## 4. Tools
 - dev containers, cloud dev env
@@ -89,6 +61,9 @@ self organized -> agile -> hard scrum -> self organized teams
   * write for yourself
   * what you'll probably forgot in a few months!
 
+D&D map: chaotics neutral good evil, OSS/closed source/ SCRUM etc
+Witcher references (chaos)
+
 -->
 
 ---
@@ -102,16 +77,15 @@ layout: true
 
 ---
 
-class: hide-handle, middle, full
-background-image: url(images/chaos-bg.jpg)
+class: hide-handle, middle, full, center, more-shadow
+background-image: url(images/chaos5.jpg)
 
-.full-layer.with-margins[
-.w-15.responsive[![](images/agile-gre.png)]
+.full-layer.with-margins.left[
+.w-15.responsive.img-shadow[![](images/agile-gre.png)]
 ]
 
 .title-new[
-# .baseline.light-text.sketch.bit-larger[Embracing .alt-text[chaos]<br>for more efficient projects]
-<!-- <br>&nbsp; -->
+# .baseline.sketch.big[Embracing .grad-text[chaos]<br>].tmatch.sketch[for more efficient projects]
 ]
 
 .full-layer.who.text-right.small.middle.light-text.darkened[
@@ -121,6 +95,11 @@ background-image: url(images/chaos-bg.jpg)
   |
   @sinedied
 ]
+
+<style>
+.tmatch { font-size: 1.17em; }
+.grad-text { color: #F25022; }
+</style>
 
 ---
 
@@ -165,7 +144,6 @@ rough('.dad', { type: 'highlight', color: '#fd4' })
 ---
 
 class: big-text, all-sketch, middle, center
-
 .col-6.float-left[
   &nbsp;
 ]
@@ -576,7 +554,7 @@ rough('.light-text', { type: 'underline', color: '#f22', padding: 10, strokeWidt
 ---
 
 class: huge-text, all-sketch, middle, center
-# Chaos<br>.small[⬇]
+# Chaos<br>.small.alt-text[⬇]
 # Automation?
 
 ???
@@ -597,7 +575,10 @@ I was surprised to find to find how much more automation is used on OSS vs the c
 
 class: all-sketch, center, clist
 # Examples of induced changes
-
+.w-85.responsive[
+<object data="images/example-tools.svg"></object>
+]
+???
 - Triage -> templates, bots
 - Dev environment setup/switch -> cloud IDE, devcontainers
 - Conventional commits
@@ -697,6 +678,8 @@ background-image: url(images/art.jpg)
 .credits.left[
   Art by ddraw on Freepik
 ]
+???
+L'ordre vient du chaos
 
 ---
 

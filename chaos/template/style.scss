@@ -1,4 +1,5 @@
 @use "sass:math";
+@use "sass:color";
 
 // Theme
 // ---------------------------------------------------------------------------
@@ -231,6 +232,7 @@ table {
 
 .impact {
   background-color: $primary;
+  background: linear-gradient(110deg, $primary, $blue);
   vertical-align: middle;
   text-align: center;
   &, h1, h2 { color: $text-light; }
@@ -304,7 +306,10 @@ table {
 .dark { background-color: $dark; }
 .dark-blue { background-color: $dark-blue; }
 .primary { background-color: $primary; };
-.alt { background-color: $secondary; };
+.alt {
+  background-color: $secondary;
+  background: linear-gradient(110deg, color.adjust($secondary, $hue: -5), $secondary);
+};
 .red { background-color: $red; }
 .primary-text, .primary-text a { color: $primary; }
 .alt-text { color: $secondary; };
@@ -1081,6 +1086,10 @@ hr {
 @keyframes hue {
   from { filter: hue-rotate(0deg); }
   to { filter: hue-rotate(-360deg); }
+}
+
+.img-shadow img {
+  filter: drop-shadow(0 0 0.5em rgba(0,0,0,.6))drop-shadow(0 0 0.5em rgba(0,0,0,.6));
 }
 
 // Fix PDF print with chrome
