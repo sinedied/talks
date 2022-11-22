@@ -101,8 +101,12 @@ background-image: url(images/chaos5.jpg)
 .grad-text { color: #F25022; }
 </style>
 ???
+Bienvenue dans ce talk ou on va joyeusement parler chaos!
+
+LAUNCH CHRONO!
+
 - https://github.com/azure/static-web-apps-cli
-  * codespaces/devcontainers
+  * codespaces/devcontainers -> open in tab before!!!
   * issues/PRs
   * dependencies/audit
     - talk about dependabot hell / who has automated dep updates?
@@ -116,6 +120,9 @@ background-image: url(images/chaos5.jpg)
   * commit message format
   * bot lock issues
   * CODEOWNERS files (.pullapprove)
+
+- https://github.com/ngx-rocket/generator-ngx-rocket
+  * semantic release bot closed issue
 
 - https://github.com/sinedied/devto-cli
   * github .
@@ -260,6 +267,11 @@ class: huge-text, all-sketch, middle, center, no-animation
 rough('.strikedfast', { type: 'strike-through', color: '#f22', strokeWidth: 4, animate: false }, 0);
 rough('.striked', { type: 'strike-through', color: '#f22', strokeWidth: 4 }, 0);
 </script>
+???
+par ex se dire qu'on tranquillement se prevoir la semaine pour préparer son talk, mais qu'on enchaine:
+
+- enfant positif au covid
+- greve des profs/periscolaire
 
 ---
 
@@ -274,6 +286,11 @@ class: huge-text, all-sketch, middle, center, no-animation
 rough('.strikedfast', { type: 'strike-through', color: '#f22', strokeWidth: 4, animate: false }, 0);
 rough('.striked', { type: 'strike-through', color: '#f22', strokeWidth: 4 }, 0);
 </script>
+???
+par ex se dire qu'on tranquillement se prevoir la semaine pour préparer son talk, mais qu'on enchaine:
+
+- enfant positif au covid
+- greve des profs/periscolaire
 
 ---
 
@@ -300,6 +317,7 @@ rough('.circled', { type: 'circle', color: '#f22', strokeWidth: 4, padding: 50, 
 ???
 - Aujourd'hui j'ai la chance de pouvoir passer une grande partie de mon temps pro sur de l'OSS,
 ca n'a pas toujours été le cas
+- Et a un moment donné la question se pose entre passer sa soirée/WE à OSS vs avec tes enfants
 - Envie de continuer!
 - Mais... comment?
 
@@ -329,7 +347,6 @@ rough('.striked', { type: 'crossed-off', color: '#f22', strokeWidth: 4 }, 2000);
 
 - Ceci n'est pas un talk sur la gestion du temps!
 - Je serais incapable de vous donner des conseils là-dessus!
-- J'ai essayé a peu près toutes les methodes de TM: GTD, pomodoro, todo...
 
 ---
 
@@ -342,10 +359,11 @@ class: impact, big-text, all-sketch, middle, clist, center
 3. Tools and tips
 
 ???
+7 min !
+
 Bref, why am I telling you my life?
 - Au dela de la vie perso, avoir des contraintes fortes sur le temps, c'est le cas dans le monde du travail
   * avec une difference: on a pas le choix sur certains aspects (kids), le reste c'est: ce qu'on a envie de faire
-- work-life ⚖️
 
 ---
 
@@ -360,9 +378,6 @@ class: impact, big-text, all-sketch, middle, clist, center
 <script>
 rough('.chaos', { type: 'underline', color: '#FFB900', strokeWidth: 4 }, 0);
 </script>
-
-???
-
 
 ---
 
@@ -400,7 +415,7 @@ class: all-sketch, center, middle
 ]
 
 ???
-- Most of the time in a project is spent on the "need to" tasks
+- A lot of the time in a project is spent on the "need to" tasks
 
 ---
 
@@ -412,7 +427,19 @@ class: all-sketch, center, middle
 
 ???
 - OSS at the beginning
-- What we should seek in a project!
+- Then equilibrium comes by itself!
+
+---
+
+class: contain, dark, contain, center
+background-image: url(./images/run.jpg)
+
+.credits.light-text[
+  r/ProgrammerHumor
+]
+
+???
+Sauf qu'on finit toujours par se faire rattrapper
 
 ---
 
@@ -445,8 +472,6 @@ background-image: url(./images/oops.jpg)
 ???
 Clairement, ca s'applique bien à la définition de jeune parent.
 Par contre ca nous aide pas beaucoup ici.
-
-TODO: pic jeune parent confus
 
 ---
 
@@ -488,7 +513,8 @@ class: all-sketch, big-text, center, middle, clist
 - ...
 
 ???
-- Mise en place des méthodes agiles :D
+- Explain a bit
+- Process pour mettre de l'ordre dans un projet
 
 ---
 
@@ -536,6 +562,7 @@ class: huge-text, all-sketch, middle, center
 - ca force à s'adapter!
 - ca aide à éliminer les tâches/process inutiles
 - Moins d'affect, plus de pragmatisme
+- Soit je trouve un moyen d'y passer moins de temps, soit j'oublie l'OSS!
 
 ---
 
@@ -547,9 +574,10 @@ class: all-sketch, center
 ???
 Repartons de la base
 
+- OSS -> issues n'importe qd, PRs le WE, release n'importe quand
+  * release salle d'attente chez le medecin
 - Si je vous dis qu'on peut releaser 5 fois par jour, n'importe quand (meme un vendredi)?
 - Sur que votre process va changer!
-- OSS -> issues n'importe qd, PRs le WE, release n'importe quand
 
 ---
 
@@ -561,6 +589,8 @@ rough('.light-text', { type: 'underline', color: '#f22', padding: 10, strokeWidt
 </script>
 
 ???
+25 min !
+
 - https://github.com/azure/static-web-apps-cli
   * codespaces/devcontainers
   * issues/PRs
@@ -600,6 +630,8 @@ class: huge-text, all-sketch, middle, center
 # Automation?
 
 ???
+35 min !
+
 I was surprised to find to find how much more automation is used on OSS vs the company projects I worked on, including enterprise OSS projects!
 
 <!-- - Update dependencies->
@@ -646,7 +678,6 @@ class: all-sketch, center, clist
 ---
 
 class: all-sketch, center
-
 # Is it worth the time?
 
 .w-55.responsive[![](images/worth.png)]<br>
@@ -748,10 +779,11 @@ class: all-sketch
   * [GitHub Codespaces](https://github.com/features/codespaces) / [Gitpod](https://www.gitpod.io/)
   * [Developing inside a Container](https://code.visualstudio.com/docs/devcontainers/containers) (docs)
 - Find vulnerabilities and update dependencies
-  * [Dependabot](https://github.com/features/security) / [Snyk](https://snyk.io/)
+  * [Dependabot](https://github.com/features/security) / [Snyk](https://snyk.io/) / [Renovate](https://github.com/renovatebot/renovate)
 - Tests and CI
   * [GitHub Actions](https://github.com/features/actions) / [Gitlab CI](https://docs.gitlab.com/ee/ci/)
   * [Prettier pre-commit hook](https://prettier.io/docs/en/precommit.html) (docs)
+  * [Husky for git hooks](https://github.com/typicode/husky) (tool)
 
 ---
 
