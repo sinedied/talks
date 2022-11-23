@@ -4,14 +4,17 @@
   * Dependencies/security audit
     - talk about dependabot hell / who has automated dep updates?
   * CI + release workflows
-  * Conventional commits (when OSS), changelog + manual release
   
 # Angular
   * monorepo (not at the beginning!)
+  * Conventional commits (when OSS), changelog + manual release
   * issues templates + debug tool!!
   * commit message format checker
   * bot auto-lock issues + reminders
   * CODEOWNERS files (.pullapprove)
+
+# NGX
+  * semantic release tagging closed issues
 
 # Devto CLI
   * Show GitHub .
