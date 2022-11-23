@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Become a GitHub Actions Hero</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="remark.min.js"></script>
+  <script>
+    function create() {
+      var slideshow = remark.create({
+        source: "title: Become a GitHub Actions Hero\nclass: middle, black, right, hide-handle, contain\nbackground-image: url(images/github-actions-hero.jpg)\n\n.full-layer.who.text-right.small.middle.light-text[\n  <br>\n  .ms.responsive[![](images/ms-full-logo-light.svg)]\n  |\n  Yohan Lasorsa\n  |\n  @sinedied\n]\n\n<!-- \n\nTODO:\n- actionslint?\n- Find/Create docker image for create your own runner\n\nDevenez un GitHub Actions Hero!\n\nGitHub Actions, c'est le nouveau système de worflow intégré à GitHub pour automatiser tous vos projets, CI/CD mais pas que! Et en plus, ca ne coute rien pour les projets open source, c'est le moment de s'y mettre non?\nPlutot qu'un long discours, rien ne vaut une belle démo live pour découvrir tout cela!\n\n# GitHub Actions?\n\n# Demo\n- new project, create repo\n- CI!\n- CD -> github pages\n- show actions marketplace\n- talk about custom actions\n- talk about docker compose\n\n# Conclusion\n- pricing, laius Az DevOps\n- semantic release, Google home...\n\n----\nDEPLOY:\n  deploy:\n    runs-on: ubuntu-latest\n    needs: [build]\n    \n    steps:\n    - uses: actions/checkout@v2\n    - uses: actions/setup-node@v2\n      with:\n        node-version: 14.x\n        cache: 'npm'\n    - run: npm ci\n    - run: npm run build --if-present\n      env:\n        PUBLIC_URL: 'https://sinedied.github.io/gha-demo'\n    - uses: crazy-max/ghaction-github-pages@v2.6.0\n      with:\n        build_dir: build\n      env:\n        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}\n\n-->\n\n---\n\nexclude: true\nclass: middle, center, hide-handle\n# .large[Who am I?]\n\n.table.row.middle[\n.col-4.center[\n  .w-70.responsive.avatar.tada.animated[![](images/photo.jpg)]\n]\n.col-8.bit-larger.left[\n  .e[Yohan Lasorsa]<br>\n  .bit-larger[\\[ Cloud Developer Advocate .mini-img[![](images/ms.png)] \\]]<br>\n  .small.em-text[Web tech geek, OSS maintainer, DIY lover]<br>\n]\n]\n.center.bit-larger[\n.large.em-text[{]\n.fab.fa-twitter[] .fab.fa-github[] .fab.fa-dev[]\n.large.em-text[}] .e[@sinedied]<br>\n]\n\n---\n\nclass: center\n# GitHub Actions\n.expand[\n.responsive[![](images/intro.png)]\n]\n\n???\n- Actions = GH Events -> Workflow -> jobs -> steps\n- Platforms: linux, mac windows & arm/64\n- CI/CD, but not only (issue triage...)\n- Fully integrated to Github\n\n---\nclass: impact, full\nbackground-image: url(./images/demo.jpg)\n# Demo time\n\n???\n- Repo to be prepared in advance, see prepare.sh\n- Click on \"Actions\" tab on GH\n- CI is the default workflow proposed\n- Show other proposed workflows\n- Explain editor, show completion, platforms & archs\n- CD -> github pages\n- show actions marketplace\n- talk about custom actions\n- talk about docker compose\n---\n\nclass: center, clist, middle, big-text\n# There's more!\n\n- Run in Docker container\n- Write your custom actions\n- Use your own runner\n- Use `docker compose` to spawn testing env\n- Triage issues and clean up backlog\n- GitOps\n\n???\n- SDK\n- Bring your own env/server (on-premise or cloud-based)\n- E2E testing\n- Auto labelling/closing/need more info/CLA\n\n---\n\n# Pricing 🎁\n\n.responsive[![](images/pricing.png)]\n\n???\n\n- OSS: 20 runners en parallèle\n- 7 Go RAM, 2-core CPU, 14 Go SSD VM, 6H per workflow clean for each job\n\n---\n\nclass: clist\n# Not using GitHub? .float-right[👉 [aka.ms/git-azdo](https://aka.ms/git-azdo)]\n\n<br>\n.big-text[\n### .bit-larger[Take a look at Azure Pipelines!]\n\n.side-layer.right[\n.w-20.responsive[![](images/pipelines.png)]\n]\n\n- Still free for OSS\n- Same platform support\n- Similar syntax\n]\n\n???\n- Actions use AZ Pipelines under the hood but shhh\n- Example with GitHub but using an external git repo (Gitlab, Bitbucket...)\n\n---\n\nclass: middle, center, big-text\n# More automation, more fun  🤖\n\n---\n\nclass: no-margin\n.center[\n.quote.bit-larger.ib[\n> Hey Google, release a new version\n]\n]\n\n--\n\n- Conventional commits: `feat: | fix: | docs: | refactor: | ci: | ...`\n--\n\n- Semantic release:\n  * Check commits, decide if new release\n  * Bump version according to semantic versioning\n  * Generate changelog\n  * Publish NPM package\n  * Create release commit and tag it\n  * Create GitHub release with changelog and artifacts\n--\n\n- GitHub Action with HTTP trigger (`on: repository_dispatch`)\n--\n\n- IFTTT + Google Home 👉 Full example: [aka.ms/gha-release](https://aka.ms/gha-release)\n\n---\n\nclass: cover, bottom, full, center\nbackground-image: url(images/enjoy.jpg)\n# .large[**ENJOY YOUR FREE TIME!**]\n\n---\n\nclass: hide-handle, middle\n\n# Thank you!\n\n.side-layer.right.through.no-margin[\n  <div style=\"height: .5em\"></div>\n  .w-15.responsive[![](images/bit-learning.png)]\n]\n\n.baseline[\n- .w-35[[aka.ms/gh-actions](https://aka.ms/gh-actions)] → GitHub Actions docs\n- .w-35[[aka.ms/awesome-actions](https://aka.ms/awesome-actions)] → Awesome Actions\n- .w-35[[aka.ms/gha-example](https://aka.ms/gha-example)] → Example repo\n- .w-35[[aka.ms/git-azdo](https://aka.ms/git-azdo)] → Git+Azure DevOps\n]\n<hr class=\"hr-right more-space\">\n\n.col-3.small.text-left.float-left[\n<div style=\"height: .5em\"></div><br>\nSlides:<br>\n.large[bit.ly/gha-hero]\n]\n.col-9.right.large.middle.float-left[\n.large.em-text[{]\n.fab.fa-twitter[] .fab.fa-github[] .fab.fa-dev[]\n.large.em-text[}] .e[@sinedied]<br>\n]\n",
+        ratio: '16:9',
+        highlightLines: true,
+        countIncrementalSlides: false,
+        highlightStyle: 'github'
+      });
+      slideshow.on('showSlide', function (slide) {
+        var v = slide.properties.video;
+        if (v) {
+          var video = window[v];
+          video = video.play ? video : video[0];
+          video.currentTime = 0;
+          video.play();
+        }
+      });
+      return slideshow;
+    }
+  </script>
+</head>
+<body onload="slideshow = create()">
+</body>
+</html>
