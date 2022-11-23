@@ -18,6 +18,11 @@ mk_slides contribute-oss contribute-oss.md
 mk_slides azure-intro azure-intro.md
 mk_slides async-work async-work.md
 mk_slides chaos chaos.md
+mk_slides fast-furious-dev fast-furious-dev.md
+mk_slides github-actions github-actions.md
+mk_slides nestjs nestjs.md
+mk_slides career career.md
+mk_slides clean-dev-env clean-dev-env-conf.md
 
 # Generate index
 echo "Generating index..."

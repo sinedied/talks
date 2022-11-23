@@ -1,4 +1,4 @@
-title: clean dev env
+title: A clean dev env, working every time, everywhere
 class: animation-fade
 layout: true
 

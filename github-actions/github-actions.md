@@ -1,3 +1,4 @@
+title: Become a GitHub Actions Hero
 class: middle, black, right, hide-handle, contain
 background-image: url(images/github-actions-hero.jpg)
 
