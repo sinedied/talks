@@ -48,7 +48,7 @@ $margin-base      : 20px;
 @import url(fontawesome-all.css);
 
 * { box-sizing: border-box; }
-body { font-family: $font; }
+body { font-family: $font; line-height: 1.26; }
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 $margin-base 0;
   font-family: $font-title;

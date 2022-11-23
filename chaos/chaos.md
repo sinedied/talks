@@ -1,5 +1,4 @@
 exclude: true
-
 <!--
 Embracing chaos for more efficient projects
 Une touche de chaos pour plus d'efficacité
@@ -14,59 +13,10 @@ With my triple hat of dad, open source maintainer, and enterprise developer, I w
 - Find new sources of inspiration to remove/modernize/simplify the dev cycle
 - Know how to wisely introduce a little chaos into your project, to stimulate the creativity and efficiency of the team :)
 
-# 1. Intro
-## Why am I telling you my life?
-- Au dela de la vie perso, avoir des contraintes fortes sur le temps, c'est le cas dans le monde du travail
-  * avec une difference: on a pas le choix sur certains aspects (kids), le reste c'est: ce qu'on a envie de faire
-  WANT TO / NEED TO progress bar
-- Projet logiciel
-
-## Need to      / ## Want to
-## Context: research/esn/startup/microsoft/oss
-
-## Some OSS dev tasks
-* comment issues
-* switch back to project context/env
-* fix bugs
-* add features
-* update packages
-  * dependencies
-  vs writing your own code
-* review PRs
-* run tests
-* define version
-* build/package
-* create/update infra
-* release
-* update changelog
-* **Oops, something broke!**
-* go to step 1
-
-## (A litlle) Chaos can do good
-## More time =/= better
-
-## 4. Tools
-- dev containers, cloud dev env
-- conventional commits
-  * + git rebase/squash workflow
-  * + commitizen
-  * beware generated commits!
-- semantic release
-  * gen changelog
-  * bump version
-- CI
-- CD
-- Issue templates
-- MVD - Minimum Viable Documentation
-  * write for yourself
-  * what you'll probably forgot in a few months!
-
 D&D map: chaotics neutral good evil, OSS/closed source/ SCRUM etc
-Witcher references (chaos)
-
 -->
-
 ---
+
 title: Embracing chaos for more efficient projects
 class: animation-fade
 layout: true
@@ -553,8 +503,9 @@ C'est aussi le lien en parent, OSS et le travail
 
 ---
 
-class: huge-text, all-sketch, middle, center
-# .red-text[Survival]
+class: huge-text, all-sketch, middle, center, more-shadow, full
+background-image: url(./images/wild.jpg)
+# .red-text[Survival &nbsp; instinct]
 
 ???
 - C'est de faire appel, à plus ou moins fort degré, à notre instinct de survie
@@ -760,7 +711,7 @@ L'ordre vient du chaos
 
 class: middle, center, hide-handle, clist
 
-.w-70.responsive[
+.w-90.responsive[
 <object data="images/thanks.svg"></object>
 ]
 
