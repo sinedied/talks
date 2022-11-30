@@ -1092,6 +1092,10 @@ hr {
   filter: drop-shadow(0 0 0.5em rgba(0,0,0,.6))drop-shadow(0 0 0.5em rgba(0,0,0,.6));
 }
 
+.logo-filter {
+  filter: hue-rotate(20deg)brightness(150%);
+}
+
 // Fix PDF print with chrome
 // ---------------------------------------------------------------------------
 

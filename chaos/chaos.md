@@ -31,7 +31,7 @@ class: hide-handle, middle, full, center, more-shadow
 background-image: url(images/chaos5.jpg)
 
 .full-layer.with-margins.left[
-.w-15.responsive.img-shadow[![](images/agile-gre.png)]
+.w-15.responsive.img-shadow.logo-filter[![](images/devfest-dijon-light.png)]
 ]
 
 .title-new[
