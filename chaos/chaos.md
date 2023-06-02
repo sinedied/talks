@@ -30,9 +30,9 @@ layout: true
 class: hide-handle, middle, full, center, more-shadow
 background-image: url(images/chaos5.jpg)
 
-.full-layer.with-margins.left[
+<!-- .full-layer.with-margins.left[
 .w-15.responsive.img-shadow.logo-filter[![](images/devfest-dijon-light.png)]
-]
+] -->
 
 .title-new[
 # .baseline.sketch.big[Embracing .grad-text[chaos]<br>].tmatch.sketch[for more efficient projects]
