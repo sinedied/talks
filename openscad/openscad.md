@@ -31,9 +31,9 @@ layout: true
 class: hide-handle, middle, full, center, more-shadow
 background-image: url(images/cubes.jpg)
 
-<!-- .full-layer.with-margins.left[
-.w-15.responsive.img-shadow.logo-filter[![](images/devfest-dijon-light.png)]
-] -->
+.full-layer.with-margins.left.up[
+.w-20.responsive.logo-filter[![](images/camping-logo.png)]
+]
 
 .title-new[
 # .baseline.sketch.bit-larger[Create 3D objects with code<br>using .grad-text[OpenSCAD]]
@@ -103,27 +103,9 @@ class: big-text, all-sketch, clist, center, middle
 
 ---
 
-class: all-sketch, clist, center, middle
-
-# .large[3D modeling vs CAD]
-<br>
-
-.quote.large[
-> .small[CAD (Computed Aided Design) is 3D modeling for .dark-text.gradient-text[engineering] that allows .dark-text.gradient-text[parameterized] objects].
-]
-
-???
-
-- Le but est le meme: créer un modele 3D
-- 3D modeling:
-  * but artistique, flexibilité, textures/rendu, animation
-- CAD:
-  * contraintes fonctionnelles, parameterization
----
-
 class: big-text, all-sketch, clist, center, middle
 
-# Existing tools
+# Tools
 
 .row.table.middle.up[
 .col-6[
@@ -131,6 +113,7 @@ class: big-text, all-sketch, clist, center, middle
 - [Blender](https://www.blender.org/)
 - [FreeCAD](https://www.freecad.org/)
 - [OpenSCAD](https://www.opencad.org/)
+- [Tinkercad](https://www.tinkercad.com/) (web)
 ]
 .col-6[
 .w-60.responsive[![](./images/fusion.jpg)]
@@ -160,6 +143,25 @@ background-image: url(./images/confused.jpg)
 - mais 2 gros defaut:
 * des que ne l'utilise pas pendant 1 semaine, bah je sais plus m'en servir
 * tres pénible de modifier des modeles apres coup
+
+---
+
+class: all-sketch, clist, center, middle
+
+# .large[3D modeling vs CAD]
+<br>
+
+.quote.large[
+> .small[CAD (Computed Aided Design) is 3D modeling for .dark-text.gradient-text[engineering] that allows .dark-text.gradient-text[parameterized] objects].
+]
+
+???
+
+- Le but est le meme: créer un modele 3D
+- 3D modeling:
+  * but artistique, flexibilité, textures/rendu, animation
+- CAD:
+  * contraintes fonctionnelles, parameterization
 
 ---
 

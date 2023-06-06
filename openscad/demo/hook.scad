@@ -1,5 +1,6 @@
 $fn = 64;
 
+hull_chain()
 {
   translate([10, 0, 5])
     sphere(r = 2);
