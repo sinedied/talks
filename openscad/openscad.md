@@ -184,7 +184,7 @@ class: big-text, all-sketch, clist, center, middle
 .row.table.middle[
   .col-8[
 - .mini-img[![](./images/openscad.svg)] OpenSCAD + .mini-img[![](./images/vscode.svg)] VS Code
-- VS Code Extensions ( .primary-text[[profile](https://todo)] )
+- OpenSCAD VS Code Extension
 - BOSL2 library
 - Pen, post-its & caliper
   ]
@@ -209,11 +209,18 @@ background-image: url(./images/show-code.jpg)
 
 class: all-sketch
 # References & going further
+
+.full-layer.with-margins.right.stick-bottom.space-right[
+.w-25.responsive.circle[![](images/diver.jpg)]
+]
+
+
 - OpenSCAD tutorial
   * https://en.wikibooks.org/wiki/OpenSCAD_User_Manual
+- VS Code extension
+  * https://marketplace.visualstudio.com/items?itemName=Antyos.openscad
 - Another OpenSCAD intro
   * https://static.fablab-lannion.org/tutos/openscad/#/intro
-- VS Code profile: TODO
 - Libraries
   * https://github.com/GillesBouissac/agentscad
   * https://github.com/HopefulLlama/JointSCAD
