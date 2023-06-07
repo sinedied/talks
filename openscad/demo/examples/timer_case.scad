@@ -7,8 +7,8 @@ include <BOSL2/std.scad>
 
 /* [Dimensions] ---------------------------------------- */
 
-// LCD panel width
 panel_width = 256;
+// LCD panel width
 
 // LCD panel height
 panel_height = 128;
@@ -232,7 +232,7 @@ module triangle(size, rot = 0) {
   ];
   rotate([90, 0, 270 - rot])
   translate([-h/2, -d/2, -w/2])
-  linear_extrude(w) { 
+  linear_extrude(w) {
     polygon(points, path);
   }
 }
@@ -254,7 +254,7 @@ module lock_tab(width = true, mirror = false) {
     translate([0, 0, front_bump/2])
     rotate([90, 0, -90])
     translate([-lock_tab_thickness/2, -front_bump/2, -tab_size])
-    linear_extrude(tab_size*2) { 
+    linear_extrude(tab_size*2) {
       polygon(points, path);
     }
   } else {
@@ -265,9 +265,9 @@ module lock_tab(width = true, mirror = false) {
     translate([0, 0, front_bump/2])
     rotate([90, 0, 0])
     translate([-lock_tab_thickness/2, -front_bump/2, -tab_size/2])
-    linear_extrude(tab_size) { 
+    linear_extrude(tab_size) {
       polygon(points, path);
-    }    
+    }
   }
 }
 
@@ -343,7 +343,7 @@ module button_hole() {
     // Push hole
     translate([0, button_hole_height/2 - 0.5, button_ext_diameter/2 + diff_diameter/2])
     rotate([-90, 0, 0])
-    linear_extrude(wall_width + 1) 
+    linear_extrude(wall_width + 1)
     circle(d = button_ext_diameter);
   }
 }
@@ -541,7 +541,7 @@ module all() {
     }
 
     if (!final_view) {
-      translate(support_and_button ? 
+      translate(support_and_button ?
         [angle_support_width/2 + sep*2.5 + button_holder_width/2, 0, 0] :
         [total_width/2 + angle_support_width + sep*2.5 + angle_support_width/2 + sep*2.5 + button_holder_width/2, 0, 0])
       button_support(false);
@@ -560,7 +560,7 @@ module test_prints() {
   translate([0, 10, 0])
   difference() {
     cube([15, case_split_y ? 15 : 30, case_split_y ? 20 : 10], center=true);
-    
+
     translate([0, 8, 3])
     cube([11, 15, case_split_y ? 20 : 10], center=true);
   }
