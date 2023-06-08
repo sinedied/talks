@@ -40,13 +40,12 @@
 
 
 
-
 /*
 unit = 8;
 fudge = 0.001;
+tolerance = 0.15 / unit;
 
 module lego(w, d, h, c = "white") {
-  tolerance = 0.15 / unit;
   h_hole = (h - 1/6 + tolerance)*2;
 
   color(c)
@@ -81,7 +80,7 @@ module lego(w, d, h, c = "white") {
             ])
               difference()
               {
-                cylinder(d = (0.915 - tolerance) * df, h_hole/2, $fn = 32);
+                cylinder(d = 0.915 * df, h_hole/2, $fn = 32);
                 cylinder(d = (0.5 + tolerance*2) * df * df, h_hole, $fn = 32, center = true);
               }
       }
