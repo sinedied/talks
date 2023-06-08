@@ -13,7 +13,7 @@ text_size = 5;
 text_height = 2;
 grip_depth = 6;
 grip_thickness = 2;
-grip_space = 1.5;
+grip_space = 1.2;
 fudge = 0.001;
 $fn = 32;
 
