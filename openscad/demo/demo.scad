@@ -40,9 +40,26 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 unit = 8;
-fudge = 0.001;
+fudge = 0.001 / unit;
 tolerance = 0.15 / unit;
 
 module lego(w, d, h, c = "white") {
