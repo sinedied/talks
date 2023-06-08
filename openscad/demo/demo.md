@@ -24,12 +24,13 @@
     - rotate [0, 90, 0]
   * cylinder + fudge
   * for loops
-  
+  =======================================
   * cylinder hold bis
     - approx
     - for loops + errors + max
     - if
     - single =, df =
+  =======================================
   * tolerance
 
 3. Advanced & Ideas
@@ -39,11 +40,11 @@
   - vase
 
 TODO: photo 3d prints house
-* cale fenetre
-* tient porte
+* x cale fenetre
+* x tient porte
 * terrasse crochets lumiere
 * valise musique
 * jouets kids
-* fix porte d'entree
+* x fix porte d'entree
 * case timer
-* boite synthé
+* x boite synthé
