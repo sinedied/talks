@@ -1,5 +1,9 @@
 # Demo
 
+0. - Switch VS Code profile to OpenSCAD
+   - Zoom in
+   - Open VS Browser and hide tools
+
 1. Show example timer case
 
 2. Live coding
