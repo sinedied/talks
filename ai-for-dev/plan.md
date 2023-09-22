@@ -1,3 +1,6 @@
+Icons:
+https://www.svgrepo.com/collection/business-management-icons/
+
 # Intro
 1. IA pour les devs: de quoi parle-t-on? (2-3 min)
   * Copilot, ChatGPT, Code Whisperer, Bard: LLM

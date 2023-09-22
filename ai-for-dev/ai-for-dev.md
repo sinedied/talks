@@ -15,7 +15,7 @@ class: animation-fade
 layout: true
 
 .twitter-handle[
-  @sinedied
+  @sinedied / @cmaneu
 ]
 
 ---
@@ -24,7 +24,7 @@ class: hide-handle, full, more-shadow
 background-image: url(images/ai-enhanced-developer.jpg)
 
 <!-- .full-layer.with-margins.left.up[
-.w-20.responsive.logo-filter[![](images/camping-logo.png)]
+.w-20.responsive.logo-filter[![](images/vscode.svg)]
 ] -->
 
 .title-new.w-55.center[
@@ -70,15 +70,15 @@ class: center, middle, hide-handle
 
 ---
 
-class: big-text, all-sketch, clist, center, middle
+class: big-text, clist, center, middle
 
-# Blender
-
-.w-80.responsive.rounded.up[![](./images/blender.png)]
+# What are we talking about?
 
 ???
-- Pas specialement fait pour ca, demande un peu de configuration
-- Ca marche pas trop mal, j'ai fait plein de modeles avec
+
+---
+
+TODO intro
 
 ---
 
@@ -86,62 +86,75 @@ class: cover, hide-handle
 background-image: url(./images/confused.jpg)
 
 ???
-- mais 2 gros defaut:
-* des que ne l'utilise pas pendant 1 semaine, bah je sais plus m'en servir
-* tres pénible de modifier des modeles apres coup
 
 ---
 
-class: all-sketch, clist, center, middle
+.col-6.float-left[
+  .w-80.responsive[![](./images/dummies.jpg)]
+]
+.col-6.float-left[
+  <br><br>
 
-# .large[3D modeling vs CAD]
-<br>
-
-.quote.large[
-> .small[CAD (Computed Aided Design) is 3D modeling for .dark-text.gradient-text[engineering] that allows .dark-text.gradient-text[parameterized] objects].
+  # A (brief) intro
+  - Training data, fine-tuning & RLHF
+  - Model types and how you use them
+  - Limits: context window, speed, bias
+  - Embeddings and vector DBs
+  - Agents
 ]
 
-???
+---
 
-- Le but est le meme: créer un modele 3D
-- 3D modeling:
-  * but artistique, flexibilité, textures/rendu, animation
-- CAD:
-  * contraintes fonctionnelles, parameterization
+class: center
+
+# LLM Training
+
+.w-80.responsive[![](./images/llm-training.svg)]
+
+???
+- pre-training: expensive $$$
+- fine-tuning: cheap $
+- RLHF: long and complicated
 
 ---
 
-class: big-text, all-sketch, clist, center, middle, alt
+class: 
 
-# .light-text[OpenSCAD] .w-20.responsive[![](./images/openscad.svg)]
+# Model types
 
-.large[https://www.openscad.org]
+#### Pure text completion models
 
+.pre[These models specialize in text completion .grey-text[*tasks such as question answering, machine translation and summarization.*]]
+
+#### Intruction-following models (aka chat models)
+
+<span class="pre">&lt;|im_start|>system
+You are a professional translator&lt;|im_end|>
+&lt;|im_start|>user
+How do I translate "hello" in French?&lt;|im_end|&gt;
+<span class="grey-text">&lt;|im_start|>assistant
+Bonjour&lt;|im_end|></span>
+</span>
 
 ???
-I use git+vscode for almost anything now so...
 
 ---
 
-class: big-text, all-sketch, clist, center, middle
+# Tokens
 
-# Setup
+LLMs don't work with words, but with tokens.
 
-.row.table.middle[
-  .col-8[
-- .mini-img[![](./images/openscad.svg)] OpenSCAD + .mini-img[![](./images/vscode.svg)] VS Code
-- Pen, post-its & caliper
-  ]
-  .col-4[
-.w-100.responsive.rounded[![](./images/photo-tools.jpg)]
-  ]
-]
+.w-80.responsive[![](./images/tokens.png)]
 
-???
-- OpenSCAD VS Code Extension
-- BOSL2 library
+# Limits
+
+#### Context window
+
+
+
 
 ---
+
 
 class: contain, hide-handle, dark
 background-image: url(./images/show-code.jpg)
@@ -205,7 +218,6 @@ lego(3, 1, 1/3, "crimson");
 ```
 ]
 .col-6[
-  .responsive[![](./images/openscad-lego.png)]
 ]
 ]
 
