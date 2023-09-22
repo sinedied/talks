@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Virgil';
+  font-style: normal;
+  font-weight: 400;
+  src: url("Virgil.woff2");
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 1 999;
+  src: url(Nunito-Variable.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(NotoSans-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(NotoSans-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  src: url(Inconsolata-Regular.ttf) format('truetype');
+}
