@@ -299,21 +299,28 @@ Use a vector DB to retrieve relevant information and add it to augment the conte
 
 A program that perceives its environment, make decisions and takes actions to achieve goals autonomously.
 
-.col-9.float-left.center[
-.w-80.responsive[
+.center[
+.w-65.responsive[
   <object data="images/agent.svg"></object>
 ]
 ]
---
-.col-3.float-left[
+
+---
+
+# Agents
+
+.col-4.float-left[
 #### Examples
 - [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT)
 - [babyAGI](https://github.com/yoheinakajima/babyagi)
 - [GPT Engineer](https://github.com/AntonOsika/gpt-engineer)
 
 #### Frameworks
-- 🦜️🔗 LangChain
-- Semantic Kernel
+- 🦜️🔗 [LangChain](https://www.langchain.com/)
+- [Semantic Kernel](https://github.com/microsoft/semantic-kernel)
+]
+.col-8.float-left[
+  TODO Gif GPTEngineer
 ]
 
 ---
