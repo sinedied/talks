@@ -25,7 +25,7 @@ $nest-red: #ea2845;
 // Remark theme
 $primary          : $dark-blue;
 $secondary        : $orange;
-$tertiary         : $grey;
+$tertiary         : $blue;
 $light            : #fff;
 $dark             : $dark-grey;
 $text-dark        : $dark-grey; 
@@ -155,7 +155,13 @@ table {
 }
 
 // Remark base
-.remark-code { font-size: .9em; }
+.remark-code {
+  font-size: .9em;
+  padding: 0.5em;
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+}
 .remark-container { background: #333; }
 .remark-slide-scaler { box-shadow: none; }
 .remark-notes { font-size: 1.5em; }
