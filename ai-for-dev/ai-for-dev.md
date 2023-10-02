@@ -155,7 +155,7 @@ Bonjour&lt;|im_end|></span>
 
 LLMs don't work with words, but with tokens.
 
-.w-80.responsive[![](./images/tokens.png)]
+.w-75.responsive[![](./images/tokens.png)]
 
 ---
 
