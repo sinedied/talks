@@ -12,6 +12,7 @@ Entrez dans le quotidien d'un dev du futur, et découvrez ce qui ce cache réell
 Intro: https://www.lebigdata.fr/ia-creer-logiciel
 
 Conclu: https://www.infoq.com/news/2023/09/copilot-copyright-commitment/
+https://blogs.microsoft.com/on-the-issues/2023/09/07/copilot-copyright-commitment-ai-legal-concerns/
 
 
 -->
@@ -160,15 +161,18 @@ LLMs don't work with words, but with tokens.
 
 # Limits
 
-#### Context window
+#### .circled[Context window]
 - Common limits: .em-text[**2-4K tokens**] (GPT-4: 8k or 32K)
 - Context window limits .em-text[**input + output**]
+
+<script>
+rough('.circled', { type: 'circle', color: '#f22', strokeWidth: 4, padding: 50, animationDuration: 2000 }, 1000);
+</script>
 ???
 - context training: O(n^2) complexity
 - 4K tokens ~ 3K words ~ 6 pages
 - 100K context windows => using tricks, with great loss of accuracy (attention)
 --
-
 
 #### Bias
 - LLMs may reflect the biases of the training data
@@ -325,19 +329,71 @@ A program that perceives its environment, make decisions and takes actions to ac
 
 ---
 
+class: center, middle, cover, hide-handle
+background-image: url(./images/copilot.jpg)
 
-
-
+???
+- Sorti en 2021
+- Initialement basé sur OpenAI Codex (derivé de GPT-3)
+- Optimisé pour le code
 
 
 ---
 
+class: big-text, clist, center, middle
+# What Copilot *doesn't do*
+
+- .baseline[It **doesn't** .em-text[send all your code] to the cloud]
+- .baseline[It **doesn't** .em-text[use your data] to train the model]
+- .baseline[It **doesn't** .em-text[understand] the code]
+???
+- Privacy first: pas de code envoyé au cloud, pas de données utilisateurs
+
+---
+
+class: center, middle
+# The lifecycle of a Copilot suggestion
+
+.center[
+.w-100.responsive[![](./images/completion.png)]
+]
+
+---
+
+class: big-text, center, clist
+# Context is everything
+
+#### .large[**What's in the 🪄 Magic Sauce 🪄?**]
+- Content from open tabs
+- Code from before and after the cursor
+- Code extracts from the same file
+- Clipboard content
+- Files recently added to the workspace
+
+???
+- A prompt is usually ~2-4K tokens, so it can't contain all the code
+- Copilot cherry-picks the most relevant parts of the code to build the prompt
+- Depending on the context, the prompt can be very different
+- (Soon) Code from other files in the workspace
+
+---
 
 class: contain, hide-handle, dark
 background-image: url(./images/show-code.jpg)
 
 ???
+  * Demo de comment améliorer ses résultats
+    * Demo "avancée": code à l'envers, prompt engineering, zero-shot, few-shot, one-shot
+  * Pourquoi ca ne propose rien?
+    - Les 150 charactères de limite
+    - Code match (ex: Python)
 ---
+
+---
+
+.center[
+  .w-60.responsive[![](./images/copilot-stats.png)]
+]
 
 ---
 
@@ -350,6 +406,8 @@ class: all-sketch
 
 - https://www.promptingguide.ai
 - https://github.com/kyrolabs/awesome-langchain
+- https://towardsdatascience.com/how-gpt-models-work-b5f4517d5b5
+- https://github.blog/?s=copilot
 
 
 ---

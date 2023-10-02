@@ -3,6 +3,7 @@ https://www.svgrepo.com/collection/business-management-icons/
 
 # Intro
 1. IA pour les devs: de quoi parle-t-on? (2-3 min)
+ 92% of U.S.-based developers are already using AI coding tools
   * Copilot, ChatGPT, Code Whisperer, Bard: LLM
   * Autre IA: Stable Diffusion, Dall-E, Whisper, etc
     ex: https://v0.dev
@@ -12,7 +13,7 @@ https://www.svgrepo.com/collection/business-management-icons/
   * Objectif: démystifier, comprendre comment ca marche et surtout les limites, pour savoir comment l'utiliser au mieux!
   * Pique de démarrage: qui a deja copié collé du code de sa boite dans ChatGPT? => risques (ex Samsung leak)
 
-2. LLM: comment ca marche? (sans avoir de PhD en ML) (10min)
+X 2. LLM: comment ca marche? (sans avoir de PhD en ML) (10min)
   * Aprentissage via data set: GitHub, StackOverflow, Wikipedia, Reddit, etc
   * RLHF: Reinforced Learning from Human Feedback
   * Limites: paramètres, biais, **taille de contexte**
@@ -30,22 +31,27 @@ https://www.svgrepo.com/collection/business-management-icons/
     * Demo "avancée": code à l'envers, prompt engineering, zero-shot, few-shot, one-shot
   * Pourquoi ca ne propose rien?
     - Les 150 charactères de limite
+    - Code match (ex: Python)
 
 4. GitHub Chat (15 min)
   * Short intro: ChatGPT dédié au code, intégration à VS Code
   * Demos "real world":
     - traduction de code python
+    - comprendre une nouvelle base de code
     - refactoring de code JS et optimisation
+
+CHRIS
     - generation de tests unitaires
     - generation de docs
     - generation de datas
     - accessibilité
     - sécurité
-    - code review, tri de backlog, tag d'issues...
+    - code review, tri de backlog, tag d'issues... => Langchain
     - apprentissage (what is zero shot learning?)
 
-5. Conclusion
+5. Conclusion 5min
   - Un mot sur la licence du code généré + public code matching
+    - https://blogs.microsoft.com/on-the-issues/2023/09/07/copilot-copyright-commitment-ai-legal-concerns/
   - Savoir se servir d'une IA est un skill à part entière, qui va devenir de plus en plus important
   - % improvement de productivité (GH blog stats)
   - L'IA n'est pas magique et ne remplace pas un dev, mais peut grandement aider a la productivité
