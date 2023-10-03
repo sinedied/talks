@@ -120,7 +120,7 @@ blockquote {
   }
 }
 iframe {
-  $scale: 1.5;
+  $scale: 1;
   height: calc((100% / $scale) - 1.2em);
   width: calc(100% / $scale);
   border: 0;
@@ -276,6 +276,14 @@ table {
   left: 0;
   right: 0;
   bottom: 0;
+  &.full-top {
+    bottom: auto;
+    top: 0;
+
+    &.with-padding {
+      padding-top: 1em;
+    }
+  }
   &.stick-right {
     left: auto;
     right: 2em;
@@ -289,6 +297,10 @@ table {
   &.stick-bottom {
     top: auto;
     bottom: 1em;
+  }
+  &.full-bottom {
+    top: auto;
+    bottom: 0;
   }
   &.full-right {
     left: auto;
@@ -1106,6 +1118,10 @@ hr {
   left: 2em;
   font-size: 0.7em;
   opacity: 0.7;
+}
+
+.blur {
+  backdrop-filter: blur(3px);
 }
 
 @keyframes hue {

@@ -15,6 +15,7 @@ Conclu: https://www.infoq.com/news/2023/09/copilot-copyright-commitment/
 https://blogs.microsoft.com/on-the-issues/2023/09/07/copilot-copyright-commitment-ai-legal-concerns/
 
 
+https://github.com/danielgross/localpilot
 -->
 ---
 
@@ -61,34 +62,95 @@ class: center, middle, hide-handle
   .w-70.responsive.avatar.bounceInLeft.animated[![](images/me.jpg)]
 
   **Yohan Lasorsa**<br>
+  .fab.fa-linkedin[] .e[/yohanlasorsa]<br>
   .fab.fa-x-twitter[] .e[@sinedied]
 ]
 .col-4.center[
   .w-70.responsive.avatar.bounceInUp.animated[![](images/chris.jpg)]
 
   **Christopher Maneu**<br>
+  .fab.fa-linkedin[] .e[/cmaneu]<br>
   .fab.fa-x-twitter[] .e[@cmaneu]
 ]
 ]
 
 ---
 
-class: big-text, clist, center, middle
-
-# What are we talking about?
+class: impact
+# 92% of U.S.-based developers are already using AI coding tools
 
 ???
+- Etude faite en juin 23 auprès de 500 devs de sociétés de +1000p
+- Qui utilise ici des outils d'IA pour coder?
+- Qui déjà utilisé ChatGPT pour son boulot?
+  * Pique de démarrage: risques (ex Samsung leak) TODO FIND REF
+---
+
+class: center, cover, hide-handle
+background-image: url(./images/ai-landscape.jpg)
+
+.full-layer.full-top.blur.with-padding[
+# What are we talking about?
+]
+
+.full-layer.full-bottom.blur.small[
+Extract from **The 2023 MAD (ML/AI/Data) Landscape**
+by Matt Turck - https://mad.firstmark.com/
+]
+]
+
+.here[ ]
+
+<style>
+.here {
+  position: absolute;
+  top: 150px;
+  bottom: 340px;
+  left: 370px;
+  right: 570px;
+}
+</style>
+<script>
+rough('.here', { type: 'circle', color: '#f22', strokeWidth: 4, padding: 50, animationDuration: 2000 }, 1000);
+</script>
+
+???
+- Tout le monde fait de l'IA ces temps-ci, de quoi on parles exactement?
+- Focus sur les IA dédiées au développement
+- En particulier sur l'assistance au code
 
 ---
 
-TODO intro
+class: center, middle
+# "AI will replace developers"
+
+.w-70.responsive[![](./images/will-ai-replace-devs.png)]
+
+.scream.left[.ib.animated.heartBeat.w-20.responsive[![](./images/scream.jpg)]]
+
+<style>
+.scream {
+  position: absolute;
+  bottom: -160px;
+  left: -40px;
+  transform: rotate(20deg);
+}
+</style>
+
+???
+* "Au secours on va tous perdre notre job"
+* Est-ce qu'on est les prochains allumeurs de réverbères?
+* Guy de Maupassant: On n'a vraiment peur que de ce qu'on ne comprend pas
 
 ---
 
 class: cover, hide-handle
-background-image: url(./images/confused.jpg)
+background-image: url(./images/dual.jpg)
 
 ???
+* Believer vs Skeptics: ca marche au top/pas du tout, pourquoi une telle différence d'expérience?
+    - facon de coder, xp level vs esprit critique, techno/langage utilisés, contexte...
+* Objectif: démystifier, comprendre comment ca marche et surtout les limites, pour savoir comment l'utiliser au mieux!
 
 ---
 
@@ -156,6 +218,9 @@ Bonjour&lt;|im_end|></span>
 LLMs don't work with words, but with tokens.
 
 .w-75.responsive[![](./images/tokens.png)]
+
+???
+- https://platform.openai.com/tokenizer
 
 ---
 
@@ -345,7 +410,7 @@ class: big-text, clist, center, middle
 
 - .baseline[It **doesn't** .em-text[send all your code] to the cloud]
 - .baseline[It **doesn't** .em-text[use your data] to train the model]
-- .baseline[It **doesn't** .em-text[understand] the code]
+- .baseline[It **doesn't** .em-text[understand] your app design]
 ???
 - Privacy first: pas de code envoyé au cloud, pas de données utilisateurs
 
@@ -368,7 +433,6 @@ class: big-text, center, clist
 - Code from before and after the cursor
 - Code extracts from the same file
 - Clipboard content
-- Files recently added to the workspace
 
 ???
 - A prompt is usually ~2-4K tokens, so it can't contain all the code
