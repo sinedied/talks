@@ -2,8 +2,7 @@ Icons:
 https://www.svgrepo.com/collection/business-management-icons/
 
 # Intro
-1. IA pour les devs: de quoi parle-t-on? (2-3 min)
- 92% of U.S.-based developers are already using AI coding tools
+1. IA pour les devs: de quoi parle-t-on? 5min
   * Copilot, ChatGPT, Code Whisperer, Bard: LLM
   * Autre IA: Stable Diffusion, Dall-E, Whisper, etc
     ex: https://v0.dev
