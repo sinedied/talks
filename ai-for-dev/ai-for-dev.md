@@ -83,7 +83,8 @@ class: impact
 - Etude faite en juin 23 auprès de 500 devs de sociétés de +1000p
 - Qui utilise ici des outils d'IA pour coder?
 - Qui déjà utilisé ChatGPT pour son boulot?
-  * Pique de démarrage: risques (ex Samsung leak) TODO FIND REF
+  * Pique de démarrage: risques (ex Samsung leak)
+  https://techcrunch.com/2023/05/02/samsung-bans-use-of-generative-ai-tools-like-chatgpt-after-april-internal-data-leak/
 ---
 
 class: center, cover, hide-handle
@@ -509,6 +510,35 @@ Don't be afraid of it!
 
 ---
 
+class: middle, center, hide-handle, clist, big-text
+
+# Thank you!
+
+.arrow[
+  .w-45.responsive[![](images/arrow.svg)]
+]
+
+.row.table.middle[
+.col-6.right.space-right[
+<object data="images/qrcode.svg"></object>
+]
+.col-6.left[
+.large[[bit.ly/ai-for-dev](https://bit.ly/ai-for-dev)]
+]
+]
+
+@sinedied | @cmaneu
+
+<style>
+.arrow {
+  position: absolute;
+  top: 24%;
+  left: 40%;  
+}
+</style>
+
+---
+
 # References & going further
 
 .full-layer.with-margins.right.space-right.noclick[
@@ -527,16 +557,7 @@ Don't be afraid of it!
 - [Microsoft announces new Copilot Copyright Commitment for customers](https://blogs.microsoft.com/on-the-issues/2023/09/07/copilot-copyright-commitment-ai-legal-concerns/)
 - [ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search](https://github.com/Azure-Samples/azure-search-openai-javascript/)
 - [Responsible Generative AI training](https://learn.microsoft.com/training/modules/responsible-generative-ai/)
-
----
-
-class: middle, center, hide-handle, clist, big-text
-
-# Thank you!
-
-.large[[bit.ly/ai-for-dev](https://bit.ly/ai-for-dev)]
-
-<object data="images/qrcode.svg"></object>
+- [About Samsung ChatGPT data leak](https://techcrunch.com/2023/05/02/samsung-bans-use-of-generative-ai-tools-like-chatgpt-after-april-internal-data-leak/)
 
 ---
 
