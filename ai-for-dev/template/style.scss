@@ -1145,6 +1145,10 @@ hr {
   text-shadow: 0 0 .5em rgba(0,0,0,.6);
 }
 
+.noclick {
+  pointer-events: none;
+}
+
 // Fix PDF print with chrome
 // ---------------------------------------------------------------------------
 

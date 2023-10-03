@@ -217,7 +217,12 @@ Bonjour&lt;|im_end|></span>
 
 LLMs don't work with words, but with tokens.
 
-.w-75.responsive[![](./images/tokens.png)]
+.col-6.float-left.top.no-margin[
+  .w-90.responsive.top[![](./images/tokens2.png)]
+]
+.col-6.float-left.top.no-margin[
+  .w-90.responsive.top[![](./images/tokens.png)]
+]
 
 ???
 - https://platform.openai.com/tokenizer
@@ -483,7 +488,7 @@ class: center
 ---
 
 class: center, middle, big-text
-It's no magic
+It's no magic 🤷
 
 ???
 - L'IA n'est pas magique et ne remplace pas un dev
@@ -493,7 +498,7 @@ It's no magic
 
 # References & going further
 
-.full-layer.with-margins.right.space-right[
+.full-layer.with-margins.right.space-right.noclick[
 <br>
 .w-25.responsive.circle[![](images/diver.jpg)]
 ]
