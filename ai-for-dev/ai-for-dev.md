@@ -394,7 +394,7 @@ A program that perceives its environment, make decisions and takes actions to ac
 - [Semantic Kernel](https://github.com/microsoft/semantic-kernel)
 ]
 .col-8.float-left[
-  TODO Gif GPTEngineer
+  .responsive.rounded[![](./images/gptengineer-demo.gif)]
 ]
 
 ---
