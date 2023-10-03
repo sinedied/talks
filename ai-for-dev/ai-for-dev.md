@@ -488,11 +488,24 @@ class: center
 ---
 
 class: center, middle, big-text
-It's no magic 🤷
+AI is no magic 🤷<br>
+--
+
+.baseline.large[but it's still a .em-text[game changer]]
 
 ???
 - L'IA n'est pas magique et ne remplace pas un dev
 - ...mais peut grandement aider a la productivité
+- Ca va changer notre métier, avec des bons et des mauvais côtés
+  * par ex les tests de code :D
+
+---
+
+class: cover, full
+background-image: url(./images/highfive-hq.jpg)
+
+???
+Don't be afraid of it!
 
 ---
 
@@ -523,7 +536,7 @@ class: middle, center, hide-handle, clist, big-text
 
 .large[[bit.ly/ai-for-dev](https://bit.ly/ai-for-dev)]
 
-TODO: qrcode
+<object data="images/qrcode.svg"></object>
 
 ---
 
