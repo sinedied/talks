@@ -24,7 +24,7 @@ class: animation-fade
 layout: true
 
 .twitter-handle[
-  @sinedied / @cmaneu
+  @sinedied | @cmaneu
 ]
 
 ---
