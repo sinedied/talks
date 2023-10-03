@@ -443,7 +443,7 @@ class: big-text, center, clist
 ---
 
 class: contain, hide-handle, dark
-background-image: url(./images/show-code.jpg)
+background-image: url(./images/demo.png)
 
 ???
   * Demo de comment améliorer ses résultats
@@ -453,29 +453,76 @@ background-image: url(./images/show-code.jpg)
     - Code match (ex: Python)
 ---
 
+class: big-text
+# Recap
+#### .large[How to improve your suggestions]
+1. .baseline[.em-text[**Context:**]<br>Tabs, clipboard, before/after cursor, same file]
+2. .baseline[.em-text[**Prompt engineering:**]<br>Give examples, think step by step]
+3. .baseline[.em-text[**Approach:**]<br> Code in reverse, split complex problems in smaller parts]
+
 ---
 
+class: center, middle, impact
+# AI-enhanced development:
+# .baseline[.large[It's a new .ib.animated.bounce.alt-text[skill]]]
+
+---
+
+class: center, middle
+# .large[Legal concerns ⚖️]
+.small[https://blogs.microsoft.com/on-the-issues/2023/09/07/copilot-copyright-commitment-ai-legal-concerns/]
+
+---
+
+class: center
+# Productivity increase
 .center[
-  .w-60.responsive[![](./images/copilot-stats.png)]
+  .w-55.responsive[![](./images/copilot-stats.png)]
 ]
 
 ---
 
-class: all-sketch
+class: center, middle, big-text
+It's no magic
+
+???
+- L'IA n'est pas magique et ne remplace pas un dev
+- ...mais peut grandement aider a la productivité
+
+---
+
 # References & going further
 
-.full-layer.with-margins.right.stick-bottom.space-right[
+.full-layer.with-margins.right.space-right[
+<br>
 .w-25.responsive.circle[![](images/diver.jpg)]
 ]
 
-- https://www.promptingguide.ai
-- https://github.com/kyrolabs/awesome-langchain
-- https://towardsdatascience.com/how-gpt-models-work-b5f4517d5b5
-- https://github.blog/?s=copilot
-
+- [GitHub Copilot Video series](https://www.youtube.com/playlist?list=PLj6YeMhvp2S5_hvBl2SE-7YCHYlLQ0bPt)
+- [How GPT models work](https://towardsdatascience.com/how-gpt-models-work-b5f4517d5b5)
+- [Practical Deep Learning](https://course.fast.ai/)
+- [OpenAI tokenizer](https://platform.openai.com/tokenizer)
+- [Prompt Engineering Guide](https://www.promptingguide.ai)
+- [Awesome LangChain](https://github.com/kyrolabs/awesome-langchain)
+- [GitHub Blog on Copilot](https://github.blog/?s=copilot)
+- [Running Copilot locally](https://github.com/danielgross/localpilot)
+- [Microsoft announces new Copilot Copyright Commitment for customers](https://blogs.microsoft.com/on-the-issues/2023/09/07/copilot-copyright-commitment-ai-legal-concerns/)
+- [ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search](https://github.com/Azure-Samples/azure-search-openai-javascript/)
+- [Responsible Generative AI training](https://learn.microsoft.com/training/modules/responsible-generative-ai/)
 
 ---
 
+class: middle, center, hide-handle, clist, big-text
+
+# Thank you!
+
+.large[[bit.ly/ai-for-dev](https://bit.ly/ai-for-dev)]
+
+TODO: qrcode
+
+---
+
+exclude: true
 class: middle, center, hide-handle, clist
 
 .w-90.responsive[

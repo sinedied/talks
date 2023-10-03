@@ -49,8 +49,8 @@ CHRIS
     - apprentissage (what is zero shot learning?)
 
 5. Conclusion 5min
-  - Un mot sur la licence du code généré + public code matching
-    - https://blogs.microsoft.com/on-the-issues/2023/09/07/copilot-copyright-commitment-ai-legal-concerns/
   - Savoir se servir d'une IA est un skill à part entière, qui va devenir de plus en plus important
   - % improvement de productivité (GH blog stats)
+  - Un mot sur la licence du code généré + public code matching
+    - https://blogs.microsoft.com/on-the-issues/2023/09/07/copilot-copyright-commitment-ai-legal-concerns/
   - L'IA n'est pas magique et ne remplace pas un dev, mais peut grandement aider a la productivité
