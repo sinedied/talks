@@ -24,6 +24,7 @@ mk_slides nestjs nestjs.md
 mk_slides career career.md
 mk_slides clean-dev-env clean-dev-env-conf.md
 mk_slides openscad openscad.md
+mk_slides ai-for-dev ai-for-dev.md
 
 # Generate index
 echo "Generating index..."
