@@ -47,8 +47,6 @@ background-image: url(images/ai-enhanced-developer.jpg)
 .conf-logo { padding-bottom: .25em; }
 </style>
 
-???
-
 ---
 
 class: center, middle, hide-handle
@@ -114,8 +112,8 @@ rough('.here', { type: 'circle', color: '#f22', strokeWidth: 4, padding: 50, ani
 </script>
 
 ???
-- Tout le monde fait de l'IA ces temps-ci, de quoi on parles exactement?
-- Focus sur les IA dédiées au développement
+- Tout le monde fait de l'IA ces temps-ci, mais de quoi on parle exactement?
+- Focus sur les IA génératives dédiées au développement
 - En particulier sur l'assistance au code
 
 ---
@@ -169,6 +167,12 @@ background-image: url(./images/dual.jpg)
   - Agents
 ]
 
+???
+- Est-ce que vous êtes chauds pour faire un de maths?
+  * ca tombe bien, moi non plus :D
+- Pour bien savoir utiliser un outil, c'est mieux de comprendre comment il fonctionne
+- On va prendre ici un point de vue de dev, car je n'ai pas de PhD en ML
+
 ---
 
 class: center
@@ -180,8 +184,8 @@ class: center
 ]
 
 ???
-- pre-training: expensive $$$
-- fine-tuning: cheap $
+- pre-training: expensive $$$ (modèles fondamentaux)
+- fine-tuning: cheap $ (modèles spécialisés)
 - RLHF: long and complicated
 
 ---
@@ -224,7 +228,20 @@ LLMs don't work with words, but with tokens.
 ]
 
 ???
+- 1 token = ~4 characters
 - https://platform.openai.com/tokenizer
+
+---
+
+# Limits
+
+#### Context window
+- Common limits: .em-text[**2-4K tokens**] (GPT-4: 8k or 32K)
+- Context window limits .em-text[**input + output**]
+???
+- context training: O(n^2) complexity
+- 4K tokens ~ 3K words ~ 6 pages
+- 100K context windows => using tricks, with great loss of accuracy (attention)
 
 ---
 
@@ -235,7 +252,7 @@ LLMs don't work with words, but with tokens.
 - Context window limits .em-text[**input + output**]
 
 <script>
-rough('.circled', { type: 'circle', color: '#f22', strokeWidth: 4, padding: 50, animationDuration: 2000 }, 1000);
+rough('.circled', { type: 'circle', color: '#f22', strokeWidth: 4, padding: 50, animationDuration: 2000 }, 500);
 </script>
 ???
 - context training: O(n^2) complexity
@@ -247,15 +264,14 @@ rough('.circled', { type: 'circle', color: '#f22', strokeWidth: 4, padding: 50, 
 - LLMs may reflect the biases of the training data
 ???
 - Humans do both logical and stereotypical reasoning, LLMs do not have logic
+???
+- Who can give some code-related biases?
 --
 
 - Examples:
   * Optimized code?
   * Accessible code?
   * Best language to learn?
-
-???
-- Who can give some code-related biases?
 
 ---
 
@@ -270,6 +286,7 @@ class: center
 - Embedding: vector representation of a piece of data, that captures the underlying structure and relationships between pieces of data
 - Embeddings are used to build vector DBs
 - This is how we "memorize" things (ie your data) in LLMs
+- Ex: textes de loi
 
 ---
 
@@ -408,6 +425,8 @@ A program that perceives its environment, make decisions and takes actions to ac
 ]
 ]
 
+???
+- ChatGPT nowaday with all its plugins is now an agent
 ---
 
 # Agents
@@ -435,7 +454,7 @@ background-image: url(./images/copilot.jpg)
 - Sorti en 2021
 - Initialement basé sur OpenAI Codex (derivé de GPT-3)
 - Optimisé pour le code
-
+- Une partie de ce qu'on va expliquer s'applique plus généralement aux systemes du meme genre
 
 ---
 
@@ -456,6 +475,11 @@ class: center, middle
 .center[
 .w-100.responsive[![](./images/completion.png)]
 ]
+
+???
+- on va pas tout détailler, mais ca permet de comprendre comment ca marche
+- points important: le prompt est construit localement, depuis le code et le contexte
+- uniquement la demande de completion est envoyée au cloud
 
 ---
 
@@ -500,11 +524,22 @@ class: center, middle, impact
 # AI-enhanced development:
 # .baseline[.large[It's a new .ib.animated.bounce.alt-text[skill]]]
 
+???
+- Coder avec une IA, ca s'apprend
+- C'est un nouveau skill, qui va devenir de plus en plus important
+- C'est un peu comme apprendre à coder en TDD, ou en pair programming
+- Ne pas lui faire une confiance aveugle: pair programming!
+
 ---
 
 class: center, middle
 # .large[Legal concerns ⚖️]
 .small[https://blogs.microsoft.com/on-the-issues/2023/09/07/copilot-copyright-commitment-ai-legal-concerns/]
+
+???
+- Note sur la question de la licence du code généré vs copyright
+- GH: c'est votre code!
+- Evoquer Public Code Match
 
 ---
 
@@ -514,16 +549,21 @@ class: center
   .w-55.responsive[![](./images/copilot-stats.png)]
 ]
 
+???
+- C'est pas facile de mesure la productivité, mais ca donne une idée
+- Important: tout le monde y arrive, la différence est dans le temps et la qualité
+
 ---
 
 class: center, middle, big-text
 AI is no magic 🤷<br>
+???
+- L'IA n'est pas magique et ne remplace pas un dev
 --
 
 .baseline.large[but it's still a .em-text[game changer]]
 
 ???
-- L'IA n'est pas magique et ne remplace pas un dev
 - ...mais peut grandement aider a la productivité
 - Ca va changer notre métier, avec des bons et des mauvais côtés
   * par ex les tests de code :D
@@ -571,7 +611,7 @@ class: middle, center, hide-handle, clist, big-text
 
 .full-layer.with-margins.right.space-right.noclick[
 <br>
-.w-25.responsive.circle[![](images/diver.jpg)]
+.w-35.responsive.circle[![](images/chris-dive.jpg)]
 ]
 
 - [GitHub Copilot Video series](https://www.youtube.com/playlist?list=PLj6YeMhvp2S5_hvBl2SE-7YCHYlLQ0bPt)
