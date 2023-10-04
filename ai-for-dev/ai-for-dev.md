@@ -350,6 +350,36 @@ Therefore, your sister is currently 36 years old.
 ]
 ]
 
+---
+
+# Prompt engineering
+
+#### Chain of thought
+
+Simulate human-like reasoning and decision-making
+
+.small[*Prompt:*
+.up[
+```
+When I was 6 years old, my sister was twice my age. Now I'm 30. How old is my sister?
+*Let's think step by step.
+```
+]
+
+*Output:*
+.up[
+```
+Sure, let's break it down step by step.
+
+1. When you were 6 years old, your sister was twice your age. This means your sister was 6 * 2 = 12 years old at that time.
+2. The age difference between you and your sister is 12 - 6 = 6 years.
+3. Now, you are 30 years old. To find out how old your sister is now, you need to add the age difference to your current age. So, 30 + 6 = 36.
+
+Therefore, your sister is currently 36 years old.
+```
+]
+]
+
 ???
 - Without "Let's think step by step." => 24
 - Allow to break down a problem into smaller, simpler steps
@@ -384,7 +414,7 @@ A program that perceives its environment, make decisions and takes actions to ac
 
 # Agents
 
-.col-4.float-left[
+.col-3.float-left.top[
 #### Examples
 - [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT)
 - [babyAGI](https://github.com/yoheinakajima/babyagi)
@@ -394,7 +424,7 @@ A program that perceives its environment, make decisions and takes actions to ac
 - 🦜️🔗 [LangChain](https://www.langchain.com/)
 - [Semantic Kernel](https://github.com/microsoft/semantic-kernel)
 ]
-.col-8.float-left[
+.col-9.float-left.top.no-margin[
   .responsive.rounded[![](./images/gptengineer-demo.gif)]
 ]
 
