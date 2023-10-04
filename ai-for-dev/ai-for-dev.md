@@ -8,13 +8,7 @@ En poussant un peu plus, on découvrira également que les bénéfices dépassen
 
 Entrez dans le quotidien d'un dev du futur, et découvrez ce qui ce cache réellement derrière les sirènes du marketing et des histoires miraculeuses entendues au café!
 
-
 Intro: https://www.lebigdata.fr/ia-creer-logiciel
-
-Conclu: https://www.infoq.com/news/2023/09/copilot-copyright-commitment/
-https://blogs.microsoft.com/on-the-issues/2023/09/07/copilot-copyright-commitment-ai-legal-concerns/
-
-
 https://github.com/danielgross/localpilot
 -->
 ---
@@ -32,10 +26,6 @@ layout: true
 class: hide-handle, full, more-shadow
 background-image: url(images/ai-enhanced-developer.jpg)
 
-<!-- .full-layer.with-margins.left.up[
-.w-20.responsive.logo-filter[![](images/vscode.svg)]
-] -->
-
 .title-new.w-55.center[
 # .baseline.bit-larger[IA-enhanced development]
 ## .small[What's going to .grad-text[change]]
@@ -48,6 +38,14 @@ background-image: url(images/ai-enhanced-developer.jpg)
   |
   Christopher Maneu
 ]
+
+.full-layer.space-left.left.full-bottom.no-margin.conf-logo[
+.w-15.responsive.logo-filter[![](images/devoxxma.png)]
+]
+
+<style>
+.conf-logo { padding-bottom: .25em; }
+</style>
 
 ???
 
@@ -581,12 +579,12 @@ class: middle, center, hide-handle, clist, big-text
 - [Practical Deep Learning](https://course.fast.ai/)
 - [OpenAI tokenizer](https://platform.openai.com/tokenizer)
 - [Prompt Engineering Guide](https://www.promptingguide.ai)
-- [Awesome LangChain](https://github.com/kyrolabs/awesome-langchain)
 - [GitHub Blog on Copilot](https://github.blog/?s=copilot)
-- [Running Copilot locally](https://github.com/danielgross/localpilot)
+- [Awesome LangChain](https://github.com/kyrolabs/awesome-langchain)
+- [Responsible Generative AI training](https://learn.microsoft.com/training/modules/responsible-generative-ai/)
+- [How to write better prompts for GitHub Copilot](https://github.blog/2023-06-20-how-to-write-better-prompts-for-github-copilot/)
 - [Microsoft announces new Copilot Copyright Commitment for customers](https://blogs.microsoft.com/on-the-issues/2023/09/07/copilot-copyright-commitment-ai-legal-concerns/)
 - [ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search](https://github.com/Azure-Samples/azure-search-openai-javascript/)
-- [Responsible Generative AI training](https://learn.microsoft.com/training/modules/responsible-generative-ai/)
 - [About Samsung ChatGPT data leak](https://techcrunch.com/2023/05/02/samsung-bans-use-of-generative-ai-tools-like-chatgpt-after-april-internal-data-leak/)
 
 ---
