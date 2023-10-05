@@ -72,6 +72,29 @@ class: center, middle, hide-handle
 
 ---
 
+class: center, middle, hide-handle
+# Who are we?
+
+.table.row.middle.center[
+.col-2[]
+.col-4.center[
+  .w-70.responsive.avatar.bounceInLeft[![](images/me.jpg)]
+
+  **Yohan Lasorsa**<br>
+  .fab.fa-linkedin[] .e[/yohanlasorsa]<br>
+  .fab.fa-x-twitter[] .e[@sinedied]
+]
+.col-4.center[
+  .w-70.responsive.avatar.bounceInUp[![](images/chris2.jpg)]
+
+  **Christopher Maneu**<br>
+  .fab.fa-linkedin[] .e[/cmaneu]<br>
+  .fab.fa-x-twitter[] .e[@cmaneu]
+]
+]
+
+---
+
 class: impact
 # 92% of U.S.-based developers are already using AI coding tools
 
