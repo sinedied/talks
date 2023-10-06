@@ -538,8 +538,8 @@ class: big-text
 # Recap
 #### .large[How to improve your suggestions]
 1. .baseline[.em-text[**Context:**]<br>Tabs, clipboard, before/after cursor, same file]
-2. .baseline[.em-text[**Prompt engineering:**]<br>Give examples, think step by step]
-3. .baseline[.em-text[**Approach:**]<br> Code in reverse, split complex problems in smaller parts]
+2. .baseline[.em-text[**Prompt engineering:**]<br>Be specific, add examples, think step by step]
+3. .baseline[.em-text[**Approach:**]<br> Code in reverse, split complex problems]
 
 ---
 

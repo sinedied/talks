@@ -11,22 +11,6 @@
 - C'est un projet sur lequel je bosse dessus depuis début septembre:
   * retour de vacances, on m'a dit: on a 2 semaines pour faire la même chose que cette app Python, un ChatGPT version enterprise qui s'appuie sur une base de documents
 
-## talk-tests branch
-- New function: open string.ts
-  * create a function that escapes html characters
-  * parse a markdown numbered or bulleted list into html
-    input: string
-    output: string
-  * then output: DOM element
-  * const element = createElementFromHTML(htmlString);
-  * // parse the list into an html string
-  * /simplify
-  * make this more concise
-  * make this readable, with comments
-
-- eslint JS to JSON config in webapp
-  * Make it valid JSON
-
 ## talk-convert branch
 - Convert Lookup: search for lookup globally
   * /explain (whole code, DictReader)
@@ -36,10 +20,49 @@
   * refactor so that the file loading and parsing occurs in a separate method
   * refactor to an async method without using streams
 
+## Data generation
+- open employee-info.scv
+
+Generate me 100 lines of CSV data based on this format:
+name,title,insurance,insurancegroup
+
+- insurancegroup must be either Family or Single
+- insurance must be either Northwind Health Plus or Northwind Health Standard
+- title must be in this list: Program Manager, Software Manager, Software Architect, Quality Assurance, Sales, Marketing, Marketing Director, Designer
+- name must be a French name
+
+Print the CSV data directly
+
 ## talk-refactor branch
 - Refactor: search for indexSections
   * /refactor
   * make it more concise and readable
+
+## talk-tests branch
+- Reverse coding
+- Chat.tsx
+  * add onKeyDown event handler to chat root
+  * implement onKeyDown event handler
+    - use setCancelStreaming hook
+  * add setCancelStreaming hook
+
+- eslint JS to JSON config in webapp
+  * Make it valid JSON
+
+## talk-tests branch
+- New function: open string.ts
+  * create a function that escapes html characters
+  * parse a markdown numbered or bulleted list into html
+   * ctrl+enter
+    input: string
+    output: string
+  * then output: DOM element
+  * const element = createElementFromHTML(htmlString);
+  * // parse the list into an html string
+  * /simplify
+  * make this more concise
+  * make this readable, with comments
+  * // alternative: think step by step
 
 ## talk-tests branch
 - Generate tests for string.ts
