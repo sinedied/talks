@@ -1,5 +1,12 @@
 exclude: true
 <!--
+
+
+- add much more:
+- data generation, security fixes, accessibility fixes,
+code review, issue triage, unit tests generation, infra as code generation, automatic translation, documentation generation, schema inference, performance optimization, code refactoring, code formatting, consistency checking, data analysis, data labeling, code translation, SQL query generation and optimization, CSS helping
+
+
 Le développement augmenté à l'IA: tout ce qui va changer
 
 Les IA chez les devs, c'est comme le sexe chez les ados: tout le monde en parle, mais très peu ont finalement une réelle expérience du sujet. Dans ce talk, nous partagerons notre expérience du développement assisté à l'IA que nous pratiquons depuis les premières versions beta de ces modèles: ce que nous en avons appris, les trucs et astuces, leur limites... Mais ce sera aussi l'occasion de debunker certaines contre-vérités que l'on peut entendre à gauche et à droite.
@@ -18,7 +25,7 @@ class: animation-fade
 layout: true
 
 .twitter-handle[
-  @sinedied | @cmaneu
+  @sinedied
 ]
 
 ---
@@ -35,8 +42,8 @@ background-image: url(images/ai-enhanced-developer.jpg)
   .ms.responsive[![](images/ms-full-logo.svg)]
   |
   Yohan Lasorsa
-  |
-  Christopher Maneu
+  <!-- |
+  Christopher Maneu -->
 ]
 
 .full-layer.space-left.left.full-bottom.no-margin.conf-logo[
@@ -49,6 +56,24 @@ background-image: url(images/ai-enhanced-developer.jpg)
 
 ---
 
+class: middle, center, hide-handle
+# .large.sketch[About me]
+
+.table.row.middle[
+.col-4.center[
+  .w-70.responsive.avatar.tada.animated[![](images/me.jpg)]
+]
+.col-8.bit-larger.left.middle[
+
+.responsive[
+<object data="images/me.svg"></object>
+]
+]
+]
+
+---
+
+exclude: true
 class: center, middle, hide-handle
 # Who are we?
 
@@ -72,6 +97,7 @@ class: center, middle, hide-handle
 
 ---
 
+exclude: true
 class: center, middle, hide-handle
 # Who are we?
 
@@ -185,7 +211,7 @@ background-image: url(./images/dual.jpg)
   - Model types
   - Tokens
   - Limits
-  - Embeddings
+  <!-- - Embeddings -->
   - Prompt engineering
   - Agents
 ]
@@ -298,6 +324,7 @@ rough('.circled', { type: 'circle', color: '#f22', strokeWidth: 4, padding: 50, 
 
 ---
 
+exclude: true
 class: center
 # Embeddings
 
@@ -424,6 +451,7 @@ Therefore, your sister is currently 36 years old.
 
 ---
 
+exclude: true
 # Prompt engineering
 
 #### Retrieval Augmented Generation
@@ -486,7 +514,7 @@ class: big-text, clist, center, middle
 
 - .baseline[It **doesn't** .em-text[send all your code] to the cloud]
 - .baseline[It **doesn't** .em-text[use your data] to train the model]
-- .baseline[It **doesn't** .em-text[understand] your app design]
+<!-- - .baseline[It **doesn't** .em-text[understand] your app design] -->
 ???
 - Privacy first: pas de code envoyé au cloud, pas de données utilisateurs
 
@@ -543,6 +571,16 @@ class: big-text
 
 ---
 
+# .large[There's more!]
+
+.bit-larger[
+.em-text[**code generation**], PR validation, issue triage, .em-text[**unit tests generation**], security fixes, accessibility fixes, .em-text[**rule-based data generation**], infra as code generation, automatic translations, .em-text[**code explanation**], automatic documentation, performance optimization, .em-text[**refactoring**], schema inference, .em-text[**code formatting**], documentation summary, consistency checking, data analysis, data labeling, .em-text[**code language translation**], SQL query generation and optimization, CSS design help, changelog generation, .em-text[**runtime simulation**], text to analytics query transformation, naming help, customer feedback summarization, automatic ticket generation... *and more that we haven't thought of yet!*
+]
+???
+- This list was not AI-generated
+
+---
+
 class: center, middle, impact
 # AI-enhanced development:
 # .baseline[.large[It's a new .ib.animated.bounce.alt-text[skill]]]
@@ -555,6 +593,7 @@ class: center, middle, impact
 
 ---
 
+exclude: true
 class: center, middle
 # .large[Legal concerns ⚖️]
 .small[https://blogs.microsoft.com/on-the-issues/2023/09/07/copilot-copyright-commitment-ai-legal-concerns/]
@@ -601,6 +640,18 @@ Don't be afraid of it!
 
 ---
 
+exclude: true
+class: middle, center, hide-handle, clist
+
+.w-90.responsive[
+<object data="images/thanks.svg"></object>
+]
+
+???
+Feedback please!
+
+---
+
 class: middle, center, hide-handle, clist, big-text
 
 # Thank you!
@@ -618,7 +669,7 @@ class: middle, center, hide-handle, clist, big-text
 ]
 ]
 
-@sinedied | @cmaneu
+@sinedied
 
 <style>
 .arrow {
