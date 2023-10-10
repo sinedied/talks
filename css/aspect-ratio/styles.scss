@@ -1,0 +1,21 @@
+// Before
+.video-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; // 9/16 * 100
+}
+
+// Now
+.video-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+
+// avoid jumping images
+// TODO find cat image
+img {
+  border: 2px solid red;
+  width: 100%;
+  // aspect-ratio: 1 / 1;
+}

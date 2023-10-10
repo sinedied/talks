@@ -1,0 +1,17 @@
+:root {
+  --base-color: hsl(0, 0%, 100%);
+  --base-color-l: 100;
+  --contrastThreshold: 50;
+}
+
+.auto-contrast {
+  background: var(--base-color);
+  color: color-contrast(var(--base-color) var(--base-color-l) var(--contrastThreshold));
+}
+
+.pseudo-contrast {
+  background: var(--base-color);
+  
+  --switch: calc((var(--base-color-l) - var(--contrastThreshold)) * -100);
+  color: hsl(0, 0%, var(--switch));
+}
