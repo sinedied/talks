@@ -567,7 +567,7 @@ class: big-text
 # .large[There's more!]
 
 .bit-larger[
-.em-text[**code generation**], PR validation, issue triage, .em-text[**unit tests generation**], security fixes, accessibility fixes, .em-text[**rule-based data generation**], infra as code generation, automatic translations, .em-text[**code explanation**], automatic documentation, performance optimization, .em-text[**refactoring**], schema inference, .em-text[**code formatting**], documentation summary, consistency checking, data analysis, data labeling, .em-text[**code language translation**], SQL query generation and optimization, CSS design help, changelog generation, .em-text[**runtime simulation**], text to analytics query transformation, naming help, customer feedback summarization, automatic ticket generation, CI/CD pipeline generation... *and more to be discovered!*
+.em-text[**code generation**], PR validation, issue triage, .em-text[**unit tests generation**], security fixes, accessibility fixes, .em-text[**rule-based data generation**], infra as code generation, automatic translations, .em-text[**code explanation**], automatic documentation, performance optimization, .em-text[**refactoring**], schema inference, .em-text[**code formatting**], documentation summary, consistency checking, data analysis, data labeling, .em-text[**code language translation**], SQL query generation and optimization, CSS design help, changelog generation, .em-text[**runtime simulation**], text to analytics query transformation, naming help, customer feedback summarization, automatic ticket generation, CI/CD pipeline creation... *and more to be discovered!*
 ]
 ???
 - This list was not AI-generated
