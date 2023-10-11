@@ -633,7 +633,6 @@ Don't be afraid of it!
 
 ---
 
-exclude: true
 class: middle, center, hide-handle, clist
 
 .w-90.responsive[
@@ -645,6 +644,7 @@ Feedback please!
 
 ---
 
+exclude: true
 class: middle, center, hide-handle, clist, big-text
 
 # Thank you!
