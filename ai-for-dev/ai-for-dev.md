@@ -1,12 +1,5 @@
 exclude: true
 <!--
-
-
-- add much more:
-- data generation, security fixes, accessibility fixes,
-code review, issue triage, unit tests generation, infra as code generation, automatic translation, documentation generation, schema inference, performance optimization, code refactoring, code formatting, consistency checking, data analysis, data labeling, code translation, SQL query generation and optimization, CSS helping
-
-
 Le développement augmenté à l'IA: tout ce qui va changer
 
 Les IA chez les devs, c'est comme le sexe chez les ados: tout le monde en parle, mais très peu ont finalement une réelle expérience du sujet. Dans ce talk, nous partagerons notre expérience du développement assisté à l'IA que nous pratiquons depuis les premières versions beta de ces modèles: ce que nous en avons appris, les trucs et astuces, leur limites... Mais ce sera aussi l'occasion de debunker certaines contre-vérités que l'on peut entendre à gauche et à droite.
@@ -574,7 +567,7 @@ class: big-text
 # .large[There's more!]
 
 .bit-larger[
-.em-text[**code generation**], PR validation, issue triage, .em-text[**unit tests generation**], security fixes, accessibility fixes, .em-text[**rule-based data generation**], infra as code generation, automatic translations, .em-text[**code explanation**], automatic documentation, performance optimization, .em-text[**refactoring**], schema inference, .em-text[**code formatting**], documentation summary, consistency checking, data analysis, data labeling, .em-text[**code language translation**], SQL query generation and optimization, CSS design help, changelog generation, .em-text[**runtime simulation**], text to analytics query transformation, naming help, customer feedback summarization, automatic ticket generation... *and more that we haven't thought of yet!*
+.em-text[**code generation**], PR validation, issue triage, .em-text[**unit tests generation**], security fixes, accessibility fixes, .em-text[**rule-based data generation**], infra as code generation, automatic translations, .em-text[**code explanation**], automatic documentation, performance optimization, .em-text[**refactoring**], schema inference, .em-text[**code formatting**], documentation summary, consistency checking, data analysis, data labeling, .em-text[**code language translation**], SQL query generation and optimization, CSS design help, changelog generation, .em-text[**runtime simulation**], text to analytics query transformation, naming help, customer feedback summarization, automatic ticket generation, CI/CD pipeline generation... *and more to be discovered!*
 ]
 ???
 - This list was not AI-generated
