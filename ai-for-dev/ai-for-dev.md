@@ -302,7 +302,7 @@ rough('.circled', { type: 'circle', color: '#f22', strokeWidth: 4, padding: 50, 
 - 100K context windows => using tricks, with great loss of accuracy (attention)
 --
 
-#### Bias
+#### Statistical bias
 - LLMs may reflect the biases of the training data
 ???
 - Humans do both logical and stereotypical reasoning, LLMs do not have logic

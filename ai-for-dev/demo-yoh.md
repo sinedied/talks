@@ -46,8 +46,21 @@ Print the CSV data directly
     - use setCancelStreaming hook
   * add setCancelStreaming hook
 
+## eslint same branch
 - eslint JS to JSON config in webapp
   * Make it valid JSON
+
+## talk-tests branch
+- Generate tests for string.ts
+  * write tests with tap framework
+  * copy parseBoolean function
+  * generate tests for parseBoolean function
+  * try with more complex function like CsvTool
+
+## GH Actions same branch
+  * generate a GH actions workflow to run unit tests with Node 18 on Mac, windows and Linux
+  * create file
+  * where should I put this
 
 ## talk-tests branch
 - New function: open string.ts
@@ -63,19 +76,6 @@ Print the CSV data directly
   * make this more concise
   * make this readable, with comments
   * // alternative: think step by step
-
-## talk-tests branch
-- Generate tests for string.ts
-  * write tests with tap framework
-  * copy parseBoolean function
-  * generate tests for parseBoolean function
-  * try with more complex function like CsvTool
-
-- GH Actions:
-  * generate a GH actions workflow to run unit tests with Node 18 on Mac, windows and Linux
-  * create file
-  * where should I put this
-
 
 
 
