@@ -40,7 +40,7 @@ background-image: url(images/ai-enhanced-developer.jpg)
 ]
 
 .full-layer.space-left.left.full-bottom.no-margin.conf-logo[
-.w-15.responsive.logo-filter[![](images/devoxxma.png)]
+.w-20.responsive.logo[![](images/snowcamp.webp)]
 ]
 
 <style>
