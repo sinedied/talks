@@ -115,12 +115,18 @@ class: center, middle, hide-handle
 ---
 
 class: impact
-# 92% of U.S.-based developers are already using AI coding tools
+# 67% of developers are already using AI as part of their job
+
+.credits.light-text[
+  From [Coderpad/Codingame State of Tech 2024 Survey](https://coderpad.io/survey-reports/coderpad-and-codingame-state-of-tech-hiring-2024/)
+]
 
 ???
-- Etude faite en juin 23 auprès de 500 devs de sociétés de +1000p
+- Etude faite aupres de 13k devs de 149 pays differents
+- 92% us devs: etude faite en juin 23 auprès de 500 devs de sociétés de +1000p
 - Qui utilise ici des outils d'IA pour coder?
 - Qui déjà utilisé ChatGPT pour son boulot?
+  * Sauf ChatGPT Enterprise, modele est entrainés sur VOS data!
   * Pique de démarrage: risques (ex Samsung leak)
   https://techcrunch.com/2023/05/02/samsung-bans-use-of-generative-ai-tools-like-chatgpt-after-april-internal-data-leak/
 ---
@@ -144,9 +150,9 @@ by Matt Turck - https://mad.firstmark.com/
 .here {
   position: absolute;
   top: 150px;
-  bottom: 340px;
-  left: 370px;
-  right: 570px;
+  bottom: 190px;
+  left: 390px;
+  right: 330px;
 }
 </style>
 <script>
@@ -160,6 +166,7 @@ rough('.here', { type: 'circle', color: '#f22', strokeWidth: 4, padding: 50, ani
 
 ---
 
+exclude: true
 class: center, middle
 # "AI will replace developers"
 
@@ -194,7 +201,7 @@ background-image: url(./images/dual.jpg)
 ---
 
 .col-6.float-left[
-  .w-80.responsive[![](./images/dummies.jpg)]
+  .w-90.responsive[![](./images/llm-magazine.jpg)]
 ]
 .col-6.float-left[
   <br><br>
@@ -210,7 +217,7 @@ background-image: url(./images/dual.jpg)
 ]
 
 ???
-- Est-ce que vous êtes chauds pour faire un de maths?
+- Est-ce que vous êtes chauds pour faire un peu de maths?
   * ca tombe bien, moi non plus :D
 - Pour bien savoir utiliser un outil, c'est mieux de comprendre comment il fonctionne
 - On va prendre ici un point de vue de dev, car je n'ai pas de PhD en ML
@@ -243,7 +250,7 @@ class:
 - LLMs do no think: they *just* complete text
 --
 
-#### Instruction-following models (aka chat models)
+#### Chat and instruction-following models
 
 <span class="pre">&lt;|im_start|>system
 You are a professional translator&lt;|im_end|>
@@ -280,6 +287,7 @@ LLMs don't work with words, but with tokens.
 #### Context window
 - Common limits: .em-text[**2-4K tokens**] (GPT-4: 8k or 32K)
 - Context window limits .em-text[**input + output**]
+- Some models differenciate input and output limits (GPT-4 Turbo: 128k in / 4k out)
 ???
 - context training: O(n^2) complexity
 - 4K tokens ~ 3K words ~ 6 pages
@@ -292,6 +300,7 @@ LLMs don't work with words, but with tokens.
 #### .circled[Context window]
 - Common limits: .em-text[**2-4K tokens**] (GPT-4: 8k or 32K)
 - Context window limits .em-text[**input + output**]
+- Some models differenciate input and output limits (GPT-4 Turbo: 128k in / 4k out)
 
 <script>
 rough('.circled', { type: 'circle', color: '#f22', strokeWidth: 4, padding: 50, animationDuration: 2000 }, 500);
@@ -303,7 +312,7 @@ rough('.circled', { type: 'circle', color: '#f22', strokeWidth: 4, padding: 50, 
 --
 
 #### Statistical bias
-- LLMs may reflect the biases of the training data
+- LLMs may reflect the biases of the training data (and context)
 ???
 - Humans do both logical and stereotypical reasoning, LLMs do not have logic
 ???
@@ -366,7 +375,7 @@ Use in-context examples to condition the output
 ```
 Bonjour Devoxx: french
 Brian is in the kitchen: english
-Danke schön: german
+Dankeschön: german
 Den här koden är hemsk:
 ```
 ]
@@ -444,7 +453,6 @@ Therefore, your sister is currently 36 years old.
 
 ---
 
-exclude: true
 # Prompt engineering
 
 #### Retrieval Augmented Generation
@@ -456,6 +464,10 @@ Use a vector DB to retrieve relevant information and add it to augment the conte
 <object data="images/rag.svg"></object>
 ]
 ]
+
+???
+- embeddings: vecteur qui capture la structure et les relations entre les données
+- permet d'ancrer le modèle dans les données et eviter les hallucinations
 
 ---
 
@@ -473,6 +485,7 @@ A program that perceives its environment, make decisions and takes actions to ac
 - ChatGPT nowaday with all its plugins is now an agent
 ---
 
+exclude: true
 # Agents
 
 .col-3.float-left.top[
