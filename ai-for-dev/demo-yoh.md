@@ -11,7 +11,7 @@
 - C'est un projet sur lequel je bosse dessus depuis début septembre:
   * retour de vacances, on m'a dit: on a 2 semaines pour faire la même chose que cette app Python, un ChatGPT version enterprise qui s'appuie sur une base de documents
 
-## talk-convert branch
+## talk-convert-lookup-example branch
 - Convert Lookup: search for lookup globally
   * /explain (whole code, DictReader)
   * What would be the result given this CSV data?
@@ -33,18 +33,21 @@ name,title,insurance,insurancegroup
 
 Print the CSV data directly
 
-## talk-refactor branch
+- I don't want a script
+
+## talk-refactor-code branch
 - Refactor: search for indexSections
   * /refactor
   * make it more concise and readable
+  * merge the if conditions
 
 ## talk-tests branch
 - Reverse coding
 - Chat.tsx
-  * add onKeyDown event handler to chat root
+  * add onEnterKeyDown event handler to chat root
   * implement onKeyDown event handler
     - use setCancelStreaming hook
-  * add setCancelStreaming hook
+  * add setCancelStreaming hook (go to top if not working)
 
 ## eslint same branch
 - eslint JS to JSON config in webapp
@@ -61,6 +64,9 @@ Print the CSV data directly
   * generate a GH actions workflow to run unit tests with Node 18 on Mac, windows and Linux
   * create file
   * where should I put this
+
+
+
 
 ## talk-tests branch
 - New function: open string.ts
