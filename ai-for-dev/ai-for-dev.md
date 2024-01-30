@@ -373,7 +373,7 @@ Use in-context examples to condition the output
 .small[*Prompt:*]
 .up[
 ```
-Bonjour Devoxx: french
+Bonjour SnowCamp: french
 Brian is in the kitchen: english
 Dankeschön: german
 Den här koden är hemsk:
@@ -505,7 +505,7 @@ exclude: true
 ---
 
 class: center, middle, cover, hide-handle
-background-image: url(./images/copilot.jpg)
+background-image: url(./images/copilot.png)
 
 ???
 - Sorti en 2021
@@ -611,6 +611,7 @@ class: center, middle
 
 ---
 
+exclude: true
 class: center
 # Productivity increase
 .center[
