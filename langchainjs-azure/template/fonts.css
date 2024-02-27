@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Segoe Sans Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url(Segoe-Sans-Text.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Segoe Sans Text Semibold';
+  font-style: normal;
+  font-weight: 500;
+  src: url(Segoe-Sans-Text-Semibold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  src: url(Inconsolata-Regular.ttf) format('truetype');
+}
