@@ -41,7 +41,7 @@ class: light-gbg
 # Introducing LangChain.js 🦜🔗
 
 .bit-larger.blist.baseline[
-- **JavaScript library for working with .blue-text[LLMs]**
+- **Open-source JavaScript library for working with .blue-text[LLMs]**
 - **Provides high-level .blue-text[abstractions]:**
   * models, vector databases, agents, and more
 - **Bridge between .blue-text[local and cloud-based] components**
@@ -49,7 +49,7 @@ class: light-gbg
 ]
 
 ???
-- So, let me introduce you to LangChain.js, a JavaScript library for working with large language models (LLMs). If the name sounds familiar, it's because it's the sister project of LangChain, which is made for Python, and a hugely popular project in the AI community.
+- So, let me introduce you to LangChain.js, a JavaScript library for working with large language models (LLMs). If the name sounds familiar, it's because it's the sister project of LangChain, which is made for Python, and a hugely popular open-source project in the AI community.
 
 - It's a great tool for building generative AI apps.
 
@@ -65,9 +65,9 @@ class: light-gbg
 
 ???
 - Let's start with a simple idea:
-- I'm from a generation who grew up reading books and articles, but nowadays most of the interesting information is in video format.
+- I'm from a generation who grew up reading books and articles, but nowadays most of the interesting content is in video format.
 
-- So, I thought it would be nice to have a system where you can ask questions about a YouTube video content, and get answers quickly in a text format without having to watch the whole video.
+- So, I thought it would be nice to have a system where you can ask questions about a YouTube video, and get answers quickly in a text format without having to watch the whole video.
 
 ---
 
@@ -85,7 +85,7 @@ class: light-gbg
 
 - Why use RAG? Video content is often long and contains a lot of information. We want to be able to retrieve the most relevant information and then generate a precise answer to a question.
 
-- It grounds the answer in a set of documents, to avoid the generation of irrelevant or incorrect information.
+- It grounds the answer in a set of documents, to avoid the generation of irrelevant or even made up information.
 
 ---
 
