@@ -171,7 +171,7 @@ Using LangChain.js abstractions and utilities
 --
 .bit-larger[
 **Local prototype**<br>
-FAISS vector DB and Ollama + Llama 7B / all-minilm-l6-v2 models
+FAISS vector DB and Ollama + LLaMa2 7B / all-minilm-l6-v2 models
 ]
 
 --
