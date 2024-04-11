@@ -35,6 +35,17 @@ Discover the journey of building a generative AI application using LangChain.js 
   * Update model, embeddings, and VectorDB
   * Switching the DB from AI Search to MongoDB vCore
 
+## Bonus Functions - 5min
+
+- Show functions/lib/azure.ts
+  * Explain changes to functions
+  * Async generator
+
+- Show functions/ask.ts
+  * Talk about streaming support with v4 runtime
+  * Explain code
+  * Run locally and test with curl
+
 ## Conlusion - 2min
 
 - Summary

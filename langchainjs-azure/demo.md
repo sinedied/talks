@@ -29,3 +29,13 @@
   * `sea` snippet => first need to check if documents are already indexed
   * `add` snippet (or use Copilot) to complete the embedding part
 - `npm start` to run the demo again
+
+## Azure Functions
+
+- show `functions/lib/azure.ts`
+  * Explain changes to functions
+  * Async generator
+- show `functions/ask.ts`
+  * Talk about streaming support with v4 runtime
+  * Explain code
+  * Run locally and test with curl
