@@ -186,7 +186,8 @@ class: hidden-table, middle
 background-image: url(images/bg-main.jpg)
 # .large[Thank you!]
 
-- .w-30[Slides] [aka.ms/lcjs-azure](https://aka.ms/lcjs-azure)
-- .w-30[Demo source code] [aka.ms/lcjs-azure/demo](https://aka.ms/lcjs-azure/demo)
-- .w-30[Enterprise AI sample] [aka.ms/azai/js/code](https://aka.ms/azai/js/code)
-- .w-30[In-depth RAG workshop] [aka.ms/ws/openai-rag](https://aka.ms/ws/openai-rag)
+- .w-35[Slides] [aka.ms/lcjs-azure](https://aka.ms/lcjs-azure)
+- .w-35[Demo source code] [aka.ms/lcjs-azure/demo](https://aka.ms/lcjs-azure/demo)
+- .w-35[Serverless ChatGPT sample] [aka.ms/lcjs/chat/sample](https://aka.ms/lcjs/chat/sample)
+- .w-35[Enterprise AI sample] [aka.ms/azai/js/code](https://aka.ms/azai/js/code)
+- .w-35[In-depth RAG workshop] [aka.ms/ws/openai-rag](https://aka.ms/ws/openai-rag)
