@@ -12,6 +12,7 @@
   * retour de vacances, on m'a dit: on a 2 semaines pour faire la même chose que cette app Python, un ChatGPT version enterprise qui s'appuie sur une base de documents
 
 ## talk-convert-lookup-example branch
+- @workspace what's the stack used?
 - Convert Lookup: search for lookup globally
   * /explain (whole code, DictReader)
   * What would be the result given this CSV data?
