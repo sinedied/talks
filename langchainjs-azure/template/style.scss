@@ -1144,6 +1144,18 @@ hr {
   background: linear-gradient(160deg, $light, $light 65%, lighten($blue, 40%) 85%, lighten($blue, 25%));
 }
 
+.conf {
+  position: absolute;
+  bottom: 1.5em;
+  right: 2em;
+}
+
+.qrcode {
+  position: absolute;
+  top: 8em;
+  right: 3em;
+}
+
 // Fix PDF print with chrome
 // ---------------------------------------------------------------------------
 

@@ -11,6 +11,10 @@ layout: true
 class: hide-handle, middle
 background-image: url(images/bg-main.jpg)
 
+.conf.right[
+  .w-40.responsive[![](images/devday.png)]
+]
+
 # .text-tight.baseline.dark-text[Gen AI, from your local machine to Azure with LangChain.js]
 .dark-text[
 Yohan Lasorsa
@@ -194,6 +198,11 @@ Azure AI Search and GPT-4o-mini / text-embedding-3-large models
 
 class: hidden-table, middle
 background-image: url(images/bg-main.jpg)
+
+.qrcode.right[
+  .w-40.responsive[![](images/qrcode.png)]
+]
+
 # .large[Thank you!]
 
 <!-- - .w-35[Slides] [aka.ms/lcjs-azure](https://aka.ms/lcjs-azure) -->
